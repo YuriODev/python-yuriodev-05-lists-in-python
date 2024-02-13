@@ -10,7 +10,7 @@ This module is part of the larger Python programming course offered by St. Ignat
 
 ➡️ [Previous Topic: String Manipulation](https://github.com/YuriODev/python-st-ignatius-04-string-manipulation/blob/main/README.md)
 
-➡️ [Next Topic: Dictionaries 🗂](https://github.com/YuriODev/python-st-ignatius-06-mastering-dictionaries/blob/main/README.md)
+➡️ [Next Topic: Dictionaries](https://github.com/YuriODev/python-st-ignatius-06-mastering-dictionaries/blob/main/README.md)
 
 # Course Overview 🎓
 
