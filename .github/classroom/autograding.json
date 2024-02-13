@@ -1,0 +1,74 @@
+{
+    "tests": [
+      
+      {
+        "name": "Exercise 1 - Sum of Digits - Medium",
+        "run": "pytest exercises/test_exercise_1.py",
+        "timeout": 5,
+        "points": 10
+      },
+      {
+        "name": "Exercise 2 - Next Even Number - Easy",
+        "run": "pytest exercises/test_exercise_2.py",
+        "timeout": 5,
+        "points": 10
+      },
+      {
+        "name": "Exercise 3 - Electronic Clock - Medium",
+        "run": "pytest exercises/test_exercise_3.py",
+        "timeout": 5,
+        "points": 10
+      },
+      {
+        "name": "Exercise 4 - Symmetric Number - Medium",
+        "run": "pytest exercises/test_exercise_4.py",
+        "timeout": 10,
+        "points": 10
+      },
+      {
+        "name": "Exercise 5 - Maximum of Two - Easy",
+        "run": "pytest exercises/test_exercise_5.py",
+        "timeout": 5,
+        "points": 5
+      },
+      {
+        "name": "Exercise 6 - Divisibility Check - Easy",
+        "run": "pytest exercises/test_exercise_6.py",
+        "timeout": 5,
+        "points": 5
+      },
+      {
+        "name": "Exercise 7 - Sum of Digits - Easy",
+        "run": "pytest exercises/test_exercise_7.py",
+        "timeout": 5,
+        "points": 5
+      },
+      {
+        "name": "Exercise 8 - Integer Sorting - Easy",
+        "run": "pytest exercises/test_exercise_8.py",
+        "timeout": 5,
+        "points": 5
+      },
+      {
+        "name": "Exercise 9 - Hour Hand Angle - Medium",
+        "run": "pytest exercises/test_exercise_9.py",
+        "timeout": 5,
+        "points": 10
+      },
+      {
+        "name": "Exercise 10 - Minute Hand Angle - Medium",
+        
+        "run": "pytest exercises/test_exercise_10.py",
+  
+        "timeout": 5,
+        "points": 10
+      },
+      {
+        "name": "Exercise 11 - Bill Denominations - Medium",
+        "run": "pytest exercises/test_exercise_11.py",
+        "timeout": 5,
+        "points": 10
+      }
+    ]
+  }
+  
