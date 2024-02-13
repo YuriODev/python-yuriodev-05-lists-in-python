@@ -1,4 +1,4 @@
-# 📘 Simple Data Types in Python
+# 📘 Lists and Tuples
 
 Welcome to the first module of our Python course at St. Ignatius College, focusing on Simple Data Types. This module is designed to lay a solid foundation for understanding how Python stores, manipulates, and utilizes data.
 
@@ -8,18 +8,19 @@ This module is part of the larger Python programming course offered by St. Ignat
 
 [Course Repository: Comprehensive Python Course](https://github.com/YuriODev/St-Ignatius-Python-Course)
 
-➡️ [Next Topic: Conditional Statements](https://github.com/YuriODev/python-st-ignatius-02-simple-conditional-statements/blob/main/README.md)
+➡️ [Previous Topic: String Manipulation](https://github.com/YuriODev/python-st-ignatius-04-string-manipulation/blob/main/README.md)
+➡️ [Next Topic: Dictionaries 🗂](https://github.com/YuriODev/python-st-ignatius-06-mastering-dictionaries/blob/main/README.md)
 
 # Course Overview 🎓
 
 This Python course covers a wide range of topics, designed to provide you with a solid foundation in programming, from simple data types to advanced concepts like Object-Oriented Programming and data structures. Each module is carefully crafted to build upon the previous one, ensuring a comprehensive understanding of Python programming.
 
 ## Modules Covered:
-- **Simple Data Types in Python (Current Module)**
+- [Variables and Data Types 📊](https://github.com/YuriODev/python-st-ignatius-01-simple-data-types/blob/main/README.md) 
 - [Conditional Statements 🔀](https://github.com/YuriODev/python-st-ignatius-02-simple-conditional-statements/blob/main/README.md)
 - [Iterations and Loops ➿](https://github.com/YuriODev/python-st-ignatius-03-iterations-and-loops/blob/main/README.md)
 - [String Manipulation 🧵](https://github.com/YuriODev/python-st-ignatius-04-string-manipulation/blob/main/README.md)
-- [Lists and Tuples 📝](https://github.com/YuriODev/python-st-ignatius-05-lists-in-python/blob/main/README.md)
+- **Lists and Tuples (Current Module)**
 - [Dictionaries 🗂](https://github.com/YuriODev/python-st-ignatius-06-mastering-dictionaries/blob/main/README.md)
 - [Functions 🛠](https://github.com/YuriODev/python-st-ignatius-07-functions-in-python/blob/main/README.md)
 - [Files 🗄](https://github.com/YuriODev/python-st-ignatius-08-files-in-python/blob/main/README.md)
