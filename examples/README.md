@@ -177,7 +177,7 @@ print(" ".join(map(str, filtered_numbers)))
 ```
 </details>
 
-
+<!-- 414 -->
 ## Example 6: Count Positive Elements
 
 **Problem:** Find the number of positive elements in an entered list. The list of numbers is entered on a single line.
@@ -300,10 +300,78 @@ print(most_frequent)
 ```
 </details>
 
+<!-- 420 -->
+## Example 10: Print Elements that Exceed Previous Elements
+
+**Problem:** Given a list of integers entered on a single line, print each element that is greater than the one preceding it. The numbers should be output in the same order as they appear in the list, separated by spaces.
+
+| No. | Inputs            | Outputs  |
+| --- | ----------------- | -------- |
+| 1   | 5 8 0 2 9 4 1    | 8 2 9    |
+| 2   | 3 5 7 6 9 10 8   | 5 7 9 10 |
+| 3   | 1 1 2 3 2 2 5 1  | 2 3 5    |
+| 4   | 10 9 8 7 6       |          |
+| 5   | 6 7 7 8 10 9 10  | 7 8 10 10 |
+
+<details open>
+<summary><b>Python Solution</b></summary>
+
+```python
+input_numbers = input("Enter numbers separated by spaces: ")
+numbers = list(map(int, input_numbers.split()))
+
+# List of elements that exceed the previous element
+exceeding_elements = [numbers[i] for i in range(1, len(numbers)) if numbers[i] > numbers[i - 1]]
+
 ```
 </details>
 
 
+<!-- 424 -->
+## Example 11: Count Unique Words in a Line
+
+**Problem:** Given a line of text, determine how many unique words are present. A word is defined by sequences of characters separated by spaces. Case sensitivity should be considered, meaning "New" and "new" would count as two different words.
+
+| No. | Inputs                                                                                                                                                          | Outputs |
+| --- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
+| 1   | New Delhi New York Paris Prague Reykjavik                                                                                                                      | 6       |
+| 2   | Happy New Year Happy New Year May we all have a vision now and then Of a world where every neighbor is a friend                                                | 19      |
+
+<details open>
+<summary><b>Python Solution</b></summary>
+
+```python
+input_text = input("Enter a line of text: ")
+words = input_text.split()
+
+# Count the number of unique words
+unique_words = len(set(words))
+
+print(unique_words)
+```
+</details>
+
+<!-- 429 -->
+## Example 12: Count Days Above Average Temperature
+
+**Problem:** Given a line of space-separated temperature readings for a series of days, determine how many days had temperatures not lower than the average temperature over the period.
+
+### Input/Output Examples
+| No. | Inputs                        | Outputs |
+| --- | ----------------------------- | ------- |
+| 1   | -3 -1 0 2 6 8 12 15          | 4       |
+
+
+<!-- 432 -->
+Напишіть програму, щоб перевірити, чи певне ціле число n перевищує всі елементи цілочисельного списку. Значення списку вводяться через пропуск в одному рядку, число n вводиться у новому рядку.
+
+Вхідні дані:
+
+4 67 109 25 44 12
+99
+Вихідні дані:
+
+False
 
 
 **Notes:** All the examples above are solved using Python. You can find the solutions in the [examples](./examples) folder. Covered with explanations and comments, these examples will help you understand the practical implementation of the concepts covered in this module. Python tests are also included to verify the correctness of the solutions.
