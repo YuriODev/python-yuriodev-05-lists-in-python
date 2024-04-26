@@ -580,6 +580,7 @@ print(" ".join(map(str, numbers)))
 
 <details open> 
 <summary><b>Python Solution 2 - Swap all mins and all max</b></summary>
+
 ```python
 input_numbers = input("Enter numbers separated by spaces: ")
 
