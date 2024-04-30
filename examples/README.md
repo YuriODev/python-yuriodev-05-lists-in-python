@@ -783,6 +783,8 @@ for num in numbers:
         divisible_by_5.append(num)
 
 print(",".join(divisible_by_5))
+```
+</details>
 
 <!-- 459 -->
 
