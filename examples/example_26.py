@@ -1,18 +1,11 @@
-# Prompt the user to enter numbers separated by spaces
-input_numbers = input("Enter numbers separated by spaces: ")
+# Read the input data
+input_data = input("Enter a list of integers separated by spaces: ")
 
-# Split the input string into a list of individual numbers and convert them to integers
-numbers = list(map(int, input_numbers.split()))
+# Convert the input data to a list of integers
+numbers = list(map(int, input_data.split()))
 
-# Set the initial output value to the first number in the list
-output = numbers[0]
+# Filter out even numbers
+odd_numbers = [num for num in numbers if num % 2 != 0]
 
-# Check if there are more than one elements in the list
-if len(numbers) > 1:
-    # Shift the elements to the right by moving the last element to the beginning
-    shifted = [numbers[-1]] + numbers[:-1]
-    # Convert the shifted list back to a string with space-separated numbers
-    output = " ".join(map(str, shifted)) 
-
-# Print the output
-print(output)
+# Print the result
+print(odd_numbers)
