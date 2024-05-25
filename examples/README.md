@@ -1916,6 +1916,7 @@ print(max_number)
 
 **Problem:** In the Roman numeral system, the following symbols are used to represent numbers (the corresponding decimal values are listed on the right):
 
+```
 I = 1
 V = 5
 X = 10
@@ -1923,7 +1924,7 @@ L = 50
 C = 100
 D = 500
 M = 1000
-
+```
 
 We will use a variant where the numbers `4`, `9`, `40`, `90`, `400`, and `900` are written as subtractions from larger numbers: `IV`, `IX`, `XL`, `XC`, `CD`, and `CM`, respectively. Write a program that converts a Roman numeral to a decimal number. The user enters a string containing a number encoded in the Roman numeral system. It is guaranteed that the number is less than `4000`. The program should output a string containing the decimal number corresponding to the input.
 
