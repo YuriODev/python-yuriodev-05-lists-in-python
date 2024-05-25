@@ -1412,9 +1412,9 @@ A list of words with the last three characters replaced by \( r \) if the word l
 
 | No. | Inputs                                        | Outputs                        |
 | --- | --------------------------------------------- | ------------------------------ |
-| 1   | 4 <br> 6 <br> % <br> writer <br> painter <br> programmer <br> scientist | ['wri%', 'pain%', 'programmer', 'scientist'] |
-| 2   | 4 <br> 3 <br> ** <br> cat <br> dog <br> mouse <br> rat | ['cat**', 'dog**', 'mouse', 'rat**'] |
-| 3   | 3 <br> 4 <br> ## <br> apple <br> banana <br> kiwi | ['appl##', 'banana', 'kiw##'] |
+| 1   | 4 <br> 6 <br> % <br> writer <br> painter <br> programmer <br> scientist | ['wri%', 'painter', 'programmer', 'scientist'] |
+| 2   | 4 <br> 3 <br> ** <br> cat <br> dog <br> mouse <br> rat | ['\**', '\**', 'mouse', '\**'] |
+| 3   | 3 <br> 4 <br> ## <br> apple <br> banana <br> kiwi | ['appl', 'banana', 'k##'] |
 
 ## Python Solution
 
