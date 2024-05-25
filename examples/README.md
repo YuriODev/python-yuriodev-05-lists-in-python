@@ -3,7 +3,7 @@
 
 Here are some examples to get you started.
 
-<details close>
+<details open>
 <summary><b>Covered topics</b></summary>
 
 | Topic Covered                                           | Code with explanations                            | Problem Description                              |
