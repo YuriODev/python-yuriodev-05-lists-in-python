@@ -4,8 +4,8 @@ input_data = input("Enter a list of integers separated by spaces: ")
 # Convert the input data to a list of integers
 numbers = list(map(int, input_data.split()))
 
-# Create a list of positive numbers
-positive_numbers = [num for num in numbers if num > 0]
+# Find the smallest number
+min_number = min(numbers)
 
 # Print the result
-print(positive_numbers)
+print(min_number)
