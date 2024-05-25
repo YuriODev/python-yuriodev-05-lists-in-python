@@ -1,23 +1,14 @@
-# Read the input data
-input_data = input("Enter a sequence of integers separated by spaces: ")
+# Prompt the user to enter temperatures separated by spaces
+input_temperatures = input("Enter temperatures separated by spaces: ")
 
-# Convert the input data to a list of integers
-numbers = list(map(int, input_data.split()))
+# Split the input string into a list of individual temperature values
+temperatures = list(map(int, input_temperatures.split()))
 
-# Find the smallest number
-min_number = min(numbers)
+# Calculate the average temperature by summing all the temperatures and dividing by the number of temperatures
+average_temperature = sum(temperatures) / len(temperatures)
 
-# Find the largest number
-max_number = max(numbers)
+# Count the number of days with temperatures not lower than the average
+days_above_average = sum(1 for temp in temperatures if temp >= average_temperature)
 
-# Find the number of elements
-count_numbers = len(numbers)
-
-# Find the average value
-average_value = sum(numbers) / count_numbers
-
-# Print the results
-print(min_number)
-print(max_number)
-print(count_numbers)
-print(average_value)
+# Print the number of days with temperatures not lower than the average
+print(days_above_average)
