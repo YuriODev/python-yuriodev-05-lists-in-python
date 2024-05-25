@@ -358,7 +358,7 @@ print(file_extension)
 </details>
 
 <!-- 424 -->
-## Example 13: Count Unique Words in a Line
+## Example 12: Count Unique Words in a Line
 
 **Problem:** Given a line of text, determine how many unique words are present. A word is defined by sequences of characters separated by spaces. Case sensitivity should be considered, meaning "New" and "new" would count as two different words.
 
@@ -382,6 +382,7 @@ unique_words = len(set(words))
 print(unique_words)
 ```
 </details>
+
 <!-- 427 -->
 ## Example 13: List Statistics
 
@@ -546,7 +547,7 @@ print(exceeds_all)
 
 
 <!-- 433 -->
-## Example 16: Print List of Positive Numbers
+## Example 17: Print List of Positive Numbers
 
 **Problem:** Integers (both positive and negative) are entered separated by spaces in one line. Write a program to print a list of only the entered positive numbers.
 
@@ -577,7 +578,7 @@ print(positive_numbers)
 
 
 <!-- 434 -->
-## Example 17: Extract Resource Name from URL
+## Example 18: Extract Resource Name from URL
 
 **Problem:** Write a program to extract the part of a URL string that indicates the resource name (e.g., the filename or path segment at the end of the URL).
 
@@ -605,7 +606,7 @@ print(resource_name)
 
 
 <!-- 435 -->
-## Example 18: Find the Smallest Integer
+## Example 19: Find the Smallest Integer
 
 **Problem:** Write a program to get the smallest integer from a list. The list values are entered separated by spaces in one line.
 
@@ -638,7 +639,7 @@ print(min_number)
 
 <!-- 436 -->
 
-## Example 19: Find the Second Smallest Element in a List
+## Example 20: Find the Second Smallest Element in a List
 
 **Problem:** Write a program to find the second smallest element in a list of integers. The integers are entered on a single line, separated by spaces.
 
@@ -666,7 +667,7 @@ print(second_smallest)
 </details>
 
 <!-- 439 -->
-## Example 20: Simple Math Expression Interpreter
+## Example 21: Simple Math Expression Interpreter
 
 **Problem:** Write a simple math expression interpreter. The input is a string with an expression consisting of two numbers (0 ≤ a, b ≤ 1000) joined by a binary operator: `a operator b`, where `operator` can be one of the words: `plus`, `minus`, `multiply`, `divide` for addition, subtraction, multiplication, and integer division, respectively. The result of the computation is a string containing an integer.
 
@@ -711,7 +712,7 @@ print(result)
 
 <!-- 441 -->
 
-## Example 21: Find Largest Element and Its First Index
+## Example 22: Find Largest Element and Its First Index
 
 **Problem:** Write a program to determine the element in a list with the highest value. Print the value of the largest element followed by the index of its first occurrence. If the largest element is not unique, print the index of the first occurrence of this largest element.
 
@@ -741,7 +742,7 @@ print(largest, first_index)
 </details>
 
 <!-- 442 -->
-## Example 22: Count Non-Repeating Elements in Sorted List
+## Example 23: Count Non-Repeating Elements in Sorted List
 
 **Problem:** Given a sequence of integers, determine the number of elements in the sorted list that do not repeat one after another.
 
@@ -778,7 +779,7 @@ print(unique_count)
 
 
 <!-- 443 -->
-## Example 23: Cyclically Shift List Elements to the Right
+## Example 24: Cyclically Shift List Elements to the Right
 
 **Problem:** Write a program that cyclically shifts the elements of a list to the right. This means the last element becomes the first, and all other elements move one position to the right. The numbers are entered on a single line.
 
@@ -807,7 +808,7 @@ else:
 </details>
 
 <!-- 445 -->
-## Example 24: Swap Minimum and Maximum in a List
+## Example 25: Swap Minimum and Maximum in a List
 
 **Problem:** For a given sequence of unique integers, swap the positions of the minimum and maximum elements. Print the resulting list.
 
@@ -863,7 +864,7 @@ print(" ".join(map(str, numbers)))
 
 
 <!-- 446 -->
-## Example 25: Count Equal Pairs in a List
+## Example 26: Count Equal Pairs in a List
 
 **Problem:** Given a list of numbers, count how many pairs of elements have the same value. Each pair should be considered only once, regardless of how many times the elements appear in the list.
 
@@ -890,7 +891,7 @@ print(equal_pairs)
 
 
 <!-- 448 -->
-## Example 26: Swap Adjacent Elements in Pairs
+## Example 27: Swap Adjacent Elements in Pairs
 
 **Problem:** Given a sequence of integers, swap each pair of adjacent elements (A[0] with A[1], A[2] with A[3], etc.). Print the resulting list. If the list has an odd number of elements, leave the last element in its original position.
 
@@ -926,7 +927,7 @@ print(" ".join(map(str, swapped)))
 
 <!-- 450 -->
 
-## Example 27: Find and Print Adjacent Elements with the Same Sign
+## Example 28: Find and Print Adjacent Elements with the Same Sign
 
 **Problem:** Given a list of integers, identify and print adjacent elements that have the same sign. If no such pair exists, nothing should be printed.
 
@@ -951,7 +952,7 @@ for i in range(len(numbers) - 1):
 </details>
 
 <!-- 452 -->
-## Example 28: Calculate the Product of Integers
+## Example 29: Calculate the Product of Integers
 
 **Problem:** Write a program to calculate the product of integers (without using a `for` loop) entered by the user in one line separated by spaces.
 
@@ -989,7 +990,7 @@ print(product)
 
 
 <!-- 453  -->
-## Example 29: Print Squares of Sequence Elements
+## Example 30: Print Squares of Sequence Elements
 
 **Problem:** Write a program that takes a sequence of integers as input and prints the squares of all its elements.
 
@@ -1015,36 +1016,6 @@ print(" ".join(map(str, squares)))
 ```
 </details>
 
-
-<!-- 454 -->
-## Example 30: Remove Even Numbers from List
-
-**Problem:** Write a program to print the elements of a given integer list after removing the even numbers. The list values are entered separated by spaces in one line.
-
-| No. | Inputs                | Outputs       |
-| --- | --------------------- | ------------- |
-| 1   | 3 44 6 8 9 12 7       | [3, 9, 7]     |
-| 2   | 1 2 3 4 5 6 7 8 9     | [1, 3, 5, 7, 9]|
-| 3   | 10 21 32 43 54 65 76  | [21, 43, 65]  |
-| 4   | 22 33 44 55 66 77     | [33, 55, 77]  |
-
-<details close>
-<summary><b>Python Solution</b></summary>
-
-```python
-# Read the input data
-input_data = input("Enter a list of integers separated by spaces: ")
-
-# Convert the input data to a list of integers
-numbers = list(map(int, input_data.split()))
-
-# Filter out even numbers
-odd_numbers = [num for num in numbers if num % 2 != 0]
-
-# Print the result
-print(odd_numbers)
-```
-</details>
 
 <!-- 454 -->
 ## Example 31: Remove Even Numbers from List
@@ -1076,9 +1047,39 @@ print(odd_numbers)
 ```
 </details>
 
+<!-- 454 -->
+## Example 32: Remove Even Numbers from List
+
+**Problem:** Write a program to print the elements of a given integer list after removing the even numbers. The list values are entered separated by spaces in one line.
+
+| No. | Inputs                | Outputs       |
+| --- | --------------------- | ------------- |
+| 1   | 3 44 6 8 9 12 7       | [3, 9, 7]     |
+| 2   | 1 2 3 4 5 6 7 8 9     | [1, 3, 5, 7, 9]|
+| 3   | 10 21 32 43 54 65 76  | [21, 43, 65]  |
+| 4   | 22 33 44 55 66 77     | [33, 55, 77]  |
+
+<details close>
+<summary><b>Python Solution</b></summary>
+
+```python
+# Read the input data
+input_data = input("Enter a list of integers separated by spaces: ")
+
+# Convert the input data to a list of integers
+numbers = list(map(int, input_data.split()))
+
+# Filter out even numbers
+odd_numbers = [num for num in numbers if num % 2 != 0]
+
+# Print the result
+print(odd_numbers)
+```
+</details>
+
 
 <!-- 455 -->
-## Example 32: Find Common Elements Between Two Sequences
+## Example 33: Find Common Elements Between Two Sequences
 
 **Problem:** Given two sequences of integers, with elements separated by spaces and commas, write a program that returns a sequence containing only the elements that are common between the entered sequences (without duplicates). Ensure that your program works on two sequences of different sizes.
 
@@ -1118,7 +1119,7 @@ print(" ".join(map(str, common_elements)))
 
 <!-- 456 -->
 
-## Example 33: Filter Binary Numbers Divisible by 5
+## Example 34: Filter Binary Numbers Divisible by 5
 
 **Problem:** Write a program that takes a sequence of 4-digit binary numbers separated by commas as input, and prints those numbers which are divisible by 5, in a line separated by commas.
 
@@ -1189,7 +1190,7 @@ print(",".join(divisible_by_5))
 
 <!-- 459 -->
 
-## Example 34: Determine Position in a Descending Sequence of Heights
+## Example 35: Determine Position in a Descending Sequence of Heights
 
 **Problem:** Given a descending sequence of natural numbers representing the heights of students, followed by a single height entry for a new student, determine the position where the new student should be placed among the others. The new student should stand behind others of the same height if present. All numbers are natural and do not exceed 200.
 
@@ -1222,7 +1223,7 @@ print(position)
 
 
 <!-- 462 -->
-## Example 35: Calculate Fraction of Students with Grade A
+## Example 36: Calculate Fraction of Students with Grade A
 
 **Problem:** Write a program that calculates the fraction of students who received a grade of `A`. The grading system uses five grades: `A`, `B`, `C`, `D`, `F`. A string of student grades separated by spaces is entered. There is always at least one grade. Output a decimal number with exactly two decimal places.
 
@@ -1250,6 +1251,716 @@ print(f"{fraction_A:.2f}")
 ```
 </details>
 
+<!-- 465 -->
+## Example 37: Remove Element by Index
+
+**Problem:** Given a list of numbers and an index `k`, remove the element at index `k` by shifting all elements to the left that are to the right of the element at index `k`. The program receives the list and then the number `k` as input. The program should perform the shift directly in the list, without using an additional list.
+
+| No. | Inputs                | Outputs       |
+| --- | --------------------- | ------------- |
+| 1   | 5 7 9 0 3 11          | 5 7 9 3 11    |
+|     | 3                     |               |
+| 2   | 1 2 3 4 5 6           | 1 2 3 5 6     |
+|     | 3                     |               |
+| 3   | 10 20 30 40 50 60 70  | 10 20 30 40 60 70|
+|     | 4                     |               |
+| 4   | 9 8 7 6 5             | 9 8 6 5       |
+|     | 2                     |               |
+
+<details close>
+<summary><b>Python Solution</b></summary>
+
+```python
+# Read the input data
+numbers = list(map(int, input("Enter a list of numbers separated by spaces: ").split()))
+k = int(input("Enter the index to remove: "))
+
+# Remove the element at index k and shift the remaining elements
+for i in range(k, len(numbers) - 1):
+    numbers[i] = numbers[i + 1]
+
+# Remove the last element since it's now duplicated
+numbers.pop()
+
+# Print the result
+print(" ".join(map(str, numbers)))
+```
+</details>
+
+
+
+<!-- 468 -->
+## Example 38: Remove Every Third Element Until List is Empty
+
+**Problem:** Write a program to remove every third element from an integer list and print the resulting list until the list is empty. The initial list of integers is entered in one line separated by spaces.
+
+| No. | Inputs                | Outputs                                                   |
+| --- | --------------------- | --------------------------------------------------------- |
+| 1   | 2 5 8 9 4 78 7 1      | [2, 5, 9, 4, 78, 7, 1] <br> [2, 5, 4, 78, 7, 1] <br> [2, 5, 78, 7, 1] <br> [2, 5, 7, 1] <br> [2, 5, 1] <br> [2, 5] <br> [5] <br> [] |
+| 2   | 1 2 3 4 5 6 7 8 9     | [1, 2, 3, 4, 5, 6, 7, 8, 9] <br> [1, 2, 4, 5, 6, 7, 8, 9] <br> [1, 2, 4, 5, 7, 8, 9] <br> [1, 2, 4, 5, 7, 8] <br> [1, 2, 4, 5, 7] <br> [1, 2, 4, 5] <br> [1, 2, 5] <br> [1, 2] <br> [2] <br> [] |
+| 3   | 10 20 30 40 50        | [10, 20, 30, 40, 50] <br> [10, 20, 40, 50] <br> [10, 20, 40] <br> [10, 20] <br> [20] <br> [] |
+| 4   | 11 22 33 44 55 66 77  | [11, 22, 33, 44, 55, 66, 77] <br> [11, 22, 33, 44, 66, 77] <br> [11, 22, 33, 44, 66] <br> [11, 22, 33, 44] <br> [11, 22, 44] <br> [11, 22] <br> [22] <br> [] |
+
+<details open>
+<summary><b>Python Solution</b></summary>
+
+```python
+# Read the input data
+input_data = input("Enter a list of integers separated by spaces: ")
+
+# Convert the input data to a list of integers
+numbers = list(map(int, input_data.split()))
+
+# Remove every third element until the list is empty
+index = 2
+while len(numbers) > 0:
+    print(numbers)
+    if len(numbers) > index:
+        numbers.pop(index)
+        index += 2
+    else:
+        index = (index - len(numbers)) % 3
+        if index == 0:
+            index = 2
+
+# Print the final empty list
+print(numbers)
+```
+</details>
+
+
+<!-- 470 -->
+## Example 39: Find Two Smallest Elements
+
+**Problem:** Given a sequence of integers entered in a line separated by spaces, determine the two smallest elements in the sequence. They can be equal to each other (both being the smallest) or different.
+
+| No. | Inputs                                        | Outputs |
+| --- | --------------------------------------------- | ------- |
+| 1   | 14 3 40 56 42 43 89 69 64 72 5 44 11 25       | 3 5     |
+| 2   | 1 2 3 4 5 6 7 8 9                             | 1 2     |
+| 3   | 10 20 30 5 5 5 40 50                          | 5 5     |
+| 4   | 100 200 50 50 300 400                         | 50 50   |
+
+<details open>
+<summary><b>Python Solution</b></summary>
+
+```python
+# Read the input data
+input_data = input("Enter a sequence of integers separated by spaces: ")
+
+# Convert the input data to a list of integers
+numbers = list(map(int, input_data.split()))
+
+# Find the two smallest elements
+if len(numbers) < 2:
+    print("Not enough elements to find two smallest.")
+else:
+    min1, min2 = float('inf'), float('inf')
+    for num in numbers:
+        if num < min1:
+            min2 = min1
+            min1 = num
+        elif num < min2:
+            min2 = num
+
+    # Print the result
+    print(min1, min2)
+```
+</details>
+
+
+<!-- 472 -->
+## Example 40: Replace Last Three Characters in Words
+
+**Problem:** Given a list of words, write a program that replaces the last three characters of words that have a certain length with a specified character. The user inputs the following data: the number of words in the list, the length of the words to be edited, the replacement character for the last three characters, and the list of words (each word on a separate line). It is guaranteed that the length of the words in the list is at least 3 characters.
+
+| No. | Inputs                                        | Outputs                        |
+| --- | --------------------------------------------- | ------------------------------ |
+| 1   | 4                                             | ['wri%', 'pain%', 'program%', 'scient%'] |
+|     | 5                                             |                                |
+|     | %                                             |                                |
+|     | writer                                        |                                |
+|     | painter                                       |                                |
+|     | programmer                                    |                                |
+|     | scientist                                     |                                |
+| 2   | 3                                             | ['cat**', 'dog**', 'mouse', 'rat**'] |
+|     | 3                                             |                                |
+|     | **                                            |                                |
+|     | cat                                           |                                |
+|     | dog                                           |                                |
+|     | mouse                                         |                                |
+|     | rat                                           |                                |
+| 3   | 2                                             | ['apple##', 'banana', 'kiwi##'] |
+|     | 4                                             |                                |
+|     | ##                                            |                                |
+|     | apple                                         |                                |
+|     | banana                                        |                                |
+|     | kiwi                                          |                                |
+
+<details open>
+<summary><b>Python Solution</b></summary>
+
+```python
+# Read the input data
+num_words = int(input("Enter the number of words: "))
+word_length = int(input("Enter the length of words to be edited: "))
+replacement_char = input("Enter the replacement character: ")
+
+# Read the list of words
+words = [input() for _ in range(num_words)]
+
+# Replace the last three characters of words with the specified length
+modified_words = [word[:-3] + replacement_char if len(word) == word_length else word for word in words]
+
+# Print the result
+print(modified_words)
+```
+</details>
+
+
+
+<!-- 473 -->
+## Example 41: Create a Chessboard Pattern
+
+**Problem:** The user inputs two positive integers `n` and `m`. Write a program that creates a two-dimensional array of size `n x m` and fills it with the characters `.` and `*` in a chessboard pattern (as in the output data). The top-left corner should have the character `.`.
+
+| No. | Inputs                | Outputs                                                                                                                                                  |
+| --- | --------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1   | 6 8                   | . * . * . * . * <br> * . * . * . * . <br> . * . * . * . * <br> * . * . * . * . <br> . * . * . * . * <br> * . * . * . * . |
+| 2   | 3 4                   | . * . * <br> * . * . <br> . * . *                                                                                                                         |
+| 3   | 2 2                   | . * <br> * .                                                                                                                                            |
+| 4   | 5 5                   | . * . * . <br> * . * . * <br> . * . * . <br> * . * . * <br> . * . *                                                                                      |
+
+<details open>
+<summary><b>Python Solution</b></summary>
+
+```python
+# Read the input data
+n, m = map(int, input("Enter the dimensions n and m: ").split())
+
+# Create the chessboard pattern
+chessboard = []
+for i in range(n):
+    row = []
+    for j in range(m):
+        if (i + j) % 2 == 0:
+            row.append('.')
+        else:
+            row.append('*')
+    chessboard.append(" ".join(row))
+
+# Print the chessboard pattern
+for row in chessboard:
+    print(row)
+```
+</details>
+
+<!-- 475 -->
+## Example 42: Find Duplicates in a List
+
+**Problem:** Write a program that takes a list of numbers in one line as input and outputs in one line the values that appear more than once. The output numbers should not be repeated, and the order of their output should be in ascending order.
+
+| No. | Inputs                | Outputs |
+| --- | --------------------- | ------- |
+| 1   | 5 8 1 3 5 2 1 3 0     | 1 3 5   |
+| 2   | 2 2 4 4 4 1           | 2 4     |
+| 3   | 9 8 7 6 5 5 6 7 8 9   | 5 6 7 8 9 |
+| 4   | 10 20 30 20 10 40 50 10 | 10 20 |
+
+<details open>
+<summary><b>Python Solution</b></summary>
+
+```python
+# Read the input data
+numbers = list(map(int, input("Enter a list of numbers separated by spaces: ").split()))
+
+# Create a dictionary to count occurrences of each number
+counts = {}
+for number in numbers:
+    counts[number] = counts.get(number, 0) + 1
+
+# Find numbers that occur more than once and sort them
+duplicates = sorted([number for number, count in counts.items() if count > 1])
+
+# Print the result
+print(" ".join(map(str, duplicates)))
+```
+</details>
+
+
+<!-- 476 -->
+## Example 43: Generate a 2D Array
+
+**Problem:** Write a program that takes 2 integers, `a` and `b`, and generates a two-dimensional array. The value of the element in the `i-th` row and `j-th` column of the array should be `i * j` (`i = 0,1,...,a-1`; `j = 0,1,...,b-1`).
+
+| No. | Inputs | Outputs                           |
+| --- | ------ | --------------------------------- |
+| 1   | 3 5    | [[0, 0, 0, 0, 0], [0, 1, 2, 3, 4], [0, 2, 4, 6, 8]] |
+| 2   | 2 4    | [[0, 0, 0, 0], [0, 1, 2, 3]]      |
+| 3   | 4 3    | [[0, 0, 0], [0, 1, 2], [0, 2, 4], [0, 3, 6]] |
+| 4   | 1 1    | [[0]]                             |
+
+<details open>
+<summary><b>Python Solution</b></summary>
+
+```python
+# Read the input data
+a, b = map(int, input("Enter two integers a and b: ").split())
+
+# Generate the 2D array
+array = [[i * j for j in range(b)] for i in range(a)]
+
+# Print the result
+print(array)
+```
+</details>
+
+<!-- 479 -->
+## Example 44: Calculate Robot's Distance from Origin
+
+**Problem:** A robot can move starting from the initial point `(0, 0)` up, down, left, and right using steps, for example:
+UP 5
+DOWN 3
+LEFT 3
+RIGHT 2
+
+
+The names indicate the direction, and the numbers indicate the number of steps. An empty line input ends the robot's movement. Write a program to calculate the distance from the robot's current position to the origin.
+
+| No. | Inputs                | Outputs |
+| --- | --------------------- | ------- |
+| 1   | UP 5                  | 2       |
+|     | DOWN 3                |         |
+|     | LEFT 3                |         |
+|     | RIGHT 2               |         |
+|     | (empty line)          |         |
+| 2   | UP 2                  | 3       |
+|     | UP 2                  |         |
+|     | RIGHT 3               |         |
+|     | DOWN 1                |         |
+|     | LEFT 4                |         |
+|     | (empty line)          |         |
+| 3   | DOWN 3                | 3       |
+|     | LEFT 3                |         |
+|     | (empty line)          |         |
+| 4   | RIGHT 5               | 4       |
+|     | UP 4                  |         |
+|     | DOWN 4                |         |
+|     | LEFT 3                |         |
+|     | (empty line)          |         |
+
+<details open>
+<summary><b>Python Solution</b></summary>
+
+```python
+import math
+
+# Initialize the starting position
+x, y = 0, 0
+
+# Read the input data
+while True:
+    command = input("Enter movement command (or empty line to stop): ")
+    if not command:
+        break
+    direction, steps = command.split()
+    steps = int(steps)
+    
+    if direction == "UP":
+        y += steps
+    elif direction == "DOWN":
+        y -= steps
+    elif direction == "LEFT":
+        x -= steps
+    elif direction == "RIGHT":
+        x += steps
+
+# Calculate the distance from the origin
+distance = math.sqrt(x**2 + y**2)
+
+# Print the result
+print(int(distance))
+```
+</details>
+
+
+<!-- 481 -->
+## Example 45: Sort Words in Descending Order
+
+**Problem:** The words are listed in a string separated by commas. Form a new string from these words. The words should be sorted in descending order (from Z to A) without considering case and written with spaces.
+
+| No. | Inputs                                      | Outputs                       |
+| --- | ------------------------------------------- | ----------------------------- |
+| 1   | horse, cat, parrot, goldfish, dog           | parrot horse goldfish dog cat |
+| 2   | apple, Banana, cherry, date                 | date cherry Banana apple      |
+| 3   | Zebra, lion, Elephant, monkey               | zebra monkey lion Elephant    |
+| 4   | blueberry, Apple, avocado, pear, kiwi       | pear kiwi blueberry Apple avocado|
+
+<details open>
+<summary><b>Python Solution</b></summary>
+
+```python
+# Read the input data
+input_data = input("Enter a list of words separated by commas: ")
+
+# Split the input data into a list of words
+words = input_data.split(',')
+
+# Strip any leading/trailing spaces from each word and convert to lowercase for sorting
+words = [word.strip() for word in words]
+
+# Sort the words in descending order without considering case
+sorted_words = sorted(words, key=lambda word: word.lower(), reverse=True)
+
+# Join the sorted words with spaces and print the result
+output = " ".join(sorted_words)
+print(output)
+```
+</details>
+
+
+<!-- 483 -->
+## Example 46: Generate a Custom Sequence
+
+**Problem:** Write a program that prints part of the sequence `1 2 2 3 3 3 4 4 4 4 5 5 5 5 5...` (the number repeats as many times as its value). The program receives a non-negative integer `n` as input - this is the number of elements of the sequence that the program should print. The output is expected to be a sequence of numbers, recorded with a space in one line.
+
+| No. | Inputs | Outputs                  |
+| --- | ------ | ------------------------ |
+| 1   | 8      | 1 2 2 3 3 3 4 4          |
+| 2   | 15     | 1 2 2 3 3 3 4 4 4 4 5 5 5 5 5 |
+| 3   | 5      | 1 2 2 3 3                |
+| 4   | 12     | 1 2 2 3 3 3 4 4 4 4      |
+
+<details open>
+<summary><b>Python Solution</b></summary>
+
+```python
+# Read the input data
+n = int(input("Enter a non-negative integer: "))
+
+# Generate the sequence
+sequence = []
+current_number = 1
+while len(sequence) < n:
+    sequence.extend([current_number] * current_number)
+    current_number += 1
+
+# Trim the sequence to the desired length and print it
+print(" ".join(map(str, sequence[:n])))
+```
+</details>
+
+
+<!-- 486 -->
+## Example 47: Create a 3D Array
+
+**Problem:** Using the concept of a list, write a program that creates a 3D array of elements `a x b x c`, each of which has a value of `0`. The values `a`, `b`, `c` are entered in one line separated by spaces.
+
+| No. | Inputs  | Outputs       |
+| --- | ------- | ------------- |
+| 1   | 2 3 3   | [[[0, 0, 0], [0, 0, 0], [0, 0, 0]], [[0, 0, 0], [0, 0, 0], [0, 0, 0]]] |
+| 2   | 4 4 4   | [[[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]], [[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]], [[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]], [[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]]] |
+| 3   | 1 1 1   | [[[0]]]       |
+| 4   | 3 2 1   | [[[0], [0]], [[0], [0]], [[0], [0]]] |
+
+<details open>
+<summary><b>Python Solution</b></summary>
+
+```python
+# Read the input data
+a, b, c = map(int, input("Enter the dimensions a, b, c: ").split())
+
+# Create the 3D array with all elements set to 0
+array_3d = [[[0 for _ in range(c)] for _ in range(b)] for _ in range(a)]
+
+# Print the result
+print(array_3d)
+```
+</details>
+
+
+<!-- 488 -->
+## Example 48: Sort Words by Length
+
+**Problem:** A string consisting of words separated by spaces is entered. The words in the string need to be sorted so that the shortest ones are at the beginning of the string, and the longest ones are at the end. The words should be printed on the screen separated by commas and spaces, and the string of sorted words should end with a period.
+
+| No. | Inputs                   | Outputs                                  |
+| --- | ------------------------ | ---------------------------------------- |
+| 1   | ab aaab ba baaaaa a aba  | a, ab, ba, aba, aaab, baaaaa.            |
+| 2   | cat dog elephant bat     | cat, dog, bat, elephant.                 |
+| 3   | alpha beta gamma delta   | beta, gamma, delta, alpha.               |
+| 4   | one two three four five  | one, two, four, five, three.             |
+
+<details open>
+<summary><b>Python Solution</b></summary>
+
+```python
+# Read the input data
+input_data = input("Enter a string of words separated by spaces: ")
+
+# Split the input data into a list of words
+words = input_data.split()
+
+# Sort the words by length
+sorted_words = sorted(words, key=len)
+
+# Join the sorted words with ", " and add a period at the end
+output = ", ".join(sorted_words) + "."
+
+# Print the result
+print(output)
+```
+</details>
+
+<!-- 490 -->
+## Example 49: Cyclically Shift a List
+
+**Problem:** Given a list of `n` (`1 ≤ n ≤ 100000`) integers and a number `k` (`|k| < 100000`). Cyclically shift the list by `|k|` elements to the right if `k` is positive, and to the left if `k` is negative. The program receives the list of integers as input, followed by the number `k`. The solution should have a complexity of `O(n)`, meaning it should not depend on `k`. Do not use an additional list.
+
+| No. | Inputs                | Outputs        |
+| --- | --------------------- | -------------- |
+| 1   | 5 3 7 4 6             | 7 4 6 5 3      |
+|     | 3                     |                |
+| 2   | 7 4 6 5 3             | 5 3 7 4 6      |
+|     | -3                    |                |
+| 3   | 1 2 3 4 5 6 7 8 9 10  | 8 9 10 1 2 3 4 5 6 7 |
+|     | 3                     |                |
+| 4   | 10 20 30 40 50 60     | 50 60 10 20 30 40 |
+|     | -2                    |                |
+
+<details open>
+<summary><b>Python Solution</b></summary>
+
+```python
+# Read the input data
+numbers = list(map(int, input("Enter a list of integers separated by spaces: ").split()))
+k = int(input("Enter the value of k: "))
+
+# Normalize k to be within the range of the list length
+n = len(numbers)
+k = k % n
+
+# Perform the cyclic shift
+if k > 0:
+    numbers = numbers[-k:] + numbers[:-k]
+else:
+    k = -k
+    numbers = numbers[k:] + numbers[:k]
+
+# Print the result
+print(" ".join(map(str, numbers)))
+```
+</details>
+
+
+<!-- 493 -->
+## Example 50: Determine Standing Pins
+
+**Problem:** There are `n` pins numbered from `1` to `n` placed in a row from left to right. Then `k` balls are thrown, where the `i-th` ball knocks down all pins numbered from `m` to `h` inclusive. Determine which pins remain standing. The program receives the number of pins `n` and the number of throws `k` as input. Then it receives `k` pairs of numbers `m, h`, where `1 ≤ m ≤ h ≤ n ≤ 100`. The program should output a sequence of `n` characters, where the `j-th` character is `I` if the `j-th` pin is still standing, or `.` if the `j-th` pin was knocked down.
+
+| No. | Inputs                | Outputs     |
+| --- | --------------------- | ----------- |
+| 1   | 10 3                  | I.....I...  |
+|     | 8 10                  |             |
+|     | 2 5                   |             |
+|     | 3 6                   |             |
+| 2   | 15 2                  | I....I.......I |
+|     | 2 3                   |             |
+|     | 7 11                  |             |
+| 3   | 5 1                   | .....       |
+|     | 1 5                   |             |
+| 4   | 20 4                  | IIIIIIIII.......I |
+|     | 5 10                  |             |
+|     | 12 15                 |             |
+|     | 3 4                   |             |
+|     | 18 20                 |             |
+
+<details open>
+<summary><b>Python Solution</b></summary>
+
+```python
+# Read the input data
+n, k = map(int, input("Enter the number of pins and throws: ").split())
+
+# Initialize the pins as standing (I)
+pins = ['I'] * n
+
+# Process each throw
+for _ in range(k):
+    m, h = map(int, input("Enter the range m to h: ").split())
+    for i in range(m-1, h):
+        pins[i] = '.'
+
+# Print the result
+print("".join(pins))
+```
+</details>
+
+
+<!-- 497 -->
+## Example 51: Find Substring Positions
+
+**Problem:** Write a program that finds all positions of the substring `B` in the string `A`. The first line contains the input string, and the second line of input specifies the substring whose positions need to be found. The strings consist of English alphabet characters. The program should output the positions of the substring `B` in the string `A` (indexing starts from `1`), separated by spaces, or the number `-1` if the substring is not found.
+
+| No. | Inputs                     | Outputs     |
+| --- | -------------------------- | ----------- |
+| 1   | abacabadaba                | 1 5 9       |
+|     | aba                        |             |
+| 2   | abc                        | -1          |
+|     | d                          |             |
+| 3   | mississippi                | 1 4         |
+|     | iss                        |             |
+| 4   | banana                     | 2 4         |
+|     | an                         |             |
+
+<details open>
+<summary><b>Python Solution</b></summary>
+
+```python
+# Read the input data
+string_A = input("Enter the string A: ")
+substring_B = input("Enter the substring B: ")
+
+# Find all positions of the substring B in string A
+positions = []
+index = string_A.find(substring_B)
+while index != -1:
+    positions.append(index + 1)
+    index = string_A.find(substring_B, index + 1)
+
+# Print the result
+if positions:
+    print(" ".join(map(str, positions)))
+else:
+    print(-1)
+```
+</details>
+
+
+
+<!-- 500 -->
+## Example 52: Sort List of Lists by Second Element
+
+**Problem:** A sequence of integers is entered in the format shown in the input data and converted into a list of lists, i.e., a list where each element is also a list. Sort this list by the second element of each sublist and print the sorted list.
+
+| No. | Inputs                | Outputs                                      |
+| --- | --------------------- | -------------------------------------------- |
+| 1   | 1 2 3,2 1 3,4 0 1     | [[1, 2, 3], [2, 1, 3], [4, 0, 1]] <br> [[4, 0, 1], [2, 1, 3], [1, 2, 3]] |
+| 2   | 5 6 7,8 9 0,3 4 2     | [[5, 6, 7], [8, 9, 0], [3, 4, 2]] <br> [[8, 9, 0], [3, 4, 2], [5, 6, 7]] |
+| 3   | 10 20 30,40 10 50     | [[10, 20, 30], [40, 10, 50]] <br> [[40, 10, 50], [10, 20, 30]] |
+| 4   | 1 1 1,2 2 2,0 0 0     | [[1, 1, 1], [2, 2, 2], [0, 0, 0]] <br> [[0, 0, 0], [1, 1, 1], [2, 2, 2]] |
+
+<details open>
+<summary><b>Python Solution</b></summary>
+
+```python
+# Read the input data
+input_data = input("Enter a sequence of integer lists separated by commas: ")
+
+# Convert the input data into a list of lists
+list_of_lists = [list(map(int, item.split())) for item in input_data.split(',')]
+
+# Print the initial list of lists
+print(list_of_lists)
+
+# Sort the list of lists by the second element of each sublist
+sorted_list_of_lists = sorted(list_of_lists, key=lambda x: x[1])
+
+# Print the sorted list of lists
+print(sorted_list_of_lists)
+```
+</details>
+
+
+<!-- 502 -->
+## Example 53: Find Maximum Number by Removing One Digit
+
+**Problem:** Write a program to find the maximum possible number that can be obtained after deleting one digit. The first line contains an integer `n` (`10 ≤ n ≤ 2025`). Output the maximum possible number that can be obtained after deleting one digit.
+
+| No. | Inputs | Outputs |
+| --- | ------ | ------- |
+| 1   | 4378   | 478     |
+| 2   | 1095   | 195     |
+| 3   | 2000   | 200     |
+| 4   | 2025   | 225     |
+
+<details open>
+<summary><b>Python Solution</b></summary>
+
+```python
+def max_number_after_removal(n):
+    n_str = str(n)
+    max_number = 0
+    for i in range(len(n_str)):
+        temp_number = int(n_str[:i] + n_str[i+1:])
+        if temp_number > max_number:
+            max_number = temp_number
+    return max_number
+
+# Read the input data
+n = int(input("Enter an integer n: "))
+
+# Get the maximum number after removing one digit
+result = max_number_after_removal(n)
+
+# Print the result
+print(result)
+```
+</details>
+
+
+<!-- 503 -->
+## Example 54: Convert Roman Numerals to Decimal
+
+**Problem:** In the Roman numeral system, the following symbols are used to represent numbers (the corresponding decimal values are listed on the right):
+
+I = 1
+V = 5
+X = 10
+L = 50
+C = 100
+D = 500
+M = 1000
+
+
+We will use a variant where the numbers `4`, `9`, `40`, `90`, `400`, and `900` are written as subtractions from larger numbers: `IV`, `IX`, `XL`, `XC`, `CD`, and `CM`, respectively. Write a program that converts a Roman numeral to a decimal number. The user enters a string containing a number encoded in the Roman numeral system. It is guaranteed that the number is less than `4000`. The program should output a string containing the decimal number corresponding to the input.
+
+| No. | Inputs    | Outputs |
+| --- | --------- | ------- |
+| 1   | MCMLXXXI  | 1981    |
+| 2   | XXI       | 21      |
+| 3   | IV        | 4       |
+| 4   | CDXLIV    | 444     |
+
+<details open>
+<summary><b>Python Solution</b></summary>
+
+```python
+# Read the input data
+roman = input("Enter a Roman numeral: ")
+
+# Define the values of Roman numerals
+roman_values = ['M', 'CM', 'D', 'CD', 'C', 'XC', 'L', 'XL', 'X', 'IX', 'V', 'IV', 'I']
+decimal_values = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1]
+
+# Initialize the index for roman_values and decimal_values
+i = 0
+decimal = 0
+pos = 0
+
+# Convert Roman numeral to decimal
+while pos < len(roman):
+    if pos + 1 < len(roman) and roman[pos:pos+2] in roman_values:
+        decimal += decimal_values[roman_values.index(roman[pos:pos+2])]
+        pos += 2
+    else:
+        decimal += decimal_values[roman_values.index(roman[pos])]
+        pos += 1
+
+# Print the result
+print(decimal)
+```
+</details>
 
 
 
