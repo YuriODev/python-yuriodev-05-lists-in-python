@@ -1,14 +1,19 @@
-# Prompt the user to enter temperatures separated by spaces
-input_temperatures = input("Enter temperatures separated by spaces: ")
+# Read the input data
+input_data = input("Enter a list of numbers separated by spaces: ")
+stop_number = int(input("Enter the stop number: "))
 
-# Split the input string into a list of individual temperature values
-temperatures = list(map(int, input_temperatures.split()))
+# Convert the input data to a list of integers
+numbers = list(map(int, input_data.split()))
 
-# Calculate the average temperature by summing all the temperatures and dividing by the number of temperatures
-average_temperature = sum(temperatures) / len(temperatures)
+# Iterate through the list and print even numbers until stop_number or zero is encountered
+# Iterate through each number in the list
+for number in numbers:
+    # Check if the current number is equal to the stop number or zero
+    if number == stop_number or number == 0:
+        # If it is, exit the loop
+        break
+    # Check if the current number is even
+    if number % 2 == 0:
+        # If it is, print the number
+        print(number)
 
-# Count the number of days with temperatures not lower than the average
-days_above_average = sum(1 for temp in temperatures if temp >= average_temperature)
-
-# Print the number of days with temperatures not lower than the average
-print(days_above_average)
