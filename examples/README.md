@@ -1,74 +1,67 @@
 # Examples 👨🏼‍💻
 
 
+Here are some examples to get you started.
+
+<details close>
+<summary><b>Covered topics</b></summary>
 
 | Topic Covered                                           | Code with explanations                            | Problem Description                              |
 | ------------------------------------------------------- | ------------------------------------------------- | ----------------------------------------------- |
 | Move Last Two Elements                                  | [Detailed code](./example_1.py)                   | [Problem description](#example-1-move-last-two-elements)       |
 | Reverse Language List                                   | [Detailed code](./example_2.py)                   | [Problem description](#example-2-reverse-language-list)       |
-
-
-Here are some examples to get you started.
-
-<details open>
-<summary><b>Covered topics</b></summary>
-
-| Topic Covered                                           | Code with explanations                            |
-| ------------------------------------------------------- | ------------------------------------------------- |
-| Move Last Two Elements                                  | [Detailed code](./example_1.py)                   |
-| Reverse Language List                                   | [Detailed code](./example_2.py)                   |
-| Print List in Reverse Order                             | [Detailed code](./example_3.py)                   |
-| Print Elements at Even Indices                          | [Detailed code](./example_4.py)                   |
-| Print Elements Less Than n                              | [Detailed code](./example_5.py)                   |
-| Count Positive Elements                                 | [Detailed code](./example_6.py)                   |
-| Print Unique Elements in Order                          | [Detailed code](./example_7.py)                   |
-| Access and Print Indices and Values of List Elements    | [Detailed code](./example_8.py)                   |
-| Find Most Frequent Number                               | [Detailed code](./example_9.py)                   |
-| Print Elements Greater Than Previous                    | [Detailed code](./example_10.py)                  |
-| Print File Extension                                    | [Detailed code](./example_11.py)                  |
-| Count Unique Words in a Line                            | [Detailed code](./example_12.py)                  |
-| List Statistics                                         | [Detailed code](./example_13.py)                  |
-| Count Days Above Average Temperature                    | [Detailed code](./example_14.py)                  |
-| Print Even Numbers Until a Specific Number              | [Detailed code](./example_15.py)                  |
-| Check If an Integer Exceeds All List Elements           | [Detailed code](./example_16.py)                  |
-| Print List of Positive Numbers                          | [Detailed code](./example_17.py)                  |
-| Extract Resource Name from URL                          | [Detailed code](./example_18.py)                  |
-| Find the Smallest Integer                               | [Detailed code](./example_19.py)                  |
-| Find the Second Smallest Element in a List              | [Detailed code](./example_20.py)                  |
-| Simple Math Expression Interpreter                      | [Detailed code](./example_21.py)                  |
-| Find Largest Element and Its First Index                | [Detailed code](./example_22.py)                  |
-| Count Non-Repeating Elements in Sorted List             | [Detailed code](./example_23.py)                  |
-| Cyclically Shift List Elements to the Right             | [Detailed code](./example_24.py)                  |
-| Swap Minimum and Maximum in a List                      | [Detailed code](./example_25.py)                  |
-| Count Equal Pairs in a List                             | [Detailed code](./example_26.py)                  |
-| Swap Adjacent Elements in Pairs                         | [Detailed code](./example_27.py)                  |
-| Find and Print Adjacent Elements with the Same Sign     | [Detailed code](./example_28.py)                  |
-| Calculate the Product of Integers                       | [Detailed code](./example_29.py)                  |
-| Print Squares of Sequence Elements                      | [Detailed code](./example_30.py)                  |
-| Find the Median of Three Numbers                        | [Detailed code](./example_31.py)                  |
-| Remove Even Numbers from List                           | [Detailed code](./example_32.py)                  |
-| Find Common Elements Between Two Sequences              | [Detailed code](./example_33.py)                  |
-| Filter Binary Numbers Divisible by 5                    | [Detailed code](./example_34.py)                  |
-| Determine Position in a Descending Sequence of Heights  | [Detailed code](./example_35.py)                  |
-| Calculate Fraction of Students with Grade A             | [Detailed code](./example_36.py)                  |
-| Remove Element by Index                                 | [Detailed code](./example_37.py)                  |
-| Remove Every Third Element Until List is Empty          | [Detailed code](./example_38.py)                  |
-| Find Two Smallest Elements                              | [Detailed code](./example_39.py)                  |
-| Replace Last Three Characters in Words                  | [Detailed code](./example_40.py)                  |
-| Create a Chessboard Pattern                             | [Detailed code](./example_41.py)                  |
-| Find Duplicates in a List                               | [Detailed code](./example_42.py)                  |
-| Generate a 2D Array                                     | [Detailed code](./example_43.py)                  |
-| Calculate Robot's Distance from Origin                  | [Detailed code](./example_44.py)                  |
-| Sort Words in Descending Order                          | [Detailed code](./example_45.py)                  |
-| Generate a Custom Sequence                              | [Detailed code](./example_46.py)                  |
-| Create a 3D Array                                       | [Detailed code](./example_47.py)                  |
-| Sort Words by Length                                    | [Detailed code](./example_48.py)                  |
-| Cyclically Shift a List                                 | [Detailed code](./example_49.py)                  |
-| Determine Standing Pins                                 | [Detailed code](./example_50.py)                  |
-| Find Substring Positions                                | [Detailed code](./example_51.py)                  |
-| Sort List of Lists by Second Element                    | [Detailed code](./example_52.py)                  |
-| Find Maximum Number by Removing One Digit               | [Detailed code](./example_53.py)                  |
-| Convert Roman Numerals to Decimal                       | [Detailed code](./example_54.py)                  |
+| Print List in Reverse Order                             | [Detailed code](./example_3.py)                   | [Problem description](#example-3-print-list-in-reverse-order)       |
+| Print Elements at Even Indices                          | [Detailed code](./example_4.py)                   | [Problem description](#example-4-print-elements-at-even-indices)       |
+| Print Elements Less Than n                              | [Detailed code](./example_5.py)                   | [Problem description](#example-5-print-elements-less-than-n)       |
+| Count Positive Elements                                 | [Detailed code](./example_6.py)                   | [Problem description](#example-6-count-positive-elements)       |
+| Print Unique Elements in Order                          | [Detailed code](./example_7.py)                   | [Problem description](#example-7-print-unique-elements-in-order)       |
+| Access and Print Indices and Values of List Elements    | [Detailed code](./example_8.py)                   | [Problem description](#example-8-access-and-print-indices-and-values)       |
+| Find Most Frequent Number                               | [Detailed code](./example_9.py)                   | [Problem description](#example-9-find-most-frequent-number)       |
+| Print Elements Greater Than Previous                    | [Detailed code](./example_10.py)                  | [Problem description](#example-10-print-elements-greater-than-previous)       |
+| Print File Extension                                    | [Detailed code](./example_11.py)                  | [Problem description](#example-11-print-file-extension)       |
+| Count Unique Words in a Line                            | [Detailed code](./example_12.py)                  | [Problem description](#example-12-count-unique-words-in-a-line)       |
+| List Statistics                                         | [Detailed code](./example_13.py)                  | [Problem description](#example-13-list-statistics)       |
+| Count Days Above Average Temperature                    | [Detailed code](./example_14.py)                  | [Problem description](#example-14-count-days-above-average-temperature)       |
+| Print Even Numbers Until a Specific Number              | [Detailed code](./example_15.py)                  | [Problem description](#example-15-print-even-numbers-until-a-specific-number)       |
+| Check If an Integer Exceeds All List Elements           | [Detailed code](./example_16.py)                  | [Problem description](#example-16-check-if-an-integer-exceeds-all-list-elements)       |
+| Print List of Positive Numbers                          | [Detailed code](./example_17.py)                  | [Problem description](#example-17-print-list-of-positive-numbers)       |
+| Extract Resource Name from URL                          | [Detailed code](./example_18.py)                  | [Problem description](#example-18-extract-resource-name-from-url)       |
+| Find the Smallest Integer                               | [Detailed code](./example_19.py)                  | [Problem description](#example-19-find-the-smallest-integer)       |
+| Find the Second Smallest Element in a List              | [Detailed code](./example_20.py)                  | [Problem description](#example-20-find-the-second-smallest-element-in-a-list)       |
+| Simple Math Expression Interpreter                      | [Detailed code](./example_21.py)                  | [Problem description](#example-21-simple-math-expression-interpreter)       |
+| Find Largest Element and Its First Index                | [Detailed code](./example_22.py)                  | [Problem description](#example-22-find-largest-element-and-its-first-index)       |
+| Count Non-Repeating Elements in Sorted List             | [Detailed code](./example_23.py)                  | [Problem description](#example-23-count-non-repeating-elements-in-sorted-list)       |
+| Cyclically Shift List Elements to the Right             | [Detailed code](./example_24.py)                  | [Problem description](#example-24-cyclically-shift-list-elements-to-the-right)       |
+| Swap Minimum and Maximum in a List                      | [Detailed code](./example_25.py)                  | [Problem description](#example-25-swap-minimum-and-maximum-in-a-list)       |
+| Count Equal Pairs in a List                             | [Detailed code](./example_26.py)                  | [Problem description](#example-26-count-equal-pairs-in-a-list)       |
+| Swap Adjacent Elements in Pairs                         | [Detailed code](./example_27.py)                  | [Problem description](#example-27-swap-adjacent-elements-in-pairs)       |
+| Find and Print Adjacent Elements with the Same Sign     | [Detailed code](./example_28.py)                  | [Problem description](#example-28-find-and-print-adjacent-elements-with-the-same-sign)       |
+| Calculate the Product of Integers                       | [Detailed code](./example_29.py)                  | [Problem description](#example-29-calculate-the-product-of-integers)       |
+| Print Squares of Sequence Elements                      | [Detailed code](./example_30.py)                  | [Problem description](#example-30-print-squares-of-sequence-elements)       |
+| Find the Median of Three Numbers                        | [Detailed code](./example_31.py)                  | [Problem description](#example-31-find-the-median-of-three-numbers)       |
+| Remove Even Numbers from List                           | [Detailed code](./example_32.py)                  | [Problem description](#example-32-remove-even-numbers-from-list)       |
+| Find Common Elements Between Two Sequences              | [Detailed code](./example_33.py)                  | [Problem description](#example-33-find-common-elements-between-two-sequences)       |
+| Filter Binary Numbers Divisible by 5                    | [Detailed code](./example_34.py)                  | [Problem description](#example-34-filter-binary-numbers-divisible-by-5)       |
+| Determine Position in a Descending Sequence of Heights  | [Detailed code](./example_35.py)                  | [Problem description](#example-35-determine-position-in-a-descending-sequence-of-heights)       |
+| Calculate Fraction of Students with Grade A             | [Detailed code](./example_36.py)                  | [Problem description](#example-36-calculate-fraction-of-students-with-grade-a)       |
+| Remove Element by Index                                 | [Detailed code](./example_37.py)                  | [Problem description](#example-37-remove-element-by-index)       |
+| Remove Every Third Element Until List is Empty          | [Detailed code](./example_38.py)                  | [Problem description](#example-38-remove-every-third-element-until-list-is-empty)       |
+| Find Two Smallest Elements                              | [Detailed code](./example_39.py)                  | [Problem description](#example-39-find-two-smallest-elements)       |
+| Replace Last Three Characters in Words                  | [Detailed code](./example_40.py)                  | [Problem description](#example-40-replace-last-three-characters-in-words)       |
+| Create a Chessboard Pattern                             | [Detailed code](./example_41.py)                  | [Problem description](#example-41-create-a-chessboard-pattern)       |
+| Find Duplicates in a List                               | [Detailed code](./example_42.py)                  | [Problem description](#example-42-find-duplicates-in-a-list)       |
+| Generate a 2D Array                                     | [Detailed code](./example_43.py)                  | [Problem description](#example-43-generate-a-2d-array)       |
+| Calculate Robot's Distance from Origin                  | [Detailed code](./example_44.py)                  | [Problem description](#example-44-calculate-robots-distance-from-origin)       |
+| Sort Words in Descending Order                          | [Detailed code](./example_45.py)                  | [Problem description](#example-45-sort-words-in-descending-order)       |
+| Generate a Custom Sequence                              | [Detailed code](./example_46.py)                  | [Problem description](#example-46-generate-a-custom-sequence)       |
+| Create a 3D Array                                       | [Detailed code](./example_47.py)                  | [Problem description](#example-47-create-a-3d-array)       |
+| Sort Words by Length                                    | [Detailed code](./example_48.py)                  | [Problem description](#example-48-sort-words-by-length)       |
+| Cyclically Shift a List                                 | [Detailed code](./example_49.py)                  | [Problem description](#example-49-cyclically-shift-a-list)       |
+| Determine Standing Pins                                 | [Detailed code](./example_50.py)                  | [Problem description](#example-50-determine-standing-pins)       |
+| Find Substring Positions                                | [Detailed code](./example_51.py)                  | [Problem description](#example-51-find-substring-positions)       |
+| Sort List of Lists by Second Element                    | [Detailed code](./example_52.py)                  | [Problem description](#example-52-sort-list-of-lists-by-second-element)       |
+| Find Maximum Number by Removing One Digit               | [Detailed code](./example_53.py)                  | [Problem description](#example-53-find-maximum-number-by-removing-one-digit)       |
+| Convert Roman Numerals to Decimal                       | [Detailed code](./example_54.py)                  | [Problem description](#example-54-convert-roman-numerals-to-decimal)       |
 
 </details>
 
