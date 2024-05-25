@@ -1,37 +1,17 @@
-# Initialize the starting position
-x, y = 0, 0
-
 # Read the input data
-while True:
-    # Prompt the user to enter a movement command
-    command = input("Enter movement command (or empty line to stop): ")
+numbers = list(map(int, input("Enter a list of integers separated by spaces: ").split()))
+k = int(input("Enter the value of k: "))  # Prompt the user to enter the value of k
 
-    # Check if the command is empty
-    if not command:
-        # If the command is empty, break out of the loop
-        break
+# Normalize k to be within the range of the list length
+n = len(numbers)  # Get the length of the numbers list
+k = k % n  # Calculate the remainder of k divided by n to ensure k is within the range of the list length
 
-    # Split the command into direction and steps
-    direction, steps = command.split()
-
-    # Convert the steps to an integer
-    steps = int(steps)
-
-    # Check the direction and update the position accordingly
-    if direction == "UP":
-        y += steps
-    elif direction == "DOWN":
-        y -= steps
-    elif direction == "LEFT":
-        x -= steps
-    elif direction == "RIGHT":
-        x += steps
-
-# Calculate the distance from the origin
-distance = ((x ** 2) + (y ** 2)) ** 0.5
-
-# Round up the distance to the nearest integer
-distance = int(distance + 0.5)
+# Perform the cyclic shift
+if k > 0:  # If k is positive
+    numbers = numbers[-k:] + numbers[:-k]  # Perform a right cyclic shift by slicing the list
+else:  # If k is negative or zero
+    k = -k  # Convert k to positive
+    numbers = numbers[k:] + numbers[:k]  # Perform a left cyclic shift by slicing the list
 
 # Print the result
-print(distance)
+print(" ".join(map(str, numbers)))  # Convert the numbers list to a string and print it with spaces in between
