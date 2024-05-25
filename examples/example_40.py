@@ -1,21 +1,22 @@
-# Prompt the user to enter heights separated by spaces
-input_heights = input("Enter heights separated by spaces: ")
+# Read the input data
+# Prompt the user to enter the number of words and convert it to an integer
+num_words = int(input("Enter the number of words: "))
 
-# Split the input string into a list of strings, then convert each string to an integer
-heights = list(map(int, input_heights.split()))
+# Prompt the user to enter the length of words to be edited and convert it to an integer
+word_length = int(input("Enter the length of words to be edited: "))
 
-# Prompt the user to enter the height of the new student and convert it to an integer
-new_height = int(input("Enter the height of the new student: "))
+# Prompt the user to enter the replacement character
+replacement_char = input("Enter the replacement character: ")
 
-# Find the position for the new student
-position = 1
-for height in heights:
-    # Compare the new height with each height in the list
-    if new_height >= height:
-        # If the new height is greater than or equal to the current height, stop the loop
-        break
-    # If the new height is smaller than the current height, increment the position
-    position += 1
+# Read the list of words
+# Prompt the user to enter each word in the list, and store them in a list,
+# based on the number of words entered
+words = [input() for _ in range(num_words)]
 
-# Print the position of the new student
-print(position)
+# Replace the last three characters of words with the specified length
+# Iterate over each word in the list and replace the last three characters
+# with the replacement character if the word length matches the specified length
+modified_words = [word[:-3] + replacement_char if len(word) == word_length else word for word in words]  
+
+# Print the result
+print(modified_words)  # Print the modified list of words
