@@ -1016,34 +1016,34 @@ print(" ".join(map(str, squares)))
 ```
 </details>
 
+<!-- 457 -->
+## Example 31: Find the Median of Three Numbers
 
-<!-- 454 -->
-## Example 31: Remove Even Numbers from List
+**Problem:** Write a program to find the median of three entered integers. The numbers are entered in one line separated by spaces.
 
-**Problem:** Write a program to print the elements of a given integer list after removing the even numbers. The list values are entered separated by spaces in one line.
+| No. | Inputs      | Outputs |
+| --- | ----------- | ------- |
+| 1   | 25 50 11    | 25      |
+| 2   | 1 9 7       | 7       |
+| 3   | 15 20 10    | 15      |
+| 4   | 3 5 4       | 4       |
 
-| No. | Inputs                | Outputs       |
-| --- | --------------------- | ------------- |
-| 1   | 3 44 6 8 9 12 7       | [3, 9, 7]     |
-| 2   | 1 2 3 4 5 6 7 8 9     | [1, 3, 5, 7, 9]|
-| 3   | 10 21 32 43 54 65 76  | [21, 43, 65]  |
-| 4   | 22 33 44 55 66 77     | [33, 55, 77]  |
-
-<details close>
+<details open>
 <summary><b>Python Solution</b></summary>
 
 ```python
 # Read the input data
-input_data = input("Enter a list of integers separated by spaces: ")
+numbers = list(map(int, input("Enter three integers separated by spaces: ").split()))
 
-# Convert the input data to a list of integers
-numbers = list(map(int, input_data.split()))
+# Sort the numbers
+sorted_numbers = sorted(numbers)
 
-# Filter out even numbers
-odd_numbers = [num for num in numbers if num % 2 != 0]
+# Find the median (the second element in the sorted list of three numbers)
+median = sorted_numbers[1]
 
 # Print the result
-print(odd_numbers)
+print(median)
+
 ```
 </details>
 
