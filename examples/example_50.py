@@ -1,16 +1,17 @@
 # Read the input data
-string_A = input("Enter the string A: ")  # Prompt the user to enter string A and store it in the variable string_A
-substring_B = input("Enter the substring B: ")  # Prompt the user to enter substring B and store it in the variable substring_B
+n, k = map(int, input("Enter the number of pins and throws: ").split())
 
-# Find all positions of the substring B in string A
-positions = []  # Create an empty list to store the positions of substring B in string A
-index = string_A.find(substring_B)  # Find the first occurrence of substring B in string A and store its index in the variable index
-while index != -1:  # Continue the loop as long as substring B is found in string A
-    positions.append(index + 1)  # Add the position of substring B (index + 1) to the positions list
-    index = string_A.find(substring_B, index + 1)  # Find the next occurrence of substring B in string A starting from index + 1
+# Initialize the pins as standing (I)
+pins = ['I'] * n
+
+# Process each throw
+for _ in range(k):
+    # Read the range of pins to be knocked down
+    m, h = map(int, input("Enter the range m to h: ").split())
+
+    # Update the status of the knocked down pins
+    for i in range(m-1, h):
+        pins[i] = '.'
 
 # Print the result
-if positions:  # Check if there are any positions found
-    print(" ".join(map(str, positions)))  # Convert the positions list to a string and print it with spaces in between each position
-else:
-    print(-1)  # If no positions are found, print -1
+print("".join(pins))
