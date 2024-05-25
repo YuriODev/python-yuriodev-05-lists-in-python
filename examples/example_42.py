@@ -1,13 +1,18 @@
 # Read the input data
 numbers = list(map(int, input("Enter a list of numbers separated by spaces: ").split()))
-k = int(input("Enter the index to remove: "))
 
-# Remove the element at index k and shift the remaining elements
-for i in range(k, len(numbers) - 1):
-    numbers[i] = numbers[i + 1]
+# Create a list to store the counts of each number
+counts = [0] * (max(numbers) + 1)
 
-# Remove the last element since it's now duplicated
-numbers.pop()
+# Count the occurrences of each number
+for number in numbers:
+    counts[number] += 1
+
+# Find numbers that occur more than once and sort them
+# -- enumerate() returns the index and the value of each element
+# -- list comprehension is used to filter the numbers with count > 1
+# extract the index (number) and store it in the list of duplicates
+duplicates = [number for number, count in enumerate(counts) if count > 1]
 
 # Print the result
-print(" ".join(map(str, numbers)))
+print(" ".join(map(str, duplicates)))
