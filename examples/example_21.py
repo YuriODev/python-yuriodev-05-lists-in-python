@@ -1,11 +1,23 @@
 # Read the input data
-input_data = input("Enter a list of integers separated by spaces: ")
+expression = input("Enter the math expression: ")
 
-# Convert the input data to a list of integers
-numbers = list(map(int, input_data.split()))
+# Split the expression into parts
+parts = expression.split()
+a = int(parts[0])
+operator = parts[1]
+b = int(parts[2])
 
-# Find the smallest number
-min_number = min(numbers)
+# Perform the operation based on the operator
+if operator == "plus":
+    result = a + b
+elif operator == "minus":
+    result = a - b
+elif operator == "multiply":
+    result = a * b
+elif operator == "divide":
+    result = a // b
+else:
+    result = "Unknown operator"
 
 # Print the result
-print(min_number)
+print(result)
