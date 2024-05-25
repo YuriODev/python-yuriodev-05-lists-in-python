@@ -1,21 +1,16 @@
 # Read the input data
-n = int(input("Enter a non-negative integer: "))
+string_A = input("Enter the string A: ")  # Prompt the user to enter string A and store it in the variable string_A
+substring_B = input("Enter the substring B: ")  # Prompt the user to enter substring B and store it in the variable substring_B
 
-# Generate the sequence
-sequence = []
+# Find all positions of the substring B in string A
+positions = []  # Create an empty list to store the positions of substring B in string A
+index = string_A.find(substring_B)  # Find the first occurrence of substring B in string A and store its index in the variable index
+while index != -1:  # Continue the loop as long as substring B is found in string A
+    positions.append(index + 1)  # Add the position of substring B (index + 1) to the positions list
+    index = string_A.find(substring_B, index + 1)  # Find the next occurrence of substring B in string A starting from index + 1
 
-# Initialize the current_number variable to 1
-current_number = 1
-
-# Continue the loop until the length of the sequence is less than n
-while len(sequence) < n:
-    # Extend the sequence by adding current_number repeated current_number times
-    sequence.extend([current_number] * current_number)
-
-    # Increment the current_number by 1 for the next iteration
-    current_number += 1
-
-# Trim the sequence to the desired length (n) and convert it to a string with 
-# space-separated elements
-# Then, print the sequence
-print(" ".join(map(str, sequence[:n])))
+# Print the result
+if positions:  # Check if there are any positions found
+    print(" ".join(map(str, positions)))  # Convert the positions list to a string and print it with spaces in between each position
+else:
+    print(-1)  # If no positions are found, print -1
