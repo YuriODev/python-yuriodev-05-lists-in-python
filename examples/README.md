@@ -2,7 +2,7 @@
 
 Here are some examples to get you started.
 
-<details close>
+<details open>
 <summary><b>Covered topics</b></summary>
 
 | Topic Covered                                           | Code with explanations                            |
@@ -1413,8 +1413,8 @@ A list of words with the last three characters replaced by \( r \) if the word l
 | No. | Inputs                                        | Outputs                        |
 | --- | --------------------------------------------- | ------------------------------ |
 | 1   | 4 <br> 6 <br> % <br> writer <br> painter <br> programmer <br> scientist | ['wri%', 'painter', 'programmer', 'scientist'] |
-| 2   | 4 <br> 3 <br> ** <br> cat <br> dog <br> mouse <br> rat | ['\**', '\**', 'mouse', '\**'] |
-| 3   | 3 <br> 4 <br> ## <br> apple <br> banana <br> kiwi | ['appl', 'banana', 'k##'] |
+| 2   | 4 <br> 3 <br> ** <br> cat <br> dog <br> mouse <br> rat | ['\*\*', '\*\*', 'mouse', '\*\*'] |
+| 3   | 3 <br> 4 <br> ## <br> apple <br> banana <br> kiwi | ['apple', 'banana', 'k##'] |
 
 ## Python Solution
 
