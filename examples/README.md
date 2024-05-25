@@ -1397,33 +1397,26 @@ else:
 <!-- 472 -->
 ## Example 40: Replace Last Three Characters in Words
 
-**Problem:** Given a list of words, write a program that replaces the last three characters of words that have a certain length with a specified character. The user inputs the following data: the number of words in the list, the length of the words to be edited, the replacement character for the last three characters, and the list of words (each word on a separate line). It is guaranteed that the length of the words in the list is at least 3 characters.
+**Problem:** Given a list of words, write a program that replaces the last three characters of words that have a specified length with a specified replacement character. The user inputs the following data: the number of words in the list, the length of the words to be edited, the replacement character for the last three characters, and the list of words (each word on a separate line). It is guaranteed that the length of the words in the list is at least 3 characters.
+
+## Input
+1. An integer \( n \): the number of words in the list.
+2. An integer \( l \): the length of words to be edited.
+3. A string \( r \): the replacement character for the last three characters.
+4. \( n \) words (each word on a separate line).
+
+## Output
+A list of words with the last three characters replaced by \( r \) if the word length is \( l \).
+
+## Examples
 
 | No. | Inputs                                        | Outputs                        |
 | --- | --------------------------------------------- | ------------------------------ |
-| 1   | 4                                             | ['wri%', 'pain%', 'program%', 'scient%'] |
-|     | 5                                             |                                |
-|     | %                                             |                                |
-|     | writer                                        |                                |
-|     | painter                                       |                                |
-|     | programmer                                    |                                |
-|     | scientist                                     |                                |
-| 2   | 3                                             | ['cat**', 'dog**', 'mouse', 'rat**'] |
-|     | 3                                             |                                |
-|     | **                                            |                                |
-|     | cat                                           |                                |
-|     | dog                                           |                                |
-|     | mouse                                         |                                |
-|     | rat                                           |                                |
-| 3   | 2                                             | ['apple##', 'banana', 'kiwi##'] |
-|     | 4                                             |                                |
-|     | ##                                            |                                |
-|     | apple                                         |                                |
-|     | banana                                        |                                |
-|     | kiwi                                          |                                |
+| 1   | 4 <br> 6 <br> % <br> writer <br> painter <br> programmer <br> scientist | ['wri%', 'pain%', 'programmer', 'scientist'] |
+| 2   | 4 <br> 3 <br> ** <br> cat <br> dog <br> mouse <br> rat | ['cat**', 'dog**', 'mouse', 'rat**'] |
+| 3   | 3 <br> 4 <br> ## <br> apple <br> banana <br> kiwi | ['appl##', 'banana', 'kiw##'] |
 
-<details close>
-<summary><b>Python Solution</b></summary>
+## Python Solution
 
 ```python
 # Read the input data
