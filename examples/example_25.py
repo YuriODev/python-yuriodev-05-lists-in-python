@@ -1,25 +1,41 @@
-# Read the input data
-input_data = input("Enter a sequence of integers separated by spaces: ")
+# Input data
+input_numbers = input("Enter numbers separated by spaces: ")
 
 # Convert the input data to a list of integers
-numbers = list(map(int, input_data.split()))
+numbers = list(map(int, input_numbers.split()))
 
-# Sort the list
-numbers.sort()
+# Find the indices of the minimum and maximum elements
+min_index = numbers.index(min(numbers))
+max_index = numbers.index(max(numbers))
 
-# Count the number of non-repeating elements
-# Initialize a variable to keep track of the number of unique elements
-unique_count = 1
-
-# Iterate through the list starting from the second element
-for i in range(1, len(numbers)):
-    # Check if the current element is different from the previous element
-    if numbers[i] != numbers[i-1]:
-        # If it is different, increment the unique_count variable
-        unique_count += 1
-
-# At this point, the unique_count variable will hold the number of
-# non-repeating elements in the list
+# Swap the minimum and maximum elements
+numbers[min_index], numbers[max_index] = numbers[max_index], numbers[min_index]
 
 # Print the result
-print(unique_count)
+print(" ".join(map(str, numbers)))
+
+# Alternative solution
+
+# Split the input string into a list of individual numbers and convert them to integers
+numbers = list(map(int, input_numbers.split()))
+
+# Find the minimum value in the list
+min_value = min(numbers)
+
+# Find the maximum value in the list
+max_value = max(numbers)
+
+# Iterate over the indices of the numbers list
+for i in range(len(numbers)):
+    # If the current number is equal to the minimum value, replace it with the maximum value
+    if numbers[i] == min_value:
+        numbers[i] = max_value
+    # If the current number is equal to the maximum value, replace it with the minimum value
+    elif numbers[i] == max_value:
+        numbers[i] = min_value
+
+# Convert the modified numbers list back to a string and join the elements with spaces
+result = " ".join(map(str, numbers))
+
+# Print the modified numbers string
+print(result)
