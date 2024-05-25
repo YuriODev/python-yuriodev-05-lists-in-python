@@ -1,8 +1,16 @@
 # Read the input data
-a, b = map(int, input("Enter two integers a and b: ").split())
+input_data = input("Enter a string of words separated by spaces: ")
 
-# Generate the 2D array defined by the formula a[i][j] = i * j
-array = [[i * j for j in range(b)] for i in range(a)]
+# Split the input data into a list of words
+words = input_data.split()
+
+# Sort the words by length
+# The key parameter specifies a function that will be called on each element
+# to determine the sorting key (in this case, the length of the word)
+sorted_words = sorted(words, key=len)
+
+# Join the sorted words with ", " and add a period at the end
+output = ", ".join(sorted_words) + "."
 
 # Print the result
-print(array)
+print(output)
