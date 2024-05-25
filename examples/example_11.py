@@ -1,15 +1,9 @@
 # Read the input data
-input_data = input("Enter a sequence of integers separated by spaces: ")
+file_name = input("Enter the full file name: ")
 
-# Convert the input data to a list of integers
-numbers = list(map(int, input_data.split()))
-
-# Find the elements greater than the previous one
-# The list comprehension iterates over the indices of the list
-# and selects the elements that are greater than the previous one
-# The range starts from 1 to avoid comparing the first element with a non-existent previous element
-# The condition checks if the current element is greater than the previous one
-result = [numbers[i] for i in range(1, len(numbers)) if numbers[i] > numbers[i-1]]
+# Extract the file extension
+# Split the file name by the dot character and get the last element
+file_extension = file_name.split('.')[-1]
 
 # Print the result
-print(" ".join(map(str, result)))
+print(file_extension)
