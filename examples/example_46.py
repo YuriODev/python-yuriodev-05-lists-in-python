@@ -1,17 +1,21 @@
 # Read the input data
-n, m = map(int, input("Enter the dimensions n and m: ").split())
+n = int(input("Enter a non-negative integer: "))
 
-# Create the chessboard pattern
-chessboard = []
-for i in range(n):
-    row = []
-    for j in range(m):
-        if (i + j) % 2 == 0:  # Check if the sum of i and j is even
-            row.append('.')  # Add a '.' to the row if the sum is even
-        else:
-            row.append('*')  # Add a '*' to the row if the sum is odd
-    chessboard.append(" ".join(row))  # Join the row elements with a space and add it to the chessboard list
+# Generate the sequence
+sequence = []
 
-# Print the chessboard pattern
-for row in chessboard:
-    print(row)  # Print each row of the chessboard pattern
+# Initialize the current_number variable to 1
+current_number = 1
+
+# Continue the loop until the length of the sequence is less than n
+while len(sequence) < n:
+    # Extend the sequence by adding current_number repeated current_number times
+    sequence.extend([current_number] * current_number)
+
+    # Increment the current_number by 1 for the next iteration
+    current_number += 1
+
+# Trim the sequence to the desired length (n) and convert it to a string with 
+# space-separated elements
+# Then, print the sequence
+print(" ".join(map(str, sequence[:n])))
