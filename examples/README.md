@@ -2,7 +2,7 @@
 
 Here are some examples to get you started.
 
-<details open>
+<details close>
 <summary><b>Covered topics</b></summary>
 
 | Topic Covered                                           | Code with explanations                            |
@@ -53,7 +53,7 @@ Here are some examples to get you started.
 | 4   | 1 2               | 1 2                |
 | 5   | 1                 | 1                  |
 
-<details open>
+<details close>
 <summary><b>Python Solution</b></summary>
 
 ```python
@@ -84,7 +84,7 @@ if len(numbers) >= 2:
 | 4   | English French German Italian Spanish           | Spanish Italian German French English           |
 
 
-<details open>
+<details close>
 <summary><b>Python Solution</b></summary>
 
 ```python
@@ -111,7 +111,7 @@ print(" ".join(languages))
 | 4   | 1 3 5 7 9    | 9 7 5 3 1     |
 | 5   | 9 8 7 6 5    | 5 6 7 8 9     |
 
-<details open>
+<details close>
 <summary><b>Python Solution</b></summary>
 
 ```python
@@ -137,7 +137,7 @@ print(" ".join(map(str, numbers[::-1])))
 | 4   | 4 8 12 16 20   | 4 12 20    |
 | 5   | 5 10 15 20 25  | 5 15 25    |
 
-<details open>
+<details close>
 <summary><b>Python Solution</b></summary>
 
 ```python
@@ -163,7 +163,7 @@ print(" ".join(map(str, numbers[::2])))
 | 4   | 1 2 3 4 5 6 7 8 9 10<br>1      |                           |
 | 5   | 1 2 3 4 5 6 7 8 9 10<br>0      | 1 2 3 4 5 6 7 8 9         |
 
-<details open>
+<details close>
 <summary><b>Python Solution</b></summary>
 
 ```python
@@ -177,7 +177,7 @@ print(" ".join(map(str, filtered_numbers)))
 ```
 </details>
 
-<!-- 414 -->
+
 ## Example 6: Count Positive Elements
 
 **Problem:** Find the number of positive elements in an entered list. The list of numbers is entered on a single line.
@@ -191,7 +191,7 @@ print(" ".join(map(str, filtered_numbers)))
 | 5   | 1 2 3 4 5       | 5       |
 
 
-<details open>
+<details close>
 <summary><b>Python Solution</b></summary>
 
 ```python
@@ -218,7 +218,7 @@ print(positive_count)
 | 4   | 1 2 3 4 5 6 7 8 9 10  | 1 2 3 4 5 6 7 8 9 10 |
 
 
-<details open>
+<details close>
 <summary><b>Python Solution</b></summary>
 
 ```python
@@ -247,7 +247,7 @@ print(" ".join(map(str, unique_list)))
 | 3   | 1 2 3 | 0 1<br>1 2<br>2 3 |
 
 
-<details open>
+<details close>
 <summary><b>Python Solution</b></summary>
 
 ```python
@@ -271,7 +271,7 @@ for index, value in enumerate(numbers):
 | 1   | 1 0 0 1 0 0 1 1 0          | 0       |
 | 2   | 2 4 6 9 9 2 3 2 4          | 2       |
 
-<details open>
+<details close>
 <summary><b>Python Solution</b></summary>
 
 ```python
@@ -296,39 +296,69 @@ for i in range(len(sorted_numbers)):
         most_frequent = sorted_numbers[i]
 
 print(most_frequent)
-
 ```
 </details>
 
+
 <!-- 420 -->
-## Example 10: Print Elements that Exceed Previous Elements
+## Example 10: Print Elements Greater Than Previous
 
-**Problem:** Given a list of integers entered on a single line, print each element that is greater than the one preceding it. The numbers should be output in the same order as they appear in the list, separated by spaces.
+**Problem:** Enter a list of integers in a single line separated by spaces. Print all the elements that are greater than the previous element in the list, separated by spaces in a new line in the order they appear in the list.
 
-| No. | Inputs            | Outputs  |
-| --- | ----------------- | -------- |
-| 1   | 5 8 0 2 9 4 1    | 8 2 9    |
-| 2   | 3 5 7 6 9 10 8   | 5 7 9 10 |
-| 3   | 1 1 2 3 2 2 5 1  | 2 3 5    |
-| 4   | 10 9 8 7 6       |          |
-| 5   | 6 7 7 8 10 9 10  | 7 8 10 10 |
+| No. | Inputs                | Outputs        |
+| --- | --------------------- | -------------- |
+| 1   | 5 8 0 2 9 4 1         | 8 2 9          |
+| 2   | 3 3 4 5 2 1 7 8 6     | 4 5 7 8        |
+| 3   | 1 2 3 1 2 3 1 2 3     | 2 3 2 3 2 3    |
+| 4   | 10 5 6 7 8 3 2 1      | 6 7 8          |
 
-<details open>
+<details close>
 <summary><b>Python Solution</b></summary>
 
 ```python
-input_numbers = input("Enter numbers separated by spaces: ")
-numbers = list(map(int, input_numbers.split()))
+# Read the input data
+input_data = input("Enter a sequence of integers separated by spaces: ")
 
-# List of elements that exceed the previous element
-exceeding_elements = [numbers[i] for i in range(1, len(numbers)) if numbers[i] > numbers[i - 1]]
+# Convert the input data to a list of integers
+numbers = list(map(int, input_data.split()))
 
+# Find the elements greater than the previous one
+result = [numbers[i] for i in range(1, len(numbers)) if numbers[i] > numbers[i-1]]
+
+# Print the result
+print(" ".join(map(str, result)))
 ```
 </details>
 
+<!-- 422 -->
+## Example 11: Print File Extension
+
+**Problem:** Write a program that receives the full name of a file from the user and prints the extension of the received file.
+
+| No. | Inputs                | Outputs    |
+| --- | --------------------- | ---------- |
+| 1   | test.cpp              | cpp        |
+| 2   | document.pdf          | pdf        |
+| 3   | image.jpeg            | jpeg       |
+| 4   | archive.tar.gz        | gz         |
+
+<details close>
+<summary><b>Python Solution</b></summary>
+
+```python
+# Read the input data
+file_name = input("Enter the full file name: ")
+
+# Extract the file extension
+file_extension = file_name.split('.')[-1]
+
+# Print the result
+print(file_extension)
+```
+</details>
 
 <!-- 424 -->
-## Example 11: Count Unique Words in a Line
+## Example 13: Count Unique Words in a Line
 
 **Problem:** Given a line of text, determine how many unique words are present. A word is defined by sequences of characters separated by spaces. Case sensitivity should be considered, meaning "New" and "new" would count as two different words.
 
@@ -339,7 +369,7 @@ exceeding_elements = [numbers[i] for i in range(1, len(numbers)) if numbers[i] >
 | 3   | The quick brown fox jumps over the lazy dog                                                                                                                    | 9       |
 
 
-<details open>
+<details close>
 <summary><b>Python Solution</b></summary>
 
 ```python
@@ -352,9 +382,62 @@ unique_words = len(set(words))
 print(unique_words)
 ```
 </details>
+<!-- 427 -->
+## Example 13: List Statistics
+
+**Problem:** Create a program that receives a sequence of integers and prints the smallest number in the list, the largest number in the list, the number of elements in the list, and the average value of the elements in the list.
+
+| No. | Inputs                | Outputs          |
+| --- | --------------------- | ---------------- |
+| 1   | 1 3 7 5               | 1                |
+|     |                       | 7                |
+|     |                       | 4                |
+|     |                       | 4.0              |
+| 2   | 10 20 30 40 50        | 10               |
+|     |                       | 50               |
+|     |                       | 5                |
+|     |                       | 30.0             |
+| 3   | -5 0 5 10 15          | -5               |
+|     |                       | 15               |
+|     |                       | 5                |
+|     |                       | 5.0              |
+| 4   | 100 200 300           | 100              |
+|     |                       | 300              |
+|     |                       | 3                |
+|     |                       | 200.0            |
+
+<details close>
+<summary><b>Python Solution</b></summary>
+
+```python
+# Read the input data
+input_data = input("Enter a sequence of integers separated by spaces: ")
+
+# Convert the input data to a list of integers
+numbers = list(map(int, input_data.split()))
+
+# Find the smallest number
+min_number = min(numbers)
+
+# Find the largest number
+max_number = max(numbers)
+
+# Find the number of elements
+count_numbers = len(numbers)
+
+# Find the average value
+average_value = sum(numbers) / count_numbers
+
+# Print the results
+print(min_number)
+print(max_number)
+print(count_numbers)
+print(average_value)
+```
+</details>
 
 <!-- 429 -->
-## Example 12: Count Days Above Average Temperature
+## Example 14: Count Days Above Average Temperature
 
 **Problem:** Given a line of space-separated temperature readings for a series of days, determine how many days had temperatures not lower than the average temperature over the period.
 
@@ -364,7 +447,7 @@ print(unique_words)
 | 2   | 10 12 14 16 18 20 22 24 26   | 9       |
 | 3   | 10 15 8 6 4 2 0 -2 -4        | 2       |
 
-<details open>
+<details close>
 <summary><b>Python Solution</b></summary>
 
 ```python
@@ -383,10 +466,43 @@ print(days_above_average)
 </details>
 
 
+<!-- 431 -->
+## Example 15: Print Even Numbers Until a Specific Number
+
+**Problem:** Write a program to print all even numbers from the entered list of numbers in the same order and stop printing if the number `n` or zero is encountered in the list. The list values are entered separated by spaces in one line, the number `n` is entered in a new line.
+
+| No. | Inputs                  | Outputs |
+| --- | ----------------------- | ------- |
+| 1   | 1 8 9 0 4 2 5 6\n2      | 8       |
+| 2   | 3 5 7 8 2 10 4\n10      | 8 2     |
+| 3   | 12 14 16 0 18 20\n18    | 12 14 16|
+| 4   | 2 4 6 8 10 12\n6        | 2 4     |
+
+<details close>
+<summary><b>Python Solution</b></summary>
+
+```python
+# Read the input data
+input_data = input("Enter a list of numbers separated by spaces: ")
+stop_number = int(input("Enter the stop number: "))
+
+# Convert the input data to a list of integers
+numbers = list(map(int, input_data.split()))
+
+# Iterate through the list and print even numbers until stop_number or zero is encountered
+for number in numbers:
+    if number == stop_number or number == 0:
+        break
+    if number % 2 == 0:
+        print(number)
+```
+</details>
+
+
 
 
 <!-- 432 -->
-## Example 13: Check If an Integer Exceeds All List Elements
+## Example 16: Check If an Integer Exceeds All List Elements
 
 **Problem:** Given a list of integers entered on a single line, separated by spaces, and an integer \( n \) entered on a new line, write a program to check if \( n \) is greater than all the elements in the list.
 
@@ -396,7 +512,7 @@ print(days_above_average)
 | 2   | 1 2 3 4 5 6 7 8 9 10<br>11 | True |
 | 3   | 1 2 3 4 5 6 7 8 9 10<br>10 | False |
 
-<details open>
+<details close>
 <summary><b>Python Solution 1</b></summary>
 
 ```python
@@ -412,7 +528,7 @@ print(exceeds_all)
 ```
 </details>
 
-<details open>
+<details close>
 <summary><b>Python Solution 2</b></summary>
 
 ```python
@@ -429,8 +545,39 @@ print(exceeds_all)
 </details>
 
 
+<!-- 433 -->
+## Example 16: Print List of Positive Numbers
+
+**Problem:** Integers (both positive and negative) are entered separated by spaces in one line. Write a program to print a list of only the entered positive numbers.
+
+| No. | Inputs                 | Outputs       |
+| --- | ---------------------- | ------------- |
+| 1   | 0 9 -4 6 8 -15 4       | [9, 6, 8, 4]  |
+| 2   | -10 -20 30 40 -50 60   | [30, 40, 60]  |
+| 3   | 1 -1 2 -2 3 -3 4 -4    | [1, 2, 3, 4]  |
+| 4   | -5 -10 15 20 -25 30    | [15, 20, 30]  |
+
+<details close>
+<summary><b>Python Solution</b></summary>
+
+```python
+# Read the input data
+input_data = input("Enter a list of integers separated by spaces: ")
+
+# Convert the input data to a list of integers
+numbers = list(map(int, input_data.split()))
+
+# Create a list of positive numbers
+positive_numbers = [num for num in numbers if num > 0]
+
+# Print the result
+print(positive_numbers)
+```
+</details>
+
+
 <!-- 434 -->
-## Example 14: Extract Resource Name from URL
+## Example 17: Extract Resource Name from URL
 
 **Problem:** Write a program to extract the part of a URL string that indicates the resource name (e.g., the filename or path segment at the end of the URL).
 
@@ -443,7 +590,7 @@ print(exceeds_all)
 | 5   | https://www.example.com/                         |             |
 
 
-<details open>
+<details close>
 <summary><b>Python Solution</b></summary>
 
 ```python
@@ -454,10 +601,44 @@ resource_name = url.split("/")[-1]
 
 print(resource_name)
 ```
+</details>
+
+
+<!-- 435 -->
+## Example 18: Find the Smallest Integer
+
+**Problem:** Write a program to get the smallest integer from a list. The list values are entered separated by spaces in one line.
+
+| No. | Inputs                | Outputs |
+| --- | --------------------- | ------- |
+| 1   | 87 6 25 7 105 23 56   | 6       |
+| 2   | 15 20 5 10 30         | 5       |
+| 3   | 1 2 3 4 5             | 1       |
+| 4   | 100 200 300 400       | 100     |
+
+<details close>
+<summary><b>Python Solution</b></summary>
+
+```python
+# Read the input data
+input_data = input("Enter a list of integers separated by spaces: ")
+
+# Convert the input data to a list of integers
+numbers = list(map(int, input_data.split()))
+
+# Find the smallest number
+min_number = min(numbers)
+
+# Print the result
+print(min_number)
+
+```
+</details>
+
 
 <!-- 436 -->
 
-## Example 15: Find the Second Smallest Element in a List
+## Example 19: Find the Second Smallest Element in a List
 
 **Problem:** Write a program to find the second smallest element in a list of integers. The integers are entered on a single line, separated by spaces.
 
@@ -469,7 +650,7 @@ print(resource_name)
 | 4   | 100 90 80 70 60       | 70      |
 | 5   | -5 -9 -1 -6 -2        | -5      |
 
-<details open>
+<details close>
 <summary><b>Python Solution</b></summary>
 
 ```python
@@ -484,10 +665,53 @@ print(second_smallest)
 ```
 </details>
 
+<!-- 439 -->
+## Example 20: Simple Math Expression Interpreter
+
+**Problem:** Write a simple math expression interpreter. The input is a string with an expression consisting of two numbers (0 ≤ a, b ≤ 1000) joined by a binary operator: `a operator b`, where `operator` can be one of the words: `plus`, `minus`, `multiply`, `divide` for addition, subtraction, multiplication, and integer division, respectively. The result of the computation is a string containing an integer.
+
+| No. | Inputs                | Outputs |
+| --- | --------------------- | ------- |
+| 1   | 20 plus 7             | 27      |
+| 2   | 15 minus 9            | 6       |
+| 3   | 144 multiply 2        | 288     |
+| 4   | 49 divide 7           | 7       |
+
+<details close>
+<summary><b>Python Solution</b></summary>
+
+```python
+# Read the input data
+expression = input("Enter the math expression: ")
+
+# Split the expression into parts
+parts = expression.split()
+a = int(parts[0])
+operator = parts[1]
+b = int(parts[2])
+
+# Perform the operation based on the operator
+if operator == "plus":
+    result = a + b
+elif operator == "minus":
+    result = a - b
+elif operator == "multiply":
+    result = a * b
+elif operator == "divide":
+    result = a // b
+else:
+    raise ValueError("Unknown operator")
+
+# Print the result
+print(result)
+
+```
+</details>
+
 
 <!-- 441 -->
 
-## Example 16: Find Largest Element and Its First Index
+## Example 21: Find Largest Element and Its First Index
 
 **Problem:** Write a program to determine the element in a list with the highest value. Print the value of the largest element followed by the index of its first occurrence. If the largest element is not unique, print the index of the first occurrence of this largest element.
 
@@ -499,7 +723,7 @@ print(second_smallest)
 | 4   | 1 2 3 4 5 6 7 8 9 10          | 10 9    |
 | 5   | 5 5 5 5 5                     | 5 0     |
 
-<details open>
+<details close>
 <summary><b>Python Solution</b></summary>
 
 ```python
@@ -516,9 +740,45 @@ print(largest, first_index)
 ```
 </details>
 
+<!-- 442 -->
+## Example 22: Count Non-Repeating Elements in Sorted List
+
+**Problem:** Given a sequence of integers, determine the number of elements in the sorted list that do not repeat one after another.
+
+| No. | Inputs                               | Outputs |
+| --- | ------------------------------------ | ------- |
+| 1   | 1 9 10 3 7 5 2 2 3 0 4 5 6           | 10      |
+| 2   | 5 3 8 8 2 1 1 0 9 6 4 4 7            | 9       |
+| 3   | 4 5 6 7 7 8 9 10 10 11               | 8       |
+| 4   | 3 3 3 3 3 3                          | 1       |
+
+<details close>
+<summary><b>Python Solution</b></summary>
+
+```python
+# Read the input data
+input_data = input("Enter a sequence of integers separated by spaces: ")
+
+# Convert the input data to a list of integers
+numbers = list(map(int, input_data.split()))
+
+# Sort the list
+numbers.sort()
+
+# Count the number of non-repeating elements
+unique_count = 0
+for i in range(len(numbers)):
+    if i == 0 or numbers[i] != numbers[i-1]:
+        unique_count += 1
+
+# Print the result
+print(unique_count)
+```
+</details>
+
 
 <!-- 443 -->
-## Example 17: Cyclically Shift List Elements to the Right
+## Example 23: Cyclically Shift List Elements to the Right
 
 **Problem:** Write a program that cyclically shifts the elements of a list to the right. This means the last element becomes the first, and all other elements move one position to the right. The numbers are entered on a single line.
 
@@ -528,7 +788,7 @@ print(largest, first_index)
 | 2   | 6            | 6          |
 | 3   | 1 2 3        | 3 1 2      |
 
-<details open>
+<details close>
 <summary><b>Python Solution</b></summary>
 
 ```python
@@ -547,7 +807,7 @@ else:
 </details>
 
 <!-- 445 -->
-## Example 18: Swap Minimum and Maximum in a List
+## Example 24: Swap Minimum and Maximum in a List
 
 **Problem:** For a given sequence of unique integers, swap the positions of the minimum and maximum elements. Print the resulting list.
 
@@ -558,7 +818,7 @@ else:
 | 3   | 3 2 1 4 5 6         | 3 2 1 4 5 6   |
 | 4   | 1 2 3 4 5 6         | 6 2 3 4 5 1   |
 
-<details open> 
+<details close> 
 <summary><b>Python Solution 1</b></summary>
 
 ```python
@@ -578,7 +838,7 @@ print(" ".join(map(str, numbers)))
 </details>
 
 
-<details open> 
+<details close> 
 <summary><b>Python Solution 2 - Swap all mins and all max</b></summary>
 
 ```python
@@ -603,7 +863,7 @@ print(" ".join(map(str, numbers)))
 
 
 <!-- 446 -->
-## Example 19: Count Equal Pairs in a List
+## Example 25: Count Equal Pairs in a List
 
 **Problem:** Given a list of numbers, count how many pairs of elements have the same value. Each pair should be considered only once, regardless of how many times the elements appear in the list.
 
@@ -613,7 +873,7 @@ print(" ".join(map(str, numbers)))
 | 2   | 4 5 5 8 10 12 3 3       | 2       |
 | 3   | 1 5 2 8 9 5            | 1       |
 
-<details open>
+<details close>
 <summary><b>Python Solution</b></summary>
 
 ```python
@@ -630,7 +890,7 @@ print(equal_pairs)
 
 
 <!-- 448 -->
-## Example 20: Swap Adjacent Elements in Pairs
+## Example 26: Swap Adjacent Elements in Pairs
 
 **Problem:** Given a sequence of integers, swap each pair of adjacent elements (A[0] with A[1], A[2] with A[3], etc.). Print the resulting list. If the list has an odd number of elements, leave the last element in its original position.
 
@@ -641,7 +901,7 @@ print(equal_pairs)
 | 3   | 2             | 2             |
 | 4   | 1 2 3 4 5     | 2 1 4 3 5     |
 
-<details open>
+<details close>
 <summary><b>Python Solution</b></summary>
 
 ```python
@@ -659,12 +919,14 @@ for i in range(0, len(numbers), 2):
 
 
 print(" ".join(map(str, swapped)))
-
 ```
+</details>
+
+
 
 <!-- 450 -->
 
-## Example 21: Find and Print Adjacent Elements with the Same Sign
+## Example 27: Find and Print Adjacent Elements with the Same Sign
 
 **Problem:** Given a list of integers, identify and print adjacent elements that have the same sign. If no such pair exists, nothing should be printed.
 
@@ -673,7 +935,7 @@ print(" ".join(map(str, swapped)))
 | --- | -------------------------- | ----------- |
 | 1   | 1 -2 -3 5 6 -3 7 8         | -2 -3<br>5 6<br>7 8 |
 
-<details open>
+<details close>
 <summary><b>Python Solution</b></summary>
 
 ```python
@@ -688,9 +950,46 @@ for i in range(len(numbers) - 1):
 ```
 </details>
 
+<!-- 452 -->
+## Example 28: Calculate the Product of Integers
+
+**Problem:** Write a program to calculate the product of integers (without using a `for` loop) entered by the user in one line separated by spaces.
+
+| No. | Inputs                | Outputs |
+| --- | --------------------- | ------- |
+| 1   | 2 5 3                 | 30      |
+| 2   | 1 4 7                 | 28      |
+| 3   | 6 2 9                 | 108     |
+| 4   | 10 20 30              | 6000    |
+
+<details close>
+<summary><b>Python Solution</b></summary>
+
+```python
+# Read the input data
+input_data = input("Enter a list of integers separated by spaces: ")
+
+# Convert the input data to a list of integers
+numbers = list(map(int, input_data.split()))
+
+# Calculate the product without using loops or subroutines
+length = len(numbers)
+index = 0
+product = 1
+
+while index < length:
+    product *= numbers[index]
+    index += 1
+
+# Print the result
+print(product)
+
+```
+</details>
+
 
 <!-- 453  -->
-## Example 22: Print Squares of Sequence Elements
+## Example 29: Print Squares of Sequence Elements
 
 **Problem:** Write a program that takes a sequence of integers as input and prints the squares of all its elements.
 
@@ -701,7 +1000,7 @@ for i in range(len(numbers) - 1):
 | 2   | 2 4 6 8 10 12 14 16  | 4 16 36 64 100 144 196 256    |
 | 3   | 3 6 9 12 15 18 21 24 | 9 36 81 144 225 324 441 576   |
 
-<details open>
+<details close>
 <summary><b>Python Solution</b></summary>
 
 ```python
@@ -714,10 +1013,112 @@ squares = [num ** 2 for num in numbers]
 
 print(" ".join(map(str, squares)))
 ```
+</details>
+
+
+<!-- 454 -->
+## Example 30: Remove Even Numbers from List
+
+**Problem:** Write a program to print the elements of a given integer list after removing the even numbers. The list values are entered separated by spaces in one line.
+
+| No. | Inputs                | Outputs       |
+| --- | --------------------- | ------------- |
+| 1   | 3 44 6 8 9 12 7       | [3, 9, 7]     |
+| 2   | 1 2 3 4 5 6 7 8 9     | [1, 3, 5, 7, 9]|
+| 3   | 10 21 32 43 54 65 76  | [21, 43, 65]  |
+| 4   | 22 33 44 55 66 77     | [33, 55, 77]  |
+
+<details close>
+<summary><b>Python Solution</b></summary>
+
+```python
+# Read the input data
+input_data = input("Enter a list of integers separated by spaces: ")
+
+# Convert the input data to a list of integers
+numbers = list(map(int, input_data.split()))
+
+# Filter out even numbers
+odd_numbers = [num for num in numbers if num % 2 != 0]
+
+# Print the result
+print(odd_numbers)
+```
+</details>
+
+<!-- 454 -->
+## Example 31: Remove Even Numbers from List
+
+**Problem:** Write a program to print the elements of a given integer list after removing the even numbers. The list values are entered separated by spaces in one line.
+
+| No. | Inputs                | Outputs       |
+| --- | --------------------- | ------------- |
+| 1   | 3 44 6 8 9 12 7       | [3, 9, 7]     |
+| 2   | 1 2 3 4 5 6 7 8 9     | [1, 3, 5, 7, 9]|
+| 3   | 10 21 32 43 54 65 76  | [21, 43, 65]  |
+| 4   | 22 33 44 55 66 77     | [33, 55, 77]  |
+
+<details close>
+<summary><b>Python Solution</b></summary>
+
+```python
+# Read the input data
+input_data = input("Enter a list of integers separated by spaces: ")
+
+# Convert the input data to a list of integers
+numbers = list(map(int, input_data.split()))
+
+# Filter out even numbers
+odd_numbers = [num for num in numbers if num % 2 != 0]
+
+# Print the result
+print(odd_numbers)
+```
+</details>
+
+
+<!-- 455 -->
+## Example 32: Find Common Elements Between Two Sequences
+
+**Problem:** Given two sequences of integers, with elements separated by spaces and commas, write a program that returns a sequence containing only the elements that are common between the entered sequences (without duplicates). Ensure that your program works on two sequences of different sizes.
+
+| No. | Inputs                                          | Outputs      |
+| --- | ----------------------------------------------- | ------------ |
+| 1   | 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89            | 1 2 3 5 8 13 |
+|     | 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13       |              |
+| 2   | 4, 6, 9, 2, 1                                   | 1 2 6        |
+|     | 1, 2, 6, 6, 6, 10                               |              |
+| 3   | 10, 20, 30, 40, 50                              | 50           |
+|     | 50, 60, 70                                      |              |
+| 4   | 11, 22, 33, 44, 55, 66, 77                      | 22 66        |
+|     | 22, 66                                          |              |
+
+<details close>
+<summary><b>Python Solution</b></summary>
+
+```python
+# Read the input data
+input_data1 = input("Enter the first list of integers separated by spaces and commas: ")
+input_data2 = input("Enter the second list of integers separated by spaces and commas: ")
+
+# Convert the input data to sets of integers
+set1 = set(map(int, input_data1.replace(',', '').split()))
+set2 = set(map(int, input_data2.replace(',', '').split()))
+
+# Find the intersection of the two sets
+common_elements = sorted(set1.intersection(set2))
+
+# Print the result
+print(" ".join(map(str, common_elements)))
+```
+</details>
+
+
+
 
 <!-- 456 -->
 
-## Example 23: Filter Binary Numbers Divisible by 5
+## Example 33: Filter Binary Numbers Divisible by 5
 
 **Problem:** Write a program that takes a sequence of 4-digit binary numbers separated by commas as input, and prints those numbers which are divisible by 5, in a line separated by commas.
 
@@ -726,7 +1127,7 @@ print(" ".join(map(str, squares)))
 | --- | ----------------------------- | -------- |
 | 1   | 0100,0011,1010,1001,1100      | 1010     |
 
-<details open>
+<details close>
 <summary><b>Python Solution 1</b></summary>
 
 ```python
@@ -740,7 +1141,7 @@ print(",".join(divisible_by_5))
 ```
 </details>
 
-<details open>
+<details close>
 <summary><b>Python Solution 2</b></summary>
 
 ```python
@@ -761,7 +1162,7 @@ print(",".join(divisible_by_5))
 ```
 </details>
 
-<details open>
+<details close>
 <summary><b>Python Solution 3</b></summary>
     
 ```python
@@ -788,7 +1189,7 @@ print(",".join(divisible_by_5))
 
 <!-- 459 -->
 
-## Example 24: Determine Position in a Descending Sequence of Heights
+## Example 34: Determine Position in a Descending Sequence of Heights
 
 **Problem:** Given a descending sequence of natural numbers representing the heights of students, followed by a single height entry for a new student, determine the position where the new student should be placed among the others. The new student should stand behind others of the same height if present. All numbers are natural and do not exceed 200.
 
@@ -797,7 +1198,7 @@ print(",".join(divisible_by_5))
 | --- | ----------------------------------- | ------- |
 | 1   | 165 163 160 160 157 157 155 154<br>160 | 5       |
 
-<details open>
+<details close>
 <summary><b>Python Solution</b></summary>
 
 ```python
@@ -816,9 +1217,39 @@ for height in heights:
     position += 1
 
 print(position)
-
 ```
 </details>
+
+
+<!-- 462 -->
+## Example 35: Calculate Fraction of Students with Grade A
+
+**Problem:** Write a program that calculates the fraction of students who received a grade of `A`. The grading system uses five grades: `A`, `B`, `C`, `D`, `F`. A string of student grades separated by spaces is entered. There is always at least one grade. Output a decimal number with exactly two decimal places.
+
+| No. | Inputs                           | Outputs |
+| --- | -------------------------------- | ------- |
+| 1   | A B A A B C A D F                | 0.44    |
+| 2   | A A A A A                        | 1.00    |
+| 3   | A F                              | 0.50    |
+| 4   | B B C B F F B C F                | 0.00    |
+
+<details close>
+<summary><b>Python Solution</b></summary>
+
+```python
+# Read the input data
+grades = input("Enter the grades separated by spaces: ").split()
+
+# Calculate the fraction of students with grade A
+total_students = len(grades)
+count_A = grades.count('A')
+fraction_A = count_A / total_students
+
+# Print the result formatted to two decimal places
+print(f"{fraction_A:.2f}")
+```
+</details>
+
 
 
 
