@@ -84,6 +84,7 @@ Here are some examples to get you started.
 
 ```python
 input_sequence = input("Enter a sequence of integers: ")
+
 numbers = list(map(int, input_sequence.split()))
 
 if len(numbers) >= 2:
@@ -115,8 +116,11 @@ if len(numbers) >= 2:
 
 ```python
 input_languages = input("Enter languages separated by spaces: ")
+
 languages = input_languages.split()
+
 # Reverse the list
+
 languages.reverse()
 # Print the reversed list as a single space-separated string
 print(" ".join(languages))
@@ -142,10 +146,11 @@ print(" ".join(languages))
 
 ```python
 input_numbers = input("Enter numbers separated by spaces: ")
+
 numbers = list(map(int, input_numbers.split()))
+
 # Print the list in reverse order without altering the original list
 print(" ".join(map(str, numbers[::-1])))
-
 ```
 </details>
 
@@ -168,10 +173,11 @@ print(" ".join(map(str, numbers[::-1])))
 
 ```python
 input_numbers = input("Enter numbers separated by spaces: ")
+
 numbers = list(map(int, input_numbers.split()))
+
 # Select and print elements with even indices
 print(" ".join(map(str, numbers[::2])))
-
 ```
 </details>
 
@@ -195,11 +201,13 @@ print(" ".join(map(str, numbers[::2])))
 ```python
 input_numbers = input("Enter numbers separated by spaces: ")
 n = int(input("Enter the threshold number n: "))
+
 numbers = list(map(int, input_numbers.split()))
+
 # Filter and print elements less than n
 filtered_numbers = [num for num in numbers if num < n]
-print(" ".join(map(str, filtered_numbers)))
 
+print(" ".join(map(str, filtered_numbers)))
 ```
 </details>
 
@@ -222,11 +230,13 @@ print(" ".join(map(str, filtered_numbers)))
 
 ```python
 input_numbers = input("Enter numbers separated by spaces: ")
+
 numbers = list(map(int, input_numbers.split()))
+
 # Count and print the number of positive elements
 positive_count = sum(1 for num in numbers if num > 0)
-print(positive_count)
 
+print(positive_count)
 ```
 </details>
 
@@ -249,6 +259,7 @@ print(positive_count)
 
 ```python
 input_numbers = input("Enter numbers separated by spaces: ")
+
 numbers = list(map(int, input_numbers.split()))
 
 # List to store unique elements in order
@@ -256,7 +267,6 @@ unique_list = [num for num in numbers if numbers.count(num) == 1]
 
 # Print unique elements in order
 print(" ".join(map(str, unique_list)))
-
 ```
 </details>
 
@@ -274,18 +284,33 @@ print(" ".join(map(str, unique_list)))
 
 
 <details close>
-<summary><b>Python Solution</b></summary>
+<summary><b>Python Solution 1</b></summary>
 
 ```python
 input_numbers = input("Enter numbers separated by spaces: ")
+
 numbers = list(map(int, input_numbers.split()))
 
 # Output the index and value of each element
 for index, value in enumerate(numbers):
     print(index, value)
-
 ```
 </details>
+
+<details close>
+<summary><b>Python Solution 2</b></summary>
+
+```python
+input_numbers = input("Enter numbers separated by spaces: ")
+
+numbers = list(map(int, input_numbers.split()))
+
+# Output the index and value of each element
+for i in range(len(numbers)):
+    print(i, numbers[i])
+```
+</details>
+
 
 <!-- 419 -->
 ## Example 9: Find Most Frequent Number
@@ -311,6 +336,7 @@ current_count = 0
 
 # Sort the numbers and iterate through them to find the most frequent
 sorted_numbers = sorted(numbers)
+
 for i in range(len(sorted_numbers)):
     if i == 0 or sorted_numbers[i] == sorted_numbers[i - 1]:
         current_count += 1
@@ -416,22 +442,10 @@ print(unique_words)
 
 | No. | Inputs                | Outputs          |
 | --- | --------------------- | ---------------- |
-| 1   | 1 3 7 5               | 1                |
-|     |                       | 7                |
-|     |                       | 4                |
-|     |                       | 4.0              |
-| 2   | 10 20 30 40 50        | 10               |
-|     |                       | 50               |
-|     |                       | 5                |
-|     |                       | 30.0             |
-| 3   | -5 0 5 10 15          | -5               |
-|     |                       | 15               |
-|     |                       | 5                |
-|     |                       | 5.0              |
-| 4   | 100 200 300           | 100              |
-|     |                       | 300              |
-|     |                       | 3                |
-|     |                       | 200.0            |
+| 1   | 1 3 7 5               | 1<br>7<br>4<br>4.0 |
+| 2   | 10 20 30 40 50        | 10<br>50<br>5<br>30.0 |
+| 3   | -5 0 5 10 15          | -5<br>15<br>5<br>5.0 |
+| 4   | 100 200 300           | 100<br>300<br>3<br>200.0 |
 
 <details close>
 <summary><b>Python Solution</b></summary>
@@ -500,10 +514,10 @@ print(days_above_average)
 
 | No. | Inputs                  | Outputs |
 | --- | ----------------------- | ------- |
-| 1   | 1 8 9 0 4 2 5 6\n2      | 8       |
-| 2   | 3 5 7 8 2 10 4\n10      | 8 2     |
-| 3   | 12 14 16 0 18 20\n18    | 12 14 16|
-| 4   | 2 4 6 8 10 12\n6        | 2 4     |
+| 1   | 1 8 9 0 4 2 5 6<br>2      | 8       |
+| 2   | 3 5 7 8 2 10 4<br>10      | 8 2     |
+| 3   | 12 14 16 0 18 20<br>18    | 12 14 16|
+| 4   | 2 4 6 8 10 12<br>6        | 2 4     |
 
 <details close>
 <summary><b>Python Solution</b></summary>
@@ -549,7 +563,12 @@ numbers = list(map(int, input_numbers.split()))
 n = int(input("Enter an integer n: ")
 
 # Check if n exceeds all elements in the list
-exceeds_all = all(n > num for num in numbers)
+exceeds_all = True
+
+for num in numbers:
+    if n <= num:
+        exceeds_all = False
+        break
 
 print(exceeds_all)
 ```
@@ -658,7 +677,6 @@ min_number = min(numbers)
 
 # Print the result
 print(min_number)
-
 ```
 </details>
 
@@ -727,11 +745,10 @@ elif operator == "multiply":
 elif operator == "divide":
     result = a // b
 else:
-    raise ValueError("Unknown operator")
+    result = "Unknown operator"
 
 # Print the result
 print(result)
-
 ```
 </details>
 
@@ -793,9 +810,9 @@ numbers = list(map(int, input_data.split()))
 numbers.sort()
 
 # Count the number of non-repeating elements
-unique_count = 0
-for i in range(len(numbers)):
-    if i == 0 or numbers[i] != numbers[i-1]:
+unique_count = 1
+for i in range(1, len(numbers)):
+    if numbers[i] != numbers[i-1]:
         unique_count += 1
 
 # Print the result
@@ -823,13 +840,15 @@ input_numbers = input("Enter numbers separated by spaces: ")
 
 numbers = list(map(int, input_numbers.split()))
 
+output = numbers[0]
+
 # Check how many elements are in the list
 if len(numbers) > 1:
     # Shift the elements to the right
     shifted = [numbers[-1]] + numbers[:-1]
-    print(" ".join(map(str, shifted)))
-else:
-    print(numbers[0])
+    output = " ".join(map(str, shifted)) 
+
+print(output)
 ```
 </details>
 
@@ -1010,7 +1029,6 @@ while index < length:
 
 # Print the result
 print(product)
-
 ```
 </details>
 
@@ -1069,7 +1087,6 @@ median = sorted_numbers[1]
 
 # Print the result
 print(median)
-
 ```
 </details>
 
@@ -1139,8 +1156,6 @@ common_elements = sorted(set1.intersection(set2))
 print(" ".join(map(str, common_elements)))
 ```
 </details>
-
-
 
 
 <!-- 456 -->
@@ -1493,13 +1508,15 @@ for row in chessboard:
 # Read the input data
 numbers = list(map(int, input("Enter a list of numbers separated by spaces: ").split()))
 
-# Create a dictionary to count occurrences of each number
-counts = {}
+# Create a list to store the counts of each number
+counts = [0] * (max(numbers) + 1)
+
+# Count the occurrences of each number
 for number in numbers:
-    counts[number] = counts.get(number, 0) + 1
+    counts[number] += 1
 
 # Find numbers that occur more than once and sort them
-duplicates = sorted([number for number, count in counts.items() if count > 1])
+duplicates = [number for number, count in enumerate(counts) if count > 1]
 
 # Print the result
 print(" ".join(map(str, duplicates)))
@@ -1538,42 +1555,25 @@ print(array)
 ## Example 44: Calculate Robot's Distance from Origin
 
 **Problem:** A robot can move starting from the initial point `(0, 0)` up, down, left, and right using steps, for example:
+```
 UP 5
 DOWN 3
 LEFT 3
 RIGHT 2
+```
 
+The names indicate the direction, and the numbers indicate the number of steps. An line containing 0 means the end of the input data. Write a program that calculates the distance from the robot to the initial point `(0, 0)` after the robot has moved. The result should be rounded up to the nearest integer. Distance is calculated using the formula: `sqrt(x^2 + y^2)`.
 
-The names indicate the direction, and the numbers indicate the number of steps. An empty line input ends the robot's movement. Write a program to calculate the distance from the robot's current position to the origin.
-
-| No. | Inputs                | Outputs |
-| --- | --------------------- | ------- |
-| 1   | UP 5                  | 2       |
-|     | DOWN 3                |         |
-|     | LEFT 3                |         |
-|     | RIGHT 2               |         |
-|     | (empty line)          |         |
-| 2   | UP 2                  | 3       |
-|     | UP 2                  |         |
-|     | RIGHT 3               |         |
-|     | DOWN 1                |         |
-|     | LEFT 4                |         |
-|     | (empty line)          |         |
-| 3   | DOWN 3                | 3       |
-|     | LEFT 3                |         |
-|     | (empty line)          |         |
-| 4   | RIGHT 5               | 4       |
-|     | UP 4                  |         |
-|     | DOWN 4                |         |
-|     | LEFT 3                |         |
-|     | (empty line)          |         |
-
+| No. | Inputs                                                    | Outputs |
+| --- | ---------------------                                     | ------- |
+| 1   | UP 5<br>DOWN 3<br>LEFT 3<br>RIGHT 2<br>0                  | 5       |
+| 2   | UP 2<br>UP 2<br>RIGHT 3<br>DOWN 1<br>LEFT 4<br>0          | 4       |
+| 3   | DOWN 3<br>LEFT 3<br>0                                     | 9       |
+| 4   | RIGHT 5<br>UP 4<br>DOWN 4<br>LEFT 3<br>0                  | 4       |
 <details close>
 <summary><b>Python Solution</b></summary>
 
 ```python
-import math
-
 # Initialize the starting position
 x, y = 0, 0
 
@@ -1595,10 +1595,13 @@ while True:
         x += steps
 
 # Calculate the distance from the origin
-distance = math.sqrt(x**2 + y**2)
+distance = ((x ** 2) + (y ** 2)) ** 0.5
+
+# Round up the distance to the nearest integer
+distance = int(distance + 0.5)
 
 # Print the result
-print(int(distance))
+print(distance)
 ```
 </details>
 
@@ -1738,14 +1741,10 @@ print(output)
 
 | No. | Inputs                | Outputs        |
 | --- | --------------------- | -------------- |
-| 1   | 5 3 7 4 6             | 7 4 6 5 3      |
-|     | 3                     |                |
-| 2   | 7 4 6 5 3             | 5 3 7 4 6      |
-|     | -3                    |                |
-| 3   | 1 2 3 4 5 6 7 8 9 10  | 8 9 10 1 2 3 4 5 6 7 |
-|     | 3                     |                |
-| 4   | 10 20 30 40 50 60     | 50 60 10 20 30 40 |
-|     | -2                    |                |
+| 1   | 5 3 7 4 6<br>3             | 7 4 6 5 3      |
+| 2   | 7 4 6 5 3<br>-3            | 5 3 7 4 6      |
+| 3   | 1 2 3 4 5 6 7 8 9 10<br>3  | 8 9 10 1 2 3 4 5 6 7 |
+| 4   | 10 20 30 40 50 60<br>-2     | 30 40 50 60 10 20 |
 
 <details close>
 <summary><b>Python Solution</b></summary>
@@ -1779,20 +1778,10 @@ print(" ".join(map(str, numbers)))
 
 | No. | Inputs                | Outputs     |
 | --- | --------------------- | ----------- |
-| 1   | 10 3                  | I.....I...  |
-|     | 8 10                  |             |
-|     | 2 5                   |             |
-|     | 3 6                   |             |
-| 2   | 15 2                  | I....I.......I |
-|     | 2 3                   |             |
-|     | 7 11                  |             |
-| 3   | 5 1                   | .....       |
-|     | 1 5                   |             |
-| 4   | 20 4                  | IIIIIIIII.......I |
-|     | 5 10                  |             |
-|     | 12 15                 |             |
-|     | 3 4                   |             |
-|     | 18 20                 |             |
+| 1   | 10 3<br>8 10<br>2 5<br>3 6 | I.....I...  |
+| 2   | 15 2<br>2 3<br>7 11 | I....I.......I |
+| 3   | 5 1<br>1 5 | .....       |
+| 4   | 20 4<br>5 10<br>12 15<br>3 4<br>18 20 | IIIIIIIII.......I |
 
 <details close>
 <summary><b>Python Solution</b></summary>
@@ -1823,14 +1812,10 @@ print("".join(pins))
 
 | No. | Inputs                     | Outputs     |
 | --- | -------------------------- | ----------- |
-| 1   | abacabadaba                | 1 5 9       |
-|     | aba                        |             |
-| 2   | abc                        | -1          |
-|     | d                          |             |
-| 3   | mississippi                | 1 4         |
-|     | iss                        |             |
-| 4   | banana                     | 2 4         |
-|     | an                         |             |
+| 1   | abacabadaba<br>aba         | 1 5 9       |
+| 2   | abc<br>d                   | -1          |
+| 3   | mississippi<br>iss         | 1 4         |
+| 4   | banana<br>an               | 2 4         |
 
 <details close>
 <summary><b>Python Solution</b></summary>
@@ -1907,23 +1892,22 @@ print(sorted_list_of_lists)
 <summary><b>Python Solution</b></summary>
 
 ```python
-def max_number_after_removal(n):
-    n_str = str(n)
-    max_number = 0
-    for i in range(len(n_str)):
-        temp_number = int(n_str[:i] + n_str[i+1:])
-        if temp_number > max_number:
-            max_number = temp_number
-    return max_number
-
 # Read the input data
 n = int(input("Enter an integer n: "))
 
-# Get the maximum number after removing one digit
-result = max_number_after_removal(n)
+# Convert the integer to a list of digits
+digits = [int(d) for d in str(n)]
+
+# Find the maximum number after removing one digit
+max_number = 0
+for i in range(len(digits)):
+    temp_digits = digits[:i] + digits[i+1:]
+    temp_number = int(''.join(map(str, temp_digits)))
+    if temp_number > max_number:
+        max_number = temp_number
 
 # Print the result
-print(result)
+print(max_number)
 ```
 </details>
 
