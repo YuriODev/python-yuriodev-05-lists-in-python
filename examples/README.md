@@ -382,6 +382,7 @@ unique_words = len(set(words))
 print(unique_words)
 ```
 </details>
+
 <!-- 427 -->
 ## Example 13: List Statistics
 
