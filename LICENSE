@@ -7,9 +7,13 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 1. **Restrictions**:
    - The Software shall not be used, copied, modified, merged, published, distributed, sublicensed, or sold for any commercial purposes without the explicit permission of the copyright holder.
    - The Software shall not be used for educational purposes in any formal educational institutions such as schools, colleges, or universities without the explicit permission of the copyright holder.
-   
-2. **Conditions**:
+
+2. **Forking**:
+   - Forking the repository is allowed for personal use and non-commercial purposes only.
+   - Any forks or derivatives of this repository must include this license and maintain the same restrictions.
+
+3. **Conditions**:
    - The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-3. **Disclaimer**:
+4. **Disclaimer**:
    - THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
