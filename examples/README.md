@@ -1,5 +1,13 @@
 # Examples 👨🏼‍💻
 
+
+
+| Topic Covered                                           | Code with explanations                            | Problem Description                              |
+| ------------------------------------------------------- | ------------------------------------------------- | ----------------------------------------------- |
+| Move Last Two Elements                                  | [Detailed code](./example_1.py)                   | [Problem description](#example-1-move-last-two-elements)       |
+| Reverse Language List                                   | [Detailed code](./example_2.py)                   | [Problem description](#example-2-reverse-language-list)       |
+
+
 Here are some examples to get you started.
 
 <details open>
