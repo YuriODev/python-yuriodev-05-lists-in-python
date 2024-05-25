@@ -1301,7 +1301,7 @@ print(" ".join(map(str, numbers)))
 | 3   | 10 20 30 40 50        | [10, 20, 30, 40, 50] <br> [10, 20, 40, 50] <br> [10, 20, 40] <br> [10, 20] <br> [20] <br> [] |
 | 4   | 11 22 33 44 55 66 77  | [11, 22, 33, 44, 55, 66, 77] <br> [11, 22, 33, 44, 66, 77] <br> [11, 22, 33, 44, 66] <br> [11, 22, 33, 44] <br> [11, 22, 44] <br> [11, 22] <br> [22] <br> [] |
 
-<details open>
+<details close>
 <summary><b>Python Solution</b></summary>
 
 ```python
@@ -1341,7 +1341,7 @@ print(numbers)
 | 3   | 10 20 30 5 5 5 40 50                          | 5 5     |
 | 4   | 100 200 50 50 300 400                         | 50 50   |
 
-<details open>
+<details close>
 <summary><b>Python Solution</b></summary>
 
 ```python
@@ -1397,7 +1397,7 @@ else:
 |     | banana                                        |                                |
 |     | kiwi                                          |                                |
 
-<details open>
+<details close>
 <summary><b>Python Solution</b></summary>
 
 ```python
@@ -1431,7 +1431,7 @@ print(modified_words)
 | 3   | 2 2                   | . * <br> * .                                                                                                                                            |
 | 4   | 5 5                   | . * . * . <br> * . * . * <br> . * . * . <br> * . * . * <br> . * . *                                                                                      |
 
-<details open>
+<details close>
 <summary><b>Python Solution</b></summary>
 
 ```python
@@ -1467,7 +1467,7 @@ for row in chessboard:
 | 3   | 9 8 7 6 5 5 6 7 8 9   | 5 6 7 8 9 |
 | 4   | 10 20 30 20 10 40 50 10 | 10 20 |
 
-<details open>
+<details close>
 <summary><b>Python Solution</b></summary>
 
 ```python
@@ -1500,7 +1500,7 @@ print(" ".join(map(str, duplicates)))
 | 3   | 4 3    | [[0, 0, 0], [0, 1, 2], [0, 2, 4], [0, 3, 6]] |
 | 4   | 1 1    | [[0]]                             |
 
-<details open>
+<details close>
 <summary><b>Python Solution</b></summary>
 
 ```python
@@ -1549,7 +1549,7 @@ The names indicate the direction, and the numbers indicate the number of steps. 
 |     | LEFT 3                |         |
 |     | (empty line)          |         |
 
-<details open>
+<details close>
 <summary><b>Python Solution</b></summary>
 
 ```python
@@ -1596,7 +1596,7 @@ print(int(distance))
 | 3   | Zebra, lion, Elephant, monkey               | zebra monkey lion Elephant    |
 | 4   | blueberry, Apple, avocado, pear, kiwi       | pear kiwi blueberry Apple avocado|
 
-<details open>
+<details close>
 <summary><b>Python Solution</b></summary>
 
 ```python
@@ -1631,7 +1631,7 @@ print(output)
 | 3   | 5      | 1 2 2 3 3                |
 | 4   | 12     | 1 2 2 3 3 3 4 4 4 4      |
 
-<details open>
+<details close>
 <summary><b>Python Solution</b></summary>
 
 ```python
@@ -1663,7 +1663,7 @@ print(" ".join(map(str, sequence[:n])))
 | 3   | 1 1 1   | [[[0]]]       |
 | 4   | 3 2 1   | [[[0], [0]], [[0], [0]], [[0], [0]]] |
 
-<details open>
+<details close>
 <summary><b>Python Solution</b></summary>
 
 ```python
@@ -1691,7 +1691,7 @@ print(array_3d)
 | 3   | alpha beta gamma delta   | beta, gamma, delta, alpha.               |
 | 4   | one two three four five  | one, two, four, five, three.             |
 
-<details open>
+<details close>
 <summary><b>Python Solution</b></summary>
 
 ```python
@@ -1728,7 +1728,7 @@ print(output)
 | 4   | 10 20 30 40 50 60     | 50 60 10 20 30 40 |
 |     | -2                    |                |
 
-<details open>
+<details close>
 <summary><b>Python Solution</b></summary>
 
 ```python
@@ -1775,7 +1775,7 @@ print(" ".join(map(str, numbers)))
 |     | 3 4                   |             |
 |     | 18 20                 |             |
 
-<details open>
+<details close>
 <summary><b>Python Solution</b></summary>
 
 ```python
@@ -1813,7 +1813,7 @@ print("".join(pins))
 | 4   | banana                     | 2 4         |
 |     | an                         |             |
 
-<details open>
+<details close>
 <summary><b>Python Solution</b></summary>
 
 ```python
@@ -1850,7 +1850,7 @@ else:
 | 3   | 10 20 30,40 10 50     | [[10, 20, 30], [40, 10, 50]] <br> [[40, 10, 50], [10, 20, 30]] |
 | 4   | 1 1 1,2 2 2,0 0 0     | [[1, 1, 1], [2, 2, 2], [0, 0, 0]] <br> [[0, 0, 0], [1, 1, 1], [2, 2, 2]] |
 
-<details open>
+<details close>
 <summary><b>Python Solution</b></summary>
 
 ```python
@@ -1884,7 +1884,7 @@ print(sorted_list_of_lists)
 | 3   | 2000   | 200     |
 | 4   | 2025   | 225     |
 
-<details open>
+<details close>
 <summary><b>Python Solution</b></summary>
 
 ```python
@@ -1932,7 +1932,7 @@ We will use a variant where the numbers `4`, `9`, `40`, `90`, `400`, and `900` a
 | 3   | IV        | 4       |
 | 4   | CDXLIV    | 444     |
 
-<details open>
+<details close>
 <summary><b>Python Solution</b></summary>
 
 ```python
