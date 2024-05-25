@@ -1,11 +1,15 @@
-# Read the input data
-input_data = input("Enter a list of integers separated by spaces: ")
+# Prompt the user to enter numbers separated by spaces
+input_numbers = input("Enter numbers separated by spaces: ")
 
-# Convert the input data to a list of integers
-numbers = list(map(int, input_data.split()))
+# Split the input string into a list of individual numbers and convert them to integers
+numbers = list(map(int, input_numbers.split()))
 
-# Filter out even numbers
-odd_numbers = [num for num in numbers if num % 2 != 0]
+# Count the number of equal pairs in the list
+# - Convert the list to a set to remove duplicates
+# - For each unique number in the set, count the number of occurrences in the original list
+# - Divide the count by 2 to get the number of pairs
+# - Sum up the counts of all numbers to get the total number of equal pairs
+equal_pairs = sum(numbers.count(num) // 2 for num in set(numbers))
 
-# Print the result
-print(odd_numbers)
+# Print the total number of equal pairs
+print(equal_pairs)
