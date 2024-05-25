@@ -1,22 +1,11 @@
-# Prompt the user to enter numbers separated by spaces
-input_numbers = input("Enter numbers separated by spaces: ")
+# Read the input data
+input_data = input("Enter a list of integers separated by spaces: ")
 
-# Split the input string into a list of individual numbers and convert them to integers
-numbers = list(map(int, input_numbers.split()))
+# Convert the input data to a list of integers
+numbers = list(map(int, input_data.split()))
 
-# Prompt the user to enter an integer n
-n = int(input("Enter an integer n: "))
+# Create a list of positive numbers
+positive_numbers = [num for num in numbers if num > 0]
 
-# Initialize a boolean variable to track if n exceeds all elements in the list
-exceeds_all = True
-
-# Iterate through each number in the list
-for num in numbers:
-    # Check if n is less than or equal to the current number
-    if n <= num:
-        # If n is less than or equal to any number, set exceeds_all to False and break out of the loop
-        exceeds_all = False
-        break
-
-# Print the value of exceeds_all, which indicates if n exceeds all elements in the list
-print(exceeds_all)
+# Print the result
+print(positive_numbers)
