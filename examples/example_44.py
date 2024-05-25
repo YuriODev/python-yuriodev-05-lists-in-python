@@ -1,29 +1,37 @@
+# Initialize the starting position
+x, y = 0, 0
+
 # Read the input data
-input_data = input("Enter a sequence of integers separated by spaces: ")
+while True:
+    # Prompt the user to enter a movement command
+    command = input("Enter movement command (or empty line to stop): ")
 
-# Convert the input data to a list of integers
-numbers = list(map(int, input_data.split()))
+    # Check if the command is empty
+    if not command:
+        # If the command is empty, break out of the loop
+        break
 
-# Find the two smallest elements
+    # Split the command into direction and steps
+    direction, steps = command.split()
 
-# Check if the list has less than 2 elements
-if len(numbers) < 2:
-    print("Not enough elements to find two smallest.")
-else:
-    # Initialize the two smallest variables with infinity
-    min1, min2 = float('inf'), float('inf')
+    # Convert the steps to an integer
+    steps = int(steps)
 
-    # Iterate through each number in the list
-    for num in numbers:
-        # If the current number is smaller than the current smallest number,
-        # update the second smallest number and update the smallest number
-        if num < min1:
-            min2 = min1
-            min1 = num
-        # If the current number is larger than the smallest number but smaller
-        # than the second smallest number, update the second smallest number
-        elif num < min2:
-            min2 = num
+    # Check the direction and update the position accordingly
+    if direction == "UP":
+        y += steps
+    elif direction == "DOWN":
+        y -= steps
+    elif direction == "LEFT":
+        x -= steps
+    elif direction == "RIGHT":
+        x += steps
 
-    # Print the two smallest numbers
-    print(min1, min2)
+# Calculate the distance from the origin
+distance = ((x ** 2) + (y ** 2)) ** 0.5
+
+# Round up the distance to the nearest integer
+distance = int(distance + 0.5)
+
+# Print the result
+print(distance)
