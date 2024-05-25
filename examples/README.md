@@ -7,38 +7,63 @@ Here are some examples to get you started.
 
 | Topic Covered                                           | Code with explanations                            |
 | ------------------------------------------------------- | ------------------------------------------------- |
-| Repeat Last Two Characters                              | [Detailed code](./example_1.py)                   |
-| Reverse Digits                                          | [Detailed code](./example_2.py)                   |
-| Check Start of String                                   | [Detailed code](./example_3.py)                   |
-| Number reversal                                         | [Detailed code](./example_4.py)                   |
-| Palindrome String                                       | [Detailed code](./example_5.py)                   |
-| Is Digit Check                                          | [Detailed code](./example_6.py)                   |
-| Digits and Characters                                   | [Detailed code](./example_7.py)                   |
-| The first word in a string                              | [Detailed code](./example_8.py)                   |
-| Access Code Calculation                                 | [Detailed code](./example_9.py)                   |
-| ASCII Characters                                        | [Detailed code](./example_10.py)                  |
-| Count Words in a String                                 | [Detailed code](./example_11.py)                  |
-| String Len                                              | [Detailed code](./example_12.py)                  |
-| Digits and Characters Count                             | [Detailed code](./example_13.py)                  |
-| Vowel and Consonant Check                               | [Detailed code](./example_14.py)                  |
-| Sum of Sequence Elements Calculation                    | [Detailed code](./example_15.py)                  |
-| Uppercase, Lowercase, and Space Count                   | [Detailed code](./example_16.py)                  |
-| Remove Duplicate Characters                             | [Detailed code](./example_17.py)                  |
-| Find and Replace Substring                              | [Detailed code](./example_18.py)                  |
-| Longest Sequence of Zeros                               | [Detailed code](./example_19.py)                  |
-| Can Construct                                           | [Detailed code](./example_20.py)                  |
-| Check Bracket Balance                                   | [Detailed code](./example_21.py)                  |
-| Evaluate Expression                                     | [Detailed code](./example_22.py)                  |
-| Count String Occurrences                                | [Detailed code](./example_23py)                   |
-| Format Number with Commas                               | [Detailed code](./example_24.py)                  |
-| Find and Replace Substring                              | [Detailed code](./example_25.py)                  |
-| Find Shortest Word and Its Length                       | [Detailed code](./example_26.py)                  | 
-| Run-Length Encoding                                     | [Detailed code](./example_27.py)                  |
-| Evaluate Simple Arithmetic Expression                   | [Detailed code](./example_28.py)                  |
-| Find Most Frequent Letters                              | [Detailed code](./example_29.py)                  |
-| Validate IP Address                                     | [Detailed code](./example_30.py)                  |
+| Move Last Two Elements                                  | [Detailed code](./example_1.py)                   |
+| Reverse Language List                                   | [Detailed code](./example_2.py)                   |
+| Print List in Reverse Order                             | [Detailed code](./example_3.py)                   |
+| Print Elements at Even Indices                          | [Detailed code](./example_4.py)                   |
+| Print Elements Less Than n                              | [Detailed code](./example_5.py)                   |
+| Count Positive Elements                                 | [Detailed code](./example_6.py)                   |
+| Print Unique Elements in Order                          | [Detailed code](./example_7.py)                   |
+| Access and Print Indices and Values of List Elements    | [Detailed code](./example_8.py)                   |
+| Find Most Frequent Number                               | [Detailed code](./example_9.py)                   |
+| Print Elements Greater Than Previous                    | [Detailed code](./example_10.py)                  |
+| Print File Extension                                    | [Detailed code](./example_11.py)                  |
+| Count Unique Words in a Line                            | [Detailed code](./example_12.py)                  |
+| List Statistics                                         | [Detailed code](./example_13.py)                  |
+| Count Days Above Average Temperature                    | [Detailed code](./example_14.py)                  |
+| Print Even Numbers Until a Specific Number              | [Detailed code](./example_15.py)                  |
+| Check If an Integer Exceeds All List Elements           | [Detailed code](./example_16.py)                  |
+| Print List of Positive Numbers                          | [Detailed code](./example_17.py)                  |
+| Extract Resource Name from URL                          | [Detailed code](./example_18.py)                  |
+| Find the Smallest Integer                               | [Detailed code](./example_19.py)                  |
+| Find the Second Smallest Element in a List              | [Detailed code](./example_20.py)                  |
+| Simple Math Expression Interpreter                      | [Detailed code](./example_21.py)                  |
+| Find Largest Element and Its First Index                | [Detailed code](./example_22.py)                  |
+| Count Non-Repeating Elements in Sorted List             | [Detailed code](./example_23.py)                  |
+| Cyclically Shift List Elements to the Right             | [Detailed code](./example_24.py)                  |
+| Swap Minimum and Maximum in a List                      | [Detailed code](./example_25.py)                  |
+| Count Equal Pairs in a List                             | [Detailed code](./example_26.py)                  |
+| Swap Adjacent Elements in Pairs                         | [Detailed code](./example_27.py)                  |
+| Find and Print Adjacent Elements with the Same Sign     | [Detailed code](./example_28.py)                  |
+| Calculate the Product of Integers                       | [Detailed code](./example_29.py)                  |
+| Print Squares of Sequence Elements                      | [Detailed code](./example_30.py)                  |
+| Find the Median of Three Numbers                        | [Detailed code](./example_31.py)                  |
+| Remove Even Numbers from List                           | [Detailed code](./example_32.py)                  |
+| Find Common Elements Between Two Sequences              | [Detailed code](./example_33.py)                  |
+| Filter Binary Numbers Divisible by 5                    | [Detailed code](./example_34.py)                  |
+| Determine Position in a Descending Sequence of Heights  | [Detailed code](./example_35.py)                  |
+| Calculate Fraction of Students with Grade A             | [Detailed code](./example_36.py)                  |
+| Remove Element by Index                                 | [Detailed code](./example_37.py)                  |
+| Remove Every Third Element Until List is Empty          | [Detailed code](./example_38.py)                  |
+| Find Two Smallest Elements                              | [Detailed code](./example_39.py)                  |
+| Replace Last Three Characters in Words                  | [Detailed code](./example_40.py)                  |
+| Create a Chessboard Pattern                             | [Detailed code](./example_41.py)                  |
+| Find Duplicates in a List                               | [Detailed code](./example_42.py)                  |
+| Generate a 2D Array                                     | [Detailed code](./example_43.py)                  |
+| Calculate Robot's Distance from Origin                  | [Detailed code](./example_44.py)                  |
+| Sort Words in Descending Order                          | [Detailed code](./example_45.py)                  |
+| Generate a Custom Sequence                              | [Detailed code](./example_46.py)                  |
+| Create a 3D Array                                       | [Detailed code](./example_47.py)                  |
+| Sort Words by Length                                    | [Detailed code](./example_48.py)                  |
+| Cyclically Shift a List                                 | [Detailed code](./example_49.py)                  |
+| Determine Standing Pins                                 | [Detailed code](./example_50.py)                  |
+| Find Substring Positions                                | [Detailed code](./example_51.py)                  |
+| Sort List of Lists by Second Element                    | [Detailed code](./example_52.py)                  |
+| Find Maximum Number by Removing One Digit               | [Detailed code](./example_53.py)                  |
+| Convert Roman Numerals to Decimal                       | [Detailed code](./example_54.py)                  |
 
 </details>
+
 
 <!-- 406 -->
 ## Example 1: Move Last Two Elements
