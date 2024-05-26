@@ -975,10 +975,12 @@ print(" ".join(map(str, swapped)))
 
 **Problem:** Given a list of integers, identify and print adjacent elements that have the same sign. If no such pair exists, nothing should be printed.
 
-### Input/Output Examples
+
 | No. | Inputs                     | Outputs     |
 | --- | -------------------------- | ----------- |
 | 1   | 1 -2 -3 5 6 -3 7 8         | -2 -3<br>5 6<br>7 8 |
+| 2   | 1 2 -3 | 1 2 |
+| 3   | -1 -2 -3 -4 -5 -6 -7 -8   | -1 -2<br>-3 -4<br>-5 -6<br>-7 -8 |
 
 <details close>
 <summary><b>Python Solution</b></summary>
@@ -1037,7 +1039,7 @@ print(product)
 
 **Problem:** Write a program that takes a sequence of integers as input and prints the squares of all its elements.
 
-### Input/Output Examples
+
 | No. | Inputs               | Outputs                        |
 | --- | -------------------- | ------------------------------ |
 | 1   | 1 2 3 4 5 6 7 8 9   | 1 4 9 16 25 36 49 64 81       |
@@ -1163,10 +1165,12 @@ print(" ".join(map(str, common_elements)))
 
 **Problem:** Write a program that takes a sequence of 4-digit binary numbers separated by commas as input, and prints those numbers which are divisible by 5, in a line separated by commas.
 
-### Input/Output Examples
+
 | No. | Inputs                        | Outputs  |
 | --- | ----------------------------- | -------- |
 | 1   | 0100,0011,1010,1001,1100      | 1010     |
+| 2   | 0100,0011,1010,1001,1100,1111 | 1010     |
+
 
 <details close>
 <summary><b>Python Solution 1</b></summary>
@@ -1234,10 +1238,12 @@ print(",".join(divisible_by_5))
 
 **Problem:** Given a descending sequence of natural numbers representing the heights of students, followed by a single height entry for a new student, determine the position where the new student should be placed among the others. The new student should stand behind others of the same height if present. All numbers are natural and do not exceed 200.
 
-### Input/Output Examples
+
 | No. | Inputs                              | Outputs |
 | --- | ----------------------------------- | ------- |
 | 1   | 165 163 160 160 157 157 155 154<br>160 | 5       |
+| 2   | 180 179 178 177 176 175 174 173<br>175 | 8       |
+| 3   | 200 199 198 197 196 195 194 193<br>195 | 8       |
 
 <details close>
 <summary><b>Python Solution</b></summary>
@@ -1431,7 +1437,8 @@ A list of words with the last three characters replaced by \( r \) if the word l
 | 2   | 4 <br> 3 <br> ** <br> cat <br> dog <br> mouse <br> rat | ['\*\*', '\*\*', 'mouse', '\*\*'] |
 | 3   | 3 <br> 4 <br> ## <br> apple <br> banana <br> kiwi | ['apple', 'banana', 'k##'] |
 
-## Python Solution
+<details close>
+<summary><b>Python Solution</b></summary>
 
 ```python
 # Read the input data
