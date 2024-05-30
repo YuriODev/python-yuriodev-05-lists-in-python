@@ -1,9 +1,8 @@
-# Read the input number without printing a prompt
-number = int(input("Enter a five-digit number: "))
+# Read input
+input_number = input().strip()
 
-# Calculate the sums and print the result
-first_part = (number // 10000) + ((number // 100) % 10) + (number % 10)
-print(first_part)
-second_part = ((number // 1000) % 10) + ((number // 10) % 10)
+# Append the number to itself
+result = input_number + input_number
 
-print(str(first_part) + str(second_part))
+# Print the result
+print(result)
