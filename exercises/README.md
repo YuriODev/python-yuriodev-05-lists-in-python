@@ -196,15 +196,10 @@ This exercise tests the ability to manipulate strings and floating-point numbers
 
 | No. | Inputs                | Outputs               |
 | --- | --------------------- | --------------------- |
-| 1   | 7,9,12,4              | [7, 9, 12, 4]         |
-|     |                       | (7, 9, 12, 4)         |
-| 2   | 1,2,3,4               | [1, 2, 3, 4]          |
-|     |                       | (1, 2, 3, 4)          |
-| 3   | 10,20,30              | [10, 20, 30]          |
-|     |                       | (10, 20, 30)          |
-| 
-| 4   | 5,6,7,8               | [5, 6, 7, 8]          |
-|     |                       | (5, 6, 7, 8)          |
+| 1   | 7,9,12,4              | [7, 9, 12, 4]<br>(7, 9, 12, 4)         |
+| 2   | 1,2,3,4               | [1, 2, 3, 4]<br>(1, 2, 3, 4)          |
+| 3   | 10,20,30              | [10, 20, 30]<br>(10, 20, 30)          |
+| 4   | 5,6,7,8               | [5, 6, 7, 8]<br>(5, 6, 7, 8)          |
 
 ### Note:
 This exercise tests the ability to work with lists and tuples in Python.
@@ -224,14 +219,10 @@ This exercise tests the ability to work with lists and tuples in Python.
 
 | No. | Inputs                | Outputs               |
 | --- | --------------------- | --------------------- |
-| 1   | 2 5 8 19 7            | 1                     |
-|     | 5                     |                       |
-| 2   | 2 6 7 8 9 9 2 3       | 2                     |
-|     | 9                     |                       |
-| 3   | 1 1 2 2 3 3 4 4 5     | 0                     |
-|     | 6                     |                       |
-| 4   | 10 20 30 40 50        | 1                     |
-|     | 10                    |                       |
+| 1   | 2 5 8 19 7<br>5            | 1                     |
+| 2   | 2 6 7 8 9 9 2 3<br>9       | 2                     |
+| 3   | 1 1 2 2 3 3 4 4 5<br>6     | 0                     |
+| 4   | 10 20 30 40 50<br>10        | 1                     |
 
 ### Note:
 This exercise tests the ability to work with lists and count specific elements in Python.
@@ -451,14 +442,11 @@ This exercise tests the ability to convert between naming conventions in Python.
 
 | No. | Inputs                       | Outputs |
 | --- | ---------------------------- | ------- |
-| 1   | Now is better than never     | b       |
-|     | 3                            |         |
-| 2   | Hello world from Python      | w       |
-|     | 2                            |         |
-| 3   | This is a sample text        | a       |
-|     | 4                            |         |
-| 4   | Find the first letter here   | f       |
-|     | 2                            |         |
+| 1   | Now is better than never<br>     | b       |
+| 2   | Hello world from Python<br>2      | w       |
+| 3   | This is a sample text<br>4        | a       |
+| 4   | Find the first letter here<br>2   | f       |
+
 
 ### Note:
 This exercise tests the ability to work with strings and access specific elements in Python.
@@ -478,14 +466,10 @@ This exercise tests the ability to work with strings and access specific element
 
 | No. | Inputs               | Outputs               |
 | --- | -------------------- | --------------------- |
-| 1   | 9 4 6 2 0 7 14       | 9 4 6 0 2 0 7 14      |
-|     | 3 0                  |                       |
-| 2   | 1 2 3 4 5            | 1 2 0 3 4 5           |
-|     | 2 0                  |                       |
-| 3   | 10 20 30 40 50       | 10 20 30 0 40 50      |
-|     | 3 0                  |                       |
-| 4   | 5 6 7 8              | 5 0 6 7 8             |
-|     | 1 0                  |                       |
+| 1   | 9 4 6 2 0 7 14<br>3<br>0       | 9 4 6 0 2 0 7 14      |
+| 2   | 1 2 3 4 5<br>2<br>0            | 1 2 0 3 4 5           |
+| 3   | 10 20 30 40 50<br>3<br>0       | 10 20 30 0 40 50      |
+| 4   | 5 6 7 8<br>1<br>0              | 5 0 6 7 8             |
 
 ### Note:
 This exercise tests the ability to manipulate lists and insert elements at specific positions in Python.
@@ -570,10 +554,42 @@ This exercise tests the ability to rearrange elements in a list based on their v
 
 | No. | Inputs | Outputs |
 | --- | ------ | ------- |
-| 1   | 7      | * . . * . . *<br>. * . * . * .<br>. . * * * . .<br>* * * * * * *<br>. . * * * . .<br>. * . * . * .<br>* . . * . . * |
-| 2   | 5      | * . * . *<br>. * * * .<br>* * * * *<br>. * * * .<br>* . * . * |
-| 3   | 3      | * * *<br>* * *<br>* * * |
-| 4   | 1      | * |
+| 1   | 7      | Pattern 1 |
+| 2   | 5      | Pattern 2 |
+| 3   | 3      | Pattern 3 |
+| 4   | 1      | Pattern 4 |
+
+#### The snowflake pattern for `n = 7`:
+```
+* . . * . . *
+. * . * . * .
+. . * * * . .
+* * * * * * *
+. . * * * . .
+. * . * . * .
+* . . * . . *
+```
+
+#### The snowflake pattern for `n = 5`:
+```
+* . * . *
+. * * * .
+* * * * *
+. * * * .
+* . * . *
+```
+
+#### The snowflake pattern for `n = 3`:
+```
+* * *
+* * *
+* * *
+```
+
+### The snowflake pattern for `n = 1`:
+```
+*
+```
 
 ### Note:
 This exercise tests the ability to work with 2D arrays and create patterns in Python.
@@ -664,6 +680,7 @@ This exercise tests the ability to manipulate strings and lists in Python.
 | 2   | 3      | 1 2 3<br>8 9 4<br>7 6 5 |
 | 3   | 5      | 1 2 3 4 5<br>16 17 18 19 6<br>15 24 25 20 7<br>14 23 22 21 8<br>13 12 11 10 9 |
 | 4   | 2      | 1 2<br>4 3 |
+
 
 ### Note:
 This exercise tests the ability to generate and manipulate 2D arrays in Python.
