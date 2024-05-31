@@ -1,3 +1,2 @@
-"""
-Your solution to Exercise 1
-"""
+# Your solution to Exercise 1
+
