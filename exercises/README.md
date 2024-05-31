@@ -72,15 +72,15 @@ This exercise tests the ability to manipulate lists, sort elements, and handle s
 ### Note:
 This exercise tests the ability to manipulate and filter lists in Python.
 
-## Exercise 4: Print Elements at Odd Positions - Easy 😊 (Est. Time: 10 mins | Points: 10)
+## Exercise 4: Print Elements at Odd Indices - Easy 😊 (Est. Time: 10 mins | Points: 10)
 
-**Problem:** Print all elements of the list with odd position number. The list of numbers is entered in a single line separated by commas without spaces.
+**Problem:** Print all elements of the list with odd indices. The list of numbers is entered in a single line separated by commas without spaces.
 
 ### Input:
 - A list of numbers entered in a single line separated by commas without spaces.
 
 ### Output:
-- A list of elements with odd position number in a single line separated by commas without spaces.
+- A list of elements with odd indices in a single line separated by commas without spaces.
 
 ### Examples:
 
