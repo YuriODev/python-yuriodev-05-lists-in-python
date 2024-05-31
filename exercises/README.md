@@ -442,7 +442,7 @@ This exercise tests the ability to convert between naming conventions in Python.
 
 | No. | Inputs                       | Outputs |
 | --- | ---------------------------- | ------- |
-| 1   | Now is better than never<br>     | b       |
+| 1   | Now is better than never<br>3     | b       |
 | 2   | Hello world from Python<br>2      | w       |
 | 3   | This is a sample text<br>4        | a       |
 | 4   | Find the first letter here<br>2   | f       |
