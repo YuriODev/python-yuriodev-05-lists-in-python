@@ -596,7 +596,7 @@ This exercise tests the ability to work with 2D arrays and create patterns in Py
 
 ## Exercise 26: Rearrange Even and Odd Numbers - Medium 🔥 (Est. Time: 10-15 mins | Points: 20)
 
-**Problem:** For the given sequence of integers, print them in a list such that even elements are at the beginning of the list and odd elements are at the end.
+**Problem:** For the given sequence of integers, print them in a list such that even elements are at the beginning of the list in descending order, and odd elements are at the end of the list in ascending order.
 
 ### Input:
 - A sequence of integers.
@@ -608,10 +608,11 @@ This exercise tests the ability to work with 2D arrays and create patterns in Py
 
 | No. | Inputs        | Outputs       |
 | --- | ------------- | ------------- |
-| 1   | 2 5 7 8 9 10 12 32| 32 12 10 8 2 5 7 9 |
-| 2   | 3 4 5 6 7     | 6 4 3 5 7     |
+| 1   | 2 5 7 8 9 10 12 32 5| 32 12 10 8 2 5 5 7 9|
+| 2   | 3 4 5 6 7     | 	6 4 3 5 7     |
 | 3   | 1 2 3 4 5     | 4 2 1 3 5     |
-| 4   | 8 7 6 5 4     | 8 6 4 7 5     |
+| 4   | 8 7 6 5 4     | 	8 6 4 5 7     |
+
 
 ### Note:
 This exercise tests the ability to rearrange elements in a list based on their parity in Python.
