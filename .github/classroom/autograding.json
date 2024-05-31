@@ -1,74 +1,232 @@
 {
-    "tests": [
-      
-      {
-        "name": "Exercise 1 - Sum of Digits - Medium",
-        "run": "pytest exercises/test_exercise_1.py",
-        "timeout": 5,
-        "points": 10
-      },
-      {
-        "name": "Exercise 2 - Next Even Number - Easy",
-        "run": "pytest exercises/test_exercise_2.py",
-        "timeout": 5,
-        "points": 10
-      },
-      {
-        "name": "Exercise 3 - Electronic Clock - Medium",
-        "run": "pytest exercises/test_exercise_3.py",
-        "timeout": 5,
-        "points": 10
-      },
-      {
-        "name": "Exercise 4 - Symmetric Number - Medium",
-        "run": "pytest exercises/test_exercise_4.py",
-        "timeout": 10,
-        "points": 10
-      },
-      {
-        "name": "Exercise 5 - Maximum of Two - Easy",
-        "run": "pytest exercises/test_exercise_5.py",
-        "timeout": 5,
-        "points": 5
-      },
-      {
-        "name": "Exercise 6 - Divisibility Check - Easy",
-        "run": "pytest exercises/test_exercise_6.py",
-        "timeout": 5,
-        "points": 5
-      },
-      {
-        "name": "Exercise 7 - Sum of Digits - Easy",
-        "run": "pytest exercises/test_exercise_7.py",
-        "timeout": 5,
-        "points": 5
-      },
-      {
-        "name": "Exercise 8 - Integer Sorting - Easy",
-        "run": "pytest exercises/test_exercise_8.py",
-        "timeout": 5,
-        "points": 5
-      },
-      {
-        "name": "Exercise 9 - Hour Hand Angle - Medium",
-        "run": "pytest exercises/test_exercise_9.py",
-        "timeout": 5,
-        "points": 10
-      },
-      {
-        "name": "Exercise 10 - Minute Hand Angle - Medium",
-        
-        "run": "pytest exercises/test_exercise_10.py",
-  
-        "timeout": 5,
-        "points": 10
-      },
-      {
-        "name": "Exercise 11 - Bill Denominations - Medium",
-        "run": "pytest exercises/test_exercise_11.py",
-        "timeout": 5,
-        "points": 10
-      }
-    ]
-  }
-  
+  "tests": [
+    {
+      "name": "Exercise 1 - Sort Languages Alphabetically - Easy",
+      "run": "pytest exercises/test_exercise_1.py",
+      "timeout": 5,
+      "points": 10
+    },
+    {
+      "name": "Exercise 2 - Reverse List Elements - Easy",
+      "run": "pytest exercises/test_exercise_2.py",
+      "timeout": 5,
+      "points": 10
+    },
+    {
+      "name": "Exercise 3 - Print Even Elements - Easy",
+      "run": "pytest exercises/test_exercise_3.py",
+      "timeout": 5,
+      "points": 10
+    },
+    {
+      "name": "Exercise 4 - Print Elements with Odd Indices - Easy",
+      "run": "pytest exercises/test_exercise_4.py",
+      "timeout": 5,
+      "points": 10
+    },
+    {
+      "name": "Exercise 5 - Count Unique Elements - Easy",
+      "run": "pytest exercises/test_exercise_5.py",
+      "timeout": 5,
+      "points": 10
+    },
+    {
+      "name": "Exercise 6 - Count Elements Greater Than Neighbors - Easy",
+      "run": "pytest exercises/test_exercise_6.py",
+      "timeout": 5,
+      "points": 10
+    },
+    {
+      "name": "Exercise 7 - Sum of Integers in a Line - Easy",
+      "run": "pytest exercises/test_exercise_7.py",
+      "timeout": 5,
+      "points": 10
+    },
+    {
+      "name": "Exercise 8 - Separate Integer and Fractional Parts - Easy",
+      "run": "pytest exercises/test_exercise_8.py",
+      "timeout": 5,
+      "points": 10
+    },
+    {
+      "name": "Exercise 9 - Create List and Tuple - Easy",
+      "run": "pytest exercises/test_exercise_9.py",
+      "timeout": 5,
+      "points": 10
+    },
+    {
+      "name": "Exercise 10 - Count Integers in List - Easy",
+      "run": "pytest exercises/test_exercise_10.py",
+      "timeout": 5,
+      "points": 10
+    },
+    {
+      "name": "Exercise 11 - Extract Resource Name from URL - Easy",
+      "run": "pytest exercises/test_exercise_11.py",
+      "timeout": 5,
+      "points": 10
+    },
+    {
+      "name": "Exercise 12 - Convert List of Integers to a Single Integer - Easy",
+      "run": "pytest exercises/test_exercise_12.py",
+      "timeout": 5,
+      "points": 10
+    },
+    {
+      "name": "Exercise 13 - Calculate Arithmetic Mean - Easy",
+      "run": "pytest exercises/test_exercise_13.py",
+      "timeout": 5,
+      "points": 10
+    },
+    {
+      "name": "Exercise 14 - Calculate Distance Between Two Points - Easy",
+      "run": "pytest exercises/test_exercise_14.py",
+      "timeout": 5,
+      "points": 10
+    },
+    {
+      "name": "Exercise 15 - Sort Words Alphabetically - Medium",
+      "run": "pytest exercises/test_exercise_15.py",
+      "timeout": 10,
+      "points": 20
+    },
+    {
+      "name": "Exercise 16 - Print Unique Elements - Medium",
+      "run": "pytest exercises/test_exercise_16.py",
+      "timeout": 10,
+      "points": 20
+    },
+    {
+      "name": "Exercise 17 - Print Date in Specific Format - Medium",
+      "run": "pytest exercises/test_exercise_17.py",
+      "timeout": 10,
+      "points": 20
+    },
+    {
+      "name": "Exercise 18 - Swap Min and Max Elements - Medium",
+      "run": "pytest exercises/test_exercise_18.py",
+      "timeout": 10,
+      "points": 20
+    },
+    {
+      "name": "Exercise 19 - Convert Underscore to CamelCase - Medium",
+      "run": "pytest exercises/test_exercise_19.py",
+      "timeout": 10,
+      "points": 20
+    },
+    {
+      "name": "Exercise 20 - Find Specific Word and Print First Letter - Medium",
+      "run": "pytest exercises/test_exercise_20.py",
+      "timeout": 10,
+      "points": 20
+    },
+    {
+      "name": "Exercise 21 - Insert Element at Specific Position - Medium",
+      "run": "pytest exercises/test_exercise_21.py",
+      "timeout": 10,
+      "points": 20
+    },
+    {
+      "name": "Exercise 22 - Convert Binary to Decimal - Medium",
+      "run": "pytest exercises/test_exercise_22.py",
+      "timeout": 10,
+      "points": 20
+    },
+    {
+      "name": "Exercise 23 - Reverse Digits and Form Number - Medium",
+      "run": "pytest exercises/test_exercise_23.py",
+      "timeout": 10,
+      "points": 20
+    },
+    {
+      "name": "Exercise 24 - Arrange Positive and Negative Numbers - Medium",
+      "run": "pytest exercises/test_exercise_24.py",
+      "timeout": 10,
+      "points": 20
+    },
+    {
+      "name": "Exercise 25 - Create Snowflake Pattern - Medium",
+      "run": "pytest exercises/test_exercise_25.py",
+      "timeout": 10,
+      "points": 20
+    },
+    {
+      "name": "Exercise 26 - Rearrange Even and Odd Numbers - Medium",
+      "run": "pytest exercises/test_exercise_26.py",
+      "timeout": 10,
+      "points": 20
+    },
+    {
+      "name": "Exercise 27 - Calculate Bank Account Balance - Medium",
+      "run": "pytest exercises/test_exercise_27.py",
+      "timeout": 10,
+      "points": 20
+    },
+    {
+      "name": "Exercise 28 - Extract Head and Tail - Hard",
+      "run": "pytest exercises/test_exercise_28.py",
+      "timeout": 15,
+      "points": 30
+    },
+    {
+      "name": "Exercise 29 - Print Spiral Matrix - Hard",
+      "run": "pytest exercises/test_exercise_29.py",
+      "timeout": 15,
+      "points": 30
+    },
+    {
+      "name": "Exercise 30 - Caesar Cipher for Emoji - Hard",
+      "run": "pytest exercises/test_exercise_30.py",
+      "timeout": 15,
+      "points": 30
+    },
+    {
+      "name": "Exercise 31 - Sum of Neighbors - Hard",
+      "run": "pytest exercises/test_exercise_31.py",
+      "timeout": 15,
+      "points": 30
+    },
+    {
+      "name": "Exercise 32 - Longest Line - Hard",
+      "run": "pytest exercises/test_exercise_32.py",
+      "timeout": 15,
+      "points": 30
+    },
+    {
+      "name": "Exercise 33 - Maximize Number by Removing Digit - Hard",
+      "run": "pytest exercises/test_exercise_33.py",
+      "timeout": 15,
+      "points": 30
+    },
+    {
+      "name": "Exercise 34 - Find Longest Word - Hard",
+      "run": "pytest exercises/test_exercise_34.py",
+      "timeout": 15,
+      "points": 30
+    },
+    {
+      "name": "Exercise 35 - Compress List - Hard",
+      "run": "pytest exercises/test_exercise_35.py",
+      "timeout": 15,
+      "points": 30
+    },
+    {
+      "name": "Exercise 36 - Find All Positions - Hard",
+      "run": "pytest exercises/test_exercise_36.py",
+      "timeout": 15,
+      "points": 30
+    },
+    {
+      "name": "Exercise 37 - Decode Run-Length Encoding - Hard",
+      "run": "pytest exercises/test_exercise_37.py",
+      "timeout": 15,
+      "points": 30
+    },
+    {
+      "name": "Exercise 38 - Generate Min and Max Number - Hard",
+      "run": "pytest exercises/test_exercise_38.py",
+      "timeout": 15,
+      "points": 30
+    }
+  ]
+}
