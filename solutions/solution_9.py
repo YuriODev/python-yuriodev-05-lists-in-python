@@ -1,10 +1,14 @@
-# Read the input
-h = int(input())
-m = int(input())
-s = int(input())
+# Solution to Exercise 9
 
-# Calculate the angle
-angle = 0.5 * (60 * h + m + s / 60)
+# Prompt the user to enter a sequence of numbers separated by commas
+input_data = input("Enter a sequence of numbers separated by commas: ")
 
-# Print the angle
-print(angle)
+# Convert the input string into a list of integers
+numbers_list = list(map(int, input_data.split(',')))
+
+# Convert the input string into a tuple of integers
+numbers_tuple = tuple(numbers_list)
+
+# Print the list and tuple
+print(numbers_list)
+print(numbers_tuple)
