@@ -32,7 +32,7 @@ class TestExercise4(CustomTestCase):
         """
         inputs = ['1,2,3,4,5,6,7,8,9']
         output = self.run_exercise(inputs)
-        expected_output = "1,3,5,7,9"
+        expected_output = "2,4,6,8"
         self.assertInCustom(expected=expected_output,
                             actual=output, input_value=inputs)
 
