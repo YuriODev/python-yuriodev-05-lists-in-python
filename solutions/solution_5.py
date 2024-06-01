@@ -1,12 +1,21 @@
-# Read the input
-a = int(input())
-b = int(input())
+# Solution to Exercise 5
 
-# Calculate the maximum value
-max_value = (a + b + abs(a - b)) // 2
+# Prompt the user to enter a list of numbers separated by spaces
+input_data = input("Enter a list of numbers separated by spaces: ")
 
-# Alternative solution
-max_value = a * (a > b) + b * (b >= a)
+# Convert the input string into a list of integers
+numbers = list(map(int, input_data.split()))
 
-# Print the maximum value
-print(max_value)
+# Create an empty set to store unique elements
+unique_elements = set()
+
+# Iterate through the list of numbers
+for number in numbers:
+    # Add each number to the set of unique elements
+    unique_elements.add(number)
+
+# Solution using set comprehension
+unique_elements = set(numbers)
+
+# Print the count of unique elements
+print(len(unique_elements))
