@@ -62,7 +62,7 @@ class TestExercise30(CustomTestCase):
         """
         inputs = ['-1', '😜😝😛']
         output = self.run_exercise(inputs)
-        expected_output = "😛😚😙"
+        expected_output = "😛😜😚"
         self.assertInCustom(expected=expected_output,
                             actual=output, input_value=inputs)
 
@@ -82,7 +82,7 @@ class TestExercise30(CustomTestCase):
         """
         inputs = ['-50', '😀😁😂']
         output = self.run_exercise(inputs)
-        expected_output = "😃😄😅"
+        expected_output = "😞😟😠"
         self.assertInCustom(expected=expected_output,
                             actual=output, input_value=inputs)
 
@@ -112,7 +112,7 @@ class TestExercise30(CustomTestCase):
         """
         inputs = ['-1', '😊']
         output = self.run_exercise(inputs)
-        expected_output = "😁"
+        expected_output = "😉"
         self.assertInCustom(expected=expected_output,
                             actual=output, input_value=inputs)
 
@@ -122,7 +122,7 @@ class TestExercise30(CustomTestCase):
         """
         inputs = ['5', '😇😍😎😜']
         output = self.run_exercise(inputs)
-        expected_output = "😗😞😣😧"
+        expected_output = "😌😒😓😡"
         self.assertInCustom(expected=expected_output,
                             actual=output, input_value=inputs)
 
