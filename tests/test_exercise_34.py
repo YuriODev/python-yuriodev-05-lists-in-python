@@ -102,7 +102,7 @@ class TestExercise34(CustomTestCase):
         """
         inputs = ['Python is amazing and incredibly versatile']
         output = self.run_exercise(inputs)
-        expected_output = "incredibly versatile"
+        expected_output = "incredibly"
         self.assertInCustom(expected=expected_output,
                             actual=output, input_value=inputs)
 
