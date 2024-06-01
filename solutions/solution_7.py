@@ -1,14 +1,13 @@
-# # Read the input
-n = int(input())
+# Solution to Exercise 7
 
-# Extract the digits
-d1 = n // 1000
-d2 = (n % 1000) // 100
-d3 = (n % 100) // 10
-d4 = n % 10
+# Prompt the user to enter a list of integers separated by spaces
+input_data = input("Enter a list of integers separated by spaces: ")
 
-# Calculate the sum of the digits
-sum_of_digits = d1 + d2 + d3 + d4
+# Convert the input string into a list of integers
+numbers = list(map(int, input_data.split()))
 
-# Print the sum of the digits
-print(sum_of_digits)
+# Calculate the sum of the integers in the list
+total_sum = sum(numbers)
+
+# Print the sum of the integers
+print(total_sum)
