@@ -102,7 +102,7 @@ class TestExercise38(CustomTestCase):
         """
         inputs = ['9990']
         output = self.run_exercise(inputs)
-        expected_output = "0999 9990"
+        expected_output = "9099 9990"
         self.assertInCustom(expected=expected_output,
                             actual=output, input_value=inputs)
 
@@ -112,7 +112,7 @@ class TestExercise38(CustomTestCase):
         """
         inputs = ['1023']
         output = self.run_exercise(inputs)
-        expected_output = "0123 3210"
+        expected_output = "1023 3210"
         self.assertInCustom(expected=expected_output,
                             actual=output, input_value=inputs)
 
@@ -122,7 +122,7 @@ class TestExercise38(CustomTestCase):
         """
         inputs = ['4001']
         output = self.run_exercise(inputs)
-        expected_output = "0140 4100"
+        expected_output = "1004 4100"
         self.assertInCustom(expected=expected_output,
                             actual=output, input_value=inputs)
 
