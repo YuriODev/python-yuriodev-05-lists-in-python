@@ -52,7 +52,7 @@ class TestExercise31(CustomTestCase):
         """
         inputs = ['2 4 6 8 10']
         output = self.run_exercise(inputs)
-        expected_output = "12 8 10 14 6"
+        expected_output = "14 8 12 16 10"
         self.assertInCustom(expected=expected_output,
                             actual=output, input_value=inputs)
 
@@ -62,7 +62,7 @@ class TestExercise31(CustomTestCase):
         """
         inputs = ['7 8 9 10']
         output = self.run_exercise(inputs)
-        expected_output = "18 16 18 17"
+        expected_output = "18 16 18 16"
         self.assertInCustom(expected=expected_output,
                             actual=output, input_value=inputs)
 
@@ -72,7 +72,7 @@ class TestExercise31(CustomTestCase):
         """
         inputs = ['-1 -2 -3 -4']
         output = self.run_exercise(inputs)
-        expected_output = "-6 -4 -6 -5"
+        expected_output = "-6 -4 -6 -4"
         self.assertInCustom(expected=expected_output,
                             actual=output, input_value=inputs)
 
@@ -82,7 +82,7 @@ class TestExercise31(CustomTestCase):
         """
         inputs = ['3 -3 5 -5']
         output = self.run_exercise(inputs)
-        expected_output = "2 8 0 -2"
+        expected_output = "-8 8 -8 8"
         self.assertInCustom(expected=expected_output,
                             actual=output, input_value=inputs)
 
@@ -112,7 +112,7 @@ class TestExercise31(CustomTestCase):
         """
         inputs = ['1 0 -1 0 1']
         output = self.run_exercise(inputs)
-        expected_output = "1 0 -1 0 1"
+        expected_output = "1 0 0 0 1"
         self.assertInCustom(expected=expected_output,
                             actual=output, input_value=inputs)
 
@@ -122,7 +122,7 @@ class TestExercise31(CustomTestCase):
         """
         inputs = ['1 2 3 4 5 6 7 8 9 10']
         output = self.run_exercise(inputs)
-        expected_output = "12 4 6 8 10 12 14 16 18 11"
+        expected_output = "12 4 6 8 10 12 14 16 18 10"
         self.assertInCustom(expected=expected_output,
                             actual=output, input_value=inputs)
 
