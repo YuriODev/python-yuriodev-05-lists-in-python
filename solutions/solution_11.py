@@ -1,20 +1,13 @@
-# Read the input
-s = int(input())
+# Solution to Exercise 11
 
-# Calculate the number of bills for each denomination
-bills_500 = s // 500
-s %= 500
+# Prompt the user to enter a URL
+input_data = input("Enter a URL: ")
 
-bills_100 = s // 100
-s %= 100
+# Find the position of the last slash in the URL
+last_slash_position = input_data.rfind('/')
 
-bills_10 = s // 10
-s %= 10
+# Extract the resource name from the URL
+resource_name = input_data[last_slash_position + 1:]
 
-bills_5 = s // 5
-s %= 5
-
-bills_1 = s
-
-# Print the number of bills for each denomination in one line
-print(f"{bills_500} (500), {bills_100} (100), {bills_10} (10), {bills_5} (5), {bills_1} (1)")
+# Print the resource name
+print(resource_name)
