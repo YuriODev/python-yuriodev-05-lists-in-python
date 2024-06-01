@@ -122,7 +122,7 @@ class TestExercise14(CustomTestCase):
         """
         inputs = ['-2 -3 3 4']
         output = self.run_exercise(inputs)
-        expected_output = "9.22"
+        expected_output = "8.60"
         self.assertInCustom(expected=expected_output,
                             actual=output, input_value=inputs)
 
