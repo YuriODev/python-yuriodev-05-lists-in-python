@@ -68,11 +68,11 @@ class TestExercise18(CustomTestCase):
 
     def test_case_5(self):
         """
-        Swaps min and max in '5 3 9 1 7' which should be '5 3 9 7 1'
+        Swaps min and max in '5 3 9 1 7' which should be '5 3 1 9 7'
         """
         inputs = ['5 3 9 1 7']
         output = self.run_exercise(inputs)
-        expected_output = "5 3 9 7 1"
+        expected_output = "5 3 1 9 7"
         self.assertInCustom(expected=expected_output,
                             actual=output, input_value=inputs)
 
@@ -88,21 +88,21 @@ class TestExercise18(CustomTestCase):
 
     def test_case_7(self):
         """
-        Swaps min and max in '7 8 9 10 1' which should be '7 8 9 10 1'
+        Swaps min and max in '7 8 9 10 1' which should be '7 8 9 1 10'
         """
         inputs = ['7 8 9 10 1']
         output = self.run_exercise(inputs)
-        expected_output = "1 8 9 10 7"
+        expected_output = "7 8 9 1 10"
         self.assertInCustom(expected=expected_output,
                             actual=output, input_value=inputs)
 
     def test_case_8(self):
         """
-        Swaps min and max in '4 5 6 3 2' which should be '2 5 6 3 4'
+        Swaps min and max in '4 5 6 3 2' which should be '4 5 2 3 6'
         """
         inputs = ['4 5 6 3 2']
         output = self.run_exercise(inputs)
-        expected_output = "2 5 6 3 4"
+        expected_output = "4 5 2 3 6"
         self.assertInCustom(expected=expected_output,
                             actual=output, input_value=inputs)
 
