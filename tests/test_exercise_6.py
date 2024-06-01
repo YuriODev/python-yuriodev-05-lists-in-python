@@ -68,11 +68,11 @@ class TestExercise6(CustomTestCase):
 
     def test_case_5(self):
         """
-        Counts elements greater than both neighbors in '10 20 10 5 25 5 50' which should be 3
+        Counts elements greater than both neighbors in '10 20 10 5 25 5 50' which should be 2
         """
         inputs = ['10 20 10 5 25 5 50']
         output = self.run_exercise(inputs)
-        expected_output = "3"
+        expected_output = "2"
         self.assertInCustom(expected=expected_output,
                             actual=output, input_value=inputs)
 
@@ -88,11 +88,11 @@ class TestExercise6(CustomTestCase):
 
     def test_case_7(self):
         """
-        Counts elements greater than both neighbors in '3 2 3 2 3 2 3' which should be 3
+        Counts elements greater than both neighbors in '3 2 3 2 3 2 3' which should be 2
         """
         inputs = ['3 2 3 2 3 2 3']
         output = self.run_exercise(inputs)
-        expected_output = "3"
+        expected_output = "2"
         self.assertInCustom(expected=expected_output,
                             actual=output, input_value=inputs)
 
