@@ -617,6 +617,9 @@ This exercise tests the ability to work with 2D arrays and create patterns in Py
 ### Note:
 This exercise tests the ability to rearrange elements in a list based on their parity in Python.
 
+## Exercise 27: Calculate Bank Account Balance with Number of Transactions - Medium 🔥 (Est. Time: 10-15 mins | Points: 20)
+
+
 **Problem:** Write a program that calculates the balance on a bank account based on a transaction log and the number of transactions. The format of the transaction log is as follows:
 
 ### Input:
