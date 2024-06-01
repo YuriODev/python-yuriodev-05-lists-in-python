@@ -1,14 +1,10 @@
-# Read the input
-a = int(input())
-b = int(input())
-c = int(input())
+# Solution to Exercise 8
 
-# Calculate the minimum, middle, and maximum values
-min_value = a * (a <= b and a <= c) + b * (b < a or b < c) + c * (c < a and c < b)
-max_value = a * (a >= b and a >= c) + b * (b > a or b > c) + c * (c > a and c > b)
-mid_value = a + b + c - min_value - max_value
+# Prompt the user to enter a floating-point number
+input_data = input("Enter a floating-point number: ")
 
-# Print the sorted numbers
-print(min_value)
-print(mid_value)
-print(max_value)
+# Split the input data into integer and fractional parts using the decimal point as the separator
+integer_part, fractional_part = input_data.split('.')
+
+# Print the integer part and the fractional part separately
+print(integer_part, fractional_part)
