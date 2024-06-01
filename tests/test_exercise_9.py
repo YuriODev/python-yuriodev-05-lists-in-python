@@ -32,8 +32,7 @@ class TestExercise9(CustomTestCase):
         """
         inputs = ['7,9,12,4']
         output = self.run_exercise(inputs)
-        expected_output = "[7, 9, 12, 4]
-(7, 9, 12, 4)"
+        expected_output = "[7, 9, 12, 4]\n(7, 9, 12, 4)"
         self.assertInCustom(expected=expected_output,
                             actual=output, input_value=inputs)
 
@@ -43,8 +42,7 @@ class TestExercise9(CustomTestCase):
         """
         inputs = ['1,2,3']
         output = self.run_exercise(inputs)
-        expected_output = "[1, 2, 3]
-(1, 2, 3)"
+        expected_output = "[1, 2, 3]\n(1, 2, 3)"
         self.assertInCustom(expected=expected_output,
                             actual=output, input_value=inputs)
 
@@ -54,8 +52,7 @@ class TestExercise9(CustomTestCase):
         """
         inputs = ['10,20,30,40']
         output = self.run_exercise(inputs)
-        expected_output = "[10, 20, 30, 40]
-(10, 20, 30, 40)"
+        expected_output = "[10, 20, 30, 40]\n(10, 20, 30, 40)"
         self.assertInCustom(expected=expected_output,
                             actual=output, input_value=inputs)
 
@@ -65,8 +62,7 @@ class TestExercise9(CustomTestCase):
         """
         inputs = ['5,6,7,8,9']
         output = self.run_exercise(inputs)
-        expected_output = "[5, 6, 7, 8, 9]
-(5, 6, 7, 8, 9)"
+        expected_output = "[5, 6, 7, 8, 9]\n(5, 6, 7, 8, 9)"
         self.assertInCustom(expected=expected_output,
                             actual=output, input_value=inputs)
 
@@ -76,8 +72,7 @@ class TestExercise9(CustomTestCase):
         """
         inputs = ['0,1,2,3,4']
         output = self.run_exercise(inputs)
-        expected_output = "[0, 1, 2, 3, 4]
-(0, 1, 2, 3, 4)"
+        expected_output = "[0, 1, 2, 3, 4]\n(0, 1, 2, 3, 4)"
         self.assertInCustom(expected=expected_output,
                             actual=output, input_value=inputs)
 
@@ -87,8 +82,7 @@ class TestExercise9(CustomTestCase):
         """
         inputs = ['100,200,300']
         output = self.run_exercise(inputs)
-        expected_output = "[100, 200, 300]
-(100, 200, 300)"
+        expected_output = "[100, 200, 300]\n(100, 200, 300)"
         self.assertInCustom(expected=expected_output,
                             actual=output, input_value=inputs)
 
@@ -98,8 +92,7 @@ class TestExercise9(CustomTestCase):
         """
         inputs = ['1']
         output = self.run_exercise(inputs)
-        expected_output = "[1]
-(1)"
+        expected_output = "[1]\n(1,)"
         self.assertInCustom(expected=expected_output,
                             actual=output, input_value=inputs)
 
@@ -109,8 +102,7 @@ class TestExercise9(CustomTestCase):
         """
         inputs = ['9,8,7,6,5']
         output = self.run_exercise(inputs)
-        expected_output = "[9, 8, 7, 6, 5]
-(9, 8, 7, 6, 5)"
+        expected_output = "[9, 8, 7, 6, 5]\n(9, 8, 7, 6, 5)"
         self.assertInCustom(expected=expected_output,
                             actual=output, input_value=inputs)
 
@@ -120,8 +112,7 @@ class TestExercise9(CustomTestCase):
         """
         inputs = ['10,0,0,5']
         output = self.run_exercise(inputs)
-        expected_output = "[10, 0, 0, 5]
-(10, 0, 0, 5)"
+        expected_output = "[10, 0, 0, 5]\n(10, 0, 0, 5)"
         self.assertInCustom(expected=expected_output,
                             actual=output, input_value=inputs)
 
@@ -131,8 +122,7 @@ class TestExercise9(CustomTestCase):
         """
         inputs = ['3,6,9,12']
         output = self.run_exercise(inputs)
-        expected_output = "[3, 6, 9, 12]
-(3, 6, 9, 12)"
+        expected_output = "[3, 6, 9, 12]\n(3, 6, 9, 12)"
         self.assertInCustom(expected=expected_output,
                             actual=output, input_value=inputs)
 
