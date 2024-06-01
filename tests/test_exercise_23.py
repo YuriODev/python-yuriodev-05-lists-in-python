@@ -32,7 +32,7 @@ class TestExercise23(CustomTestCase):
         """
         inputs = ['1 4 8 3 9 5']
         output = self.run_exercise(inputs)
-        expected_output = "593841"
+        expected_output = "985431"
         self.assertInCustom(expected=expected_output,
                             actual=output, input_value=inputs)
 
@@ -92,7 +92,7 @@ class TestExercise23(CustomTestCase):
         """
         inputs = ['1 2 2 1']
         output = self.run_exercise(inputs)
-        expected_output = "1221"
+        expected_output = "2211"
         self.assertInCustom(expected=expected_output,
                             actual=output, input_value=inputs)
 
