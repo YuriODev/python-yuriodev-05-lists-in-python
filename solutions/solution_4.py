@@ -1,24 +1,23 @@
-# Read the input
-n = int(input())
+# Solution to Exercise 4
 
-# Extract the digits
-d1 = n // 1000
-d2 = (n % 1000) // 100
-d3 = (n % 100) // 10
-d4 = n % 10
+# Prompt the user to enter a list of numbers separated by commas without spaces
+input_data = input("Enter a list of numbers separated by commas without spaces: ")
 
-# # SOLUTION 1
+# Convert the input string into a list of integers
+numbers = list(map(int, input_data.split(',')))
 
-# # Calculate the result
-# result = (d1 == d4) * (d2 == d3)
+# Create an empty list to store elements with odd indices
+odd_index_elements = []
 
-# # Print the result
-# print(result)
+# Iterate through the list of numbers using index
+for i in range(len(numbers)):
+    # Check if the index is odd
+    if i % 2 != 0:
+        # Append the element with an odd index to the odd_index_elements list
+        odd_index_elements.append(numbers[i])
 
-# SOLUTION 2
+# Solution using list comprehension
+odd_index_elements = [numbers[i] for i in range(len(numbers)) if i % 2 != 0]
 
-# Calculate the difference
-difference = abs((d1 - d4) + (d2 - d3))
-
-# Print the result
-print(max(1 - difference, 0))
+# Print the elements with odd indices separated by commas without spaces
+print(",".join(map(str, odd_index_elements)))
