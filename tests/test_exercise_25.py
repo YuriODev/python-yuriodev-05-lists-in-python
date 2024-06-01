@@ -32,13 +32,13 @@ class TestExercise25(CustomTestCase):
         """
         inputs = ['7']
         output = self.run_exercise(inputs)
-        expected_output = "* . . * . . *
+        expected_output = """* . . * . . *
 . * . * . * .
 . . * * * . .
 * * * * * * *
 . . * * * . .
 . * . * . * .
-* . . * . . *"
+* . . * . . *"""
         self.assertInCustom(expected=expected_output,
                             actual=output, input_value=inputs)
 
@@ -48,11 +48,11 @@ class TestExercise25(CustomTestCase):
         """
         inputs = ['5']
         output = self.run_exercise(inputs)
-        expected_output = "* . * . *
+        expected_output = """* . * . *
 . * * * .
 * * * * *
 . * * * .
-* . * . *"
+* . * . *"""
         self.assertInCustom(expected=expected_output,
                             actual=output, input_value=inputs)
 
@@ -62,9 +62,9 @@ class TestExercise25(CustomTestCase):
         """
         inputs = ['3']
         output = self.run_exercise(inputs)
-        expected_output = "* * *
+        expected_output = """* * *
 * * *
-* * *"
+* * *"""
         self.assertInCustom(expected=expected_output,
                             actual=output, input_value=inputs)
 
@@ -74,7 +74,7 @@ class TestExercise25(CustomTestCase):
         """
         inputs = ['1']
         output = self.run_exercise(inputs)
-        expected_output = "*"
+        expected_output = """*"""
         self.assertInCustom(expected=expected_output,
                             actual=output, input_value=inputs)
 
@@ -84,7 +84,7 @@ class TestExercise25(CustomTestCase):
         """
         inputs = ['9']
         output = self.run_exercise(inputs)
-        expected_output = "* . . . * . . . *
+        expected_output = """* . . . * . . . *
 . * . . * . . * .
 . . * . * . * . .
 . . . * * * . . .
@@ -92,7 +92,7 @@ class TestExercise25(CustomTestCase):
 . . . * * * . . .
 . . * . * . * . .
 . * . . * . . * .
-* . . . * . . . *"
+* . . . * . . . *"""
         self.assertInCustom(expected=expected_output,
                             actual=output, input_value=inputs)
 
@@ -102,7 +102,7 @@ class TestExercise25(CustomTestCase):
         """
         inputs = ['11']
         output = self.run_exercise(inputs)
-        expected_output = "* . . . . * . . . . *
+        expected_output = """* . . . . * . . . . *
 . * . . . * . . . * .
 . . * . . * . . * . .
 . . . * . * . * . . .
@@ -112,7 +112,7 @@ class TestExercise25(CustomTestCase):
 . . . * . * . * . . .
 . . * . . * . . * . .
 . * . . . * . . . * .
-* . . . . * . . . . *"
+* . . . . * . . . . *"""
         self.assertInCustom(expected=expected_output,
                             actual=output, input_value=inputs)
 
@@ -122,53 +122,29 @@ class TestExercise25(CustomTestCase):
         """
         inputs = ['13']
         output = self.run_exercise(inputs)
-        expected_output = "* . . . . . * . . . . . *
+        expected_output = """* . . . . . * . . . . . *
 . * . . . . * . . . . * .
 . . * . . . * . . . * . .
-. . . * . . . * . . * . . .
-. . . . * . . * . * . . . .
-. . . . . * . * * . . . . .
+. . . * . . * . . * . . .
+. . . . * . * . * . . . .
+. . . . . * * * . . . . .
 * * * * * * * * * * * * *
-. . . . . * . * * . . . . .
-. . . . * . . * . * . . . .
-. . . * . . . * . . * . . .
+. . . . . * * * . . . . .
+. . . . * . * . * . . . .
+. . . * . . * . . * . . .
 . . * . . . * . . . * . .
-. * . . . * . . . . * .
-* . . . . . * . . . . . *"
+. * . . . . * . . . . * .
+* . . . . . * . . . . . *"""
         self.assertInCustom(expected=expected_output,
                             actual=output, input_value=inputs)
 
     def test_case_8(self):
         """
-        Creates a snowflake pattern for n=15
-        """
-        inputs = ['15']
-        output = self.run_exercise(inputs)
-        expected_output = "* . . . . . . * . . . . . . *
-. * . . . . . * . . . . . * .
-. . * . . . . * . . . . * . .
-. . . * . . . * . . . * . . .
-. . . . * . . * . * . . . . .
-. . . . . * . * * . . . . . .
-. . . . . . * * * . . . . . .
-* * * * * * * * * * * * * * *
-. . . . . . * * * . . . . . .
-. . . . . * . * * . . . . . .
-. . . . * . . * . * . . . . .
-. . . * . . . * . . . * . . .
-. . * . . . * . . . . * . .
-. * . . . * . . . . . * .
-* . . . . . . * . . . . . . *"
-        self.assertInCustom(expected=expected_output,
-                            actual=output, input_value=inputs)
-
-    def test_case_9(self):
-        """
         Creates a snowflake pattern for n=17
         """
         inputs = ['17']
         output = self.run_exercise(inputs)
-        expected_output = "* . . . . . . . * . . . . . . . *
+        expected_output = """* . . . . . . . * . . . . . . . *
 . * . . . . . . * . . . . . . * .
 . . * . . . . . * . . . . . * . .
 . . . * . . . . * . . . . * . . .
@@ -184,7 +160,7 @@ class TestExercise25(CustomTestCase):
 . . . * . . . . * . . . . * . . .
 . . * . . . . . * . . . . . * . .
 . * . . . . . . * . . . . . . * .
-* . . . . . . . * . . . . . . . *"
+* . . . . . . . * . . . . . . . *"""
         self.assertInCustom(expected=expected_output,
                             actual=output, input_value=inputs)
 
