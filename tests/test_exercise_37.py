@@ -92,7 +92,7 @@ class TestExercise37(CustomTestCase):
         """
         inputs = ['100a2b3c']
         output = self.run_exercise(inputs)
-        expected_output = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbccc"
+        expected_output = 100*"a" + 2*"b" + 3*"c"
         self.assertInCustom(expected=expected_output,
                             actual=output, input_value=inputs)
 
@@ -102,7 +102,7 @@ class TestExercise37(CustomTestCase):
         """
         inputs = ['3a2B4C']
         output = self.run_exercise(inputs)
-        expected_output = "aaabbCCCC"
+        expected_output = "aaaBBCCCC"
         self.assertInCustom(expected=expected_output,
                             actual=output, input_value=inputs)
 
