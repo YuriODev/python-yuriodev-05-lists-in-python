@@ -32,8 +32,7 @@ class TestExercise32(CustomTestCase):
         """
         inputs = ['5', 'Thames', 'Amazon', 'Nile', 'Yangtze', 'Dnieper']
         output = self.run_exercise(inputs)
-        expected_output = "4
-5"
+        expected_output = "4\n5"
         self.assertInCustom(expected=expected_output,
                             actual=output, input_value=inputs)
 
@@ -43,17 +42,17 @@ class TestExercise32(CustomTestCase):
         """
         inputs = ['3', 'short', 'medium length', 'longest line']
         output = self.run_exercise(inputs)
-        expected_output = "3"
+        expected_output = "2"
         self.assertInCustom(expected=expected_output,
                             actual=output, input_value=inputs)
 
     def test_case_3(self):
         """
-        All lines of equal length among 4 inputs
+        Longest line among 4 inputs
         """
         inputs = ['4', 'alpha', 'beta', 'gamma', 'delta']
         output = self.run_exercise(inputs)
-        expected_output = "1 2 3 4"
+        expected_output = "1\n3\n4"
         self.assertInCustom(expected=expected_output,
                             actual=output, input_value=inputs)
 
@@ -83,7 +82,7 @@ class TestExercise32(CustomTestCase):
         """
         inputs = ['3', '', '', '']
         output = self.run_exercise(inputs)
-        expected_output = "1 2 3"
+        expected_output = "1\n2\n3"
         self.assertInCustom(expected=expected_output,
                             actual=output, input_value=inputs)
 
@@ -93,7 +92,7 @@ class TestExercise32(CustomTestCase):
         """
         inputs = ['4', 'short', 'longer line', 'longest line of all', 'longest line of all']
         output = self.run_exercise(inputs)
-        expected_output = "3 4"
+        expected_output = "3\n4"
         self.assertInCustom(expected=expected_output,
                             actual=output, input_value=inputs)
 
@@ -123,7 +122,7 @@ class TestExercise32(CustomTestCase):
         """
         inputs = ['5', 'line one', 'line two', 'line three', 'line four', 'line five']
         output = self.run_exercise(inputs)
-        expected_output = "1 2 3 4 5"
+        expected_output = "3"
         self.assertInCustom(expected=expected_output,
                             actual=output, input_value=inputs)
 
