@@ -510,7 +510,7 @@ This exercise tests the ability to convert numbers between different bases in Py
 
 | No. | Inputs        | Outputs  |
 | --- | ------------- | -------- |
-| 1   | 1 4 8 3 9 5   | 593841   |
+| 1   | 1 4 8 3 9 5   | 985431   |
 | 2   | 2 1 3         | 321      |
 | 3   | 7 0 5 4       | 7540     |
 | 4   | 9 8 7 6 5     | 98765    |
