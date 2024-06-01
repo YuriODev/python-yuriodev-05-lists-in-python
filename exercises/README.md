@@ -617,28 +617,27 @@ This exercise tests the ability to work with 2D arrays and create patterns in Py
 ### Note:
 This exercise tests the ability to rearrange elements in a list based on their parity in Python.
 
-## Exercise 27: Calculate Bank Account Balance - Medium 🔥 (Est. Time: 10-15 mins | Points: 20)
-
-**Problem:** Write a program that calculates the balance on a bank account based on a transaction log. The format of the transaction log is as follows:
+**Problem:** Write a program that calculates the balance on a bank account based on a transaction log and the number of transactions. The format of the transaction log is as follows:
 
 ### Input:
-- A sequence of transactions in the format `D amount` for deposit and `W amount` for withdrawal.
+- An integer \( n \) representing the number of transactions.
+- A sequence of \( n \) transactions in the format `D amount` for deposit and `W amount` for withdrawal.
 
 ### Output:
 - The final balance.
 
 ### Examples:
 
-| No. | Inputs          | Outputs      |
-| --- | --------------- | ------------ |
-| 1   | D 100<br>W 200  | -100         |
-| 2   | D 300<br>D 200<br>W 100 | 400 |
-| 3   | W 50<br>D 100<br>W 50  | 0 |
-| 4   | D 500<br>W 100<br>D 200<br>W 50 | 550 |
+| No. | Inputs                         | Outputs      |
+| --- | ------------------------------ | ------------ |
+| 1   | 2<br>D 100<br>W 200            | -100         |
+| 2   | 3<br>D 300<br>D 200<br>W 100   | 400          |
+| 3   | 3<br>W 50<br>D 100<br>W 50     | 0            |
+| 4   | 4<br>D 500<br>W 100<br>D 200<br>W 50 | 550   |
 
 ### Note:
 This exercise tests the ability to process a sequence of operations and maintain a cumulative total in Python.
-"""
+
 
 
 ## Exercise 28: Extract Head and Tail - Hard 🥵 (Est. Time: 15-20 mins | Points: 30)
