@@ -750,7 +750,7 @@ This exercise tests the ability to work with lists and calculate neighboring sum
 | --- | ------------------------------------------- | --------- |
 | 1   | 5<br>Thames<br>Amazon<br>Nile<br>Yangtze<br>Dnieper | 4<br>5   |
 | 2   | 3<br>short<br>medium length<br>longest line  | 3         |
-| 3   | 4<br>alpha<br>beta<br>gamma<br>delta         | 1 2 3 4   |
+| 3   | 4<br>alpha<br>beta<br>gamma<br>delta         | 1 <br> 3   |
 | 4   | 2<br>quick<br>quickest                      | 2         |
 
 ### Note:
