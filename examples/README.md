@@ -44,9 +44,7 @@ Here are some examples to get you started.
 | Determine Position in a Descending Sequence of Heights  | [Detailed code](./example_35.py)                  | [Problem description](#example-35-determine-position-in-a-descending-sequence-of-heights)       | [Video Explanation](https://youtube.com/example_35)       |
 | Calculate Fraction of Students with Grade A             | [Detailed code](./example_36.py)                  | [Problem description](#example-36-calculate-fraction-of-students-with-grade-a)       | [Video Explanation](https://youtube.com/example_36)       |
 | Remove Element by Index                                 | [Detailed code](./example_37.py)                  | [Problem description](#example-37-remove-element-by-index)       | [Video Explanation](https://youtube.com/example_37)       |
-| Remove Every Third Element Until List is Empty          | [Detailed code](./example_38.py)                  | [Problem description](#example-38
-
--remove-every-third-element-until-list-is-empty)       | [Video Explanation](https://youtube.com/example_38)       |
+| Remove Every Third Element Until List is Empty          | [Detailed code](./example_38.py)                  | [Problem description](#example-38-remove-every-third-element-until-list-is-empty)       | [Video Explanation](https://youtube.com/example_38)       |
 | Find Two Smallest Elements                              | [Detailed code](./example_39.py)                  | [Problem description](#example-39-find-two-smallest-elements)       | [Video Explanation](https://youtube.com/example_39)       |
 | Replace Last Three Characters in Words                  | [Detailed code](./example_40.py)                  | [Problem description](#example-40-replace-last-three-characters-in-words)       | [Video Explanation](https://youtube.com/example_40)       |
 | Create a Chessboard Pattern                             | [Detailed code](./example_41.py)                  | [Problem description](#example-41-create-a-chessboard-pattern)       | [Video Explanation](https://youtube.com/example_41)       |
