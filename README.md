@@ -1,10 +1,10 @@
 # 📘 Lists and Tuples in Python
 
-![GitHub contributors](https://img.shields.io/github/contributors/YurioDev/python-yuriodev-01-simple-data-types?style=for-the-badge)
-![Forks](https://img.shields.io/github/forks/YurioDev/python-yuriodev-01-simple-data-types?style=for-the-badge)
-![Stars](https://img.shields.io/github/stars/YurioDev/python-yuriodev-01-simple-data-types?style=for-the-badge)
-![Issues](https://img.shields.io/github/issues/YurioDev/python-yuriodev-01-simple-data-types?style=for-the-badge)
-![License](https://img.shields.io/github/license/YurioDev/python-yuriodev-01-simple-data-types?style=for-the-badge)
+![GitHub contributors](https://img.shields.io/github/contributors/YurioDev/python-yuriodev-05-lists-in-python?style=for-the-badge)
+![Forks](https://img.shields.io/github/forks/YurioDev/python-yuriodev-05-lists-in-python?style=for-the-badge)
+![Stars](https://img.shields.io/github/stars/YurioDev/python-yuriodev-05-lists-in-python?style=for-the-badge)
+![Issues](https://img.shields.io/github/issues/YurioDev/python-yuriodev-05-lists-in-python?style=for-the-badge)
+![License](https://img.shields.io/github/license/YurioDev/python-yuriodev-05-lists-in-python?style=for-the-badge)
 
 Welcome to the fifth module of the **YuriODev Comprehensive Python Course**, focusing on **Lists and Tuples**. This module explores the powerful data structures in Python that allow you to store and manipulate collections of data efficiently.
 
